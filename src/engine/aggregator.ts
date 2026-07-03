@@ -76,11 +76,11 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
       }
     }
 
-    pullRequests(first: 0, states: [OPEN]) { totalCount }
-    pullRequests(first: 0, states: [CLOSED]) { totalCount }
-    pullRequests(first: 0, states: [MERGED]) { totalCount }
-    issues(first: 0, states: [OPEN]) { totalCount }
-    issues(first: 0, states: [CLOSED]) { totalCount }
+    openPRs: pullRequests(first: 0, states: [OPEN]) { totalCount }
+    closedPRs: pullRequests(first: 0, states: [CLOSED]) { totalCount }
+    mergedPRs: pullRequests(first: 0, states: [MERGED]) { totalCount }
+    openIssues: issues(first: 0, states: [OPEN]) { totalCount }
+    closedIssues: issues(first: 0, states: [CLOSED]) { totalCount }
   }
 }
 `;
