@@ -106,7 +106,6 @@ focus: Clean Architecture, Scalable Systems, Team Leadership
 </div>
 
 <div align="center">
-  <img height="500px" src="stats/github-stats.svg" />
   <img height="500px" src="stats/top-langs.svg" />
 </div>
 
