@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=7000&pause=1000&color=667EEA&center=true&vCenter=true&width=435&lines=Full-Stack+Developer;Tech+Lead;React+%7C+Angular+%7C+Python+%7C+AWS" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=7000&pause=1000&color=667EEA&center=true&vCenter=true&width=435&lines=Full-Stack+Developer;React+%7C+Angular+%7C+Python+%7C+AWS" alt="Typing SVG" />
 </h1>
 
 ```yaml
@@ -12,7 +12,7 @@
 name: Luis Eduardo Albor Vega
 alias: LEAV
 location: Colombia
-role: Full-Stack Developer & Tech Lead
+role: Full-Stack Developer
 
 stack:
   frontend: [React, Angular, TypeScript, JavaScript, TailwindCSS]
