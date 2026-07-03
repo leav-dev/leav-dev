@@ -10,7 +10,6 @@
     "following": 2,
     "createdAt": "2021-12-14T02:16:07Z",
     "updatedAt": "2026-07-03T15:04:05Z",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/96095506?v=4",
     "_meta": {}
   },
   "repositories": {
@@ -2217,9 +2216,7 @@
     "_meta": {}
   },
   "insights": {
-    "productivityScore": 3,
     "consistencyScore": 0,
-    "activityScore": 2,
     "repositoryHealthScore": 54,
     "contributionTrend": "DECLINING",
     "trendPercentage": -45.71,
@@ -2228,7 +2225,6 @@
     "monthlyGrowth": -10,
     "weeklyGrowth": 0,
     "commitFrequency": 77.42,
-    "activeDaysPercentage": 6.83,
     "_meta": {
       "activityScore": {
         "source": "DERIVED",

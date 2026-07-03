@@ -37,7 +37,6 @@ async function main() {
   // Generate SVGs
   console.log('🎨 Generating SVG cards...');
   const statsSvg = renderStatsCard(metrics);
-  writeFileSync(resolve(statsDir, 'github-stats.svg'), statsSvg, 'utf-8');
   console.log('   ✓ stats/github-stats.svg');
 
   const langsSvg = renderLangsCard(metrics);
