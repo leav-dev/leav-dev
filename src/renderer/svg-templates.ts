@@ -5,7 +5,7 @@ const C = {
   bg: '#1a1b27',
   card: '#1f2235',
   border: '#2d3355',
-  text: '#a9b1d6',
+  text: '#ffffff',
   heading: '#e0e0e0',
   accent: '#7aa2f7',
   green: '#9ece6a',
@@ -108,7 +108,7 @@ export function renderLangsCard(m: GitHubMetrics): string {
     return `
   <text x="20" y="${y}" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="${C.text}">${escapeXml(lang.name)}</text>
   <rect x="20" y="${y + 6}" width="${barW}" height="12" rx="4" fill="${color}" opacity="0.8"/>
-  <text x="230" y="${y + 16}" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="${C.text}" text-anchor="end">${lang.percentage}%</text>`;
+  <text x="${20 + barW + 6}" y="${y + 16}" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="${C.text}">${lang.percentage}%</text>`;
   }).join('')}
 </svg>`;
 }
