@@ -35,33 +35,37 @@ focus: Clean Architecture, Scalable Systems, Team Leadership
   <tr>
     <td align="center" width="50%">
       <a href="https://github.com/leav-dev/shaun">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=leav-dev&repo=shaun&theme=tokyonight&hide_border=true&show_owner=true" />
+        <h3>shaun</h3>
       </a>
-      <br />
-      <sub>Kanban board con Astro + SQLite + Docker</sub>
+      <sub>Kanban board</sub>
+      <br /><br />
+      <img src="https://skillicons.dev/icons?i=astro,sqlite,docker" height="40" alt="" />
     </td>
     <td align="center" width="50%">
       <a href="https://github.com/leav-dev/utilspress">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=leav-dev&repo=utilspress&theme=tokyonight&hide_border=true&show_owner=true" />
+        <h3>utilspress</h3>
       </a>
-      <br />
-      <sub>Procesamiento de imágenes y PDF con Flet + Python</sub>
+      <sub>Procesamiento de imágenes y PDF</sub>
+      <br /><br />
+      <img src="https://skillicons.dev/icons?i=flutter,python" height="40" alt="" />
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
       <a href="https://github.com/leav-dev/api-clima">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=leav-dev&repo=api-clima&theme=tokyonight&hide_border=true&show_owner=true" />
+        <h3>api-clima</h3>
       </a>
-      <br />
-      <sub>API meteorológica con FastAPI + Docker</sub>
+      <sub>API meteorológica</sub>
+      <br /><br />
+      <img src="https://skillicons.dev/icons?i=fastapi,docker" height="40" alt="" />
     </td>
     <td align="center" width="50%">
       <a href="https://github.com/leav-dev/bot-detector">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=leav-dev&repo=bot-detector&theme=tokyonight&hide_border=true&show_owner=true" />
+        <h3>bot-detector</h3>
       </a>
-      <br />
-      <sub>GUI automation bot con OpenCV + Python</sub>
+      <sub>GUI automation bot</sub>
+      <br /><br />
+      <img src="https://skillicons.dev/icons?i=opencv,python" height="40" alt="" />
     </td>
   </tr>
 </table>
