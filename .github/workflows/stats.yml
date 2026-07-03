@@ -1,0 +1,48 @@
+name: Generate Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch GitHub Stats
+        run: |
+          mkdir -p stats
+          curl -s -o stats/github-stats.svg -w "%{http_code}" \
+            "https://github-readme-stats.vercel.app/api?username=leav-dev&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" \
+            | { read code; [ "$code" = "200" ] && echo "OK stats" || echo "FAIL stats ($code)"; }
+
+      - name: Fetch Top Languages
+        run: |
+          curl -s -o stats/top-langs.svg -w "%{http_code}" \
+            "https://github-readme-stats.vercel.app/api/top-langs/?username=leav-dev&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" \
+            | { read code; [ "$code" = "200" ] && echo "OK langs" || echo "FAIL langs ($code)"; }
+
+      - name: Validate SVGs
+        run: |
+          for f in stats/*.svg; do
+            head -1 "$f" | grep -q '<?xml\|<svg' && echo "$f OK" || { echo "INVALID $f — removing"; rm "$f"; }
+          done
+
+      - name: Commit if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add stats/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update stats"
+            git push
+          fi
