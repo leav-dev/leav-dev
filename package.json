@@ -1,0 +1,22 @@
+{
+  "name": "github-metrics-engine",
+  "version": "1.0.0",
+  "description": "GitHub Metrics Engine — collect, process and calculate advanced GitHub user statistics",
+  "type": "module",
+  "main": "dist/engine/index.js",
+  "types": "dist/engine/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "generate": "node scripts/generate.mjs",
+    "generate:local": "GITHUB_USERNAME=leav-dev node scripts/generate.mjs"
+  },
+  "dependencies": {
+    "@octokit/graphql": "^8.2.1",
+    "@octokit/rest": "^21.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "typescript": "^5.7.3"
+  }
+}

@@ -16,30 +16,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Create output directory
-        run: mkdir -p stats
-
-      - name: Generate Stats Card
-        uses: stats-organization/github-readme-stats-action@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true
-          path: stats/github-stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: 22
+          cache: npm
 
-      - name: Generate Top Languages Card
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=tokyonight&hide_border=true
-          path: stats/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build engine
+        run: npm run build
+
+      - name: Generate metrics & SVGs
+        run: npm run generate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: Validate SVGs
         run: |
           for f in stats/*.svg; do
             [ -f "$f" ] || continue
-            if head -1 "$f" | grep -q '<?xml\|<svg'; then
+            if head -1 "$f" | grep -q '<svg'; then
               echo "$f OK"
             else
               echo "INVALID $f — removing"
