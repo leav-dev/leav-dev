@@ -14,8 +14,8 @@
     "_meta": {}
   },
   "repositories": {
-    "total": 5,
-    "public": 5,
+    "total": 8,
+    "public": 8,
     "private": 0,
     "archived": 0,
     "forks": 0,
@@ -53,8 +53,8 @@
       "description": null,
       "url": "https://github.com/leav-dev/leav-dev",
       "createdAt": "2026-07-03T15:04:03Z",
-      "updatedAt": "2026-07-03T16:29:15Z",
-      "pushedAt": "2026-07-03T16:29:11Z",
+      "updatedAt": "2026-07-03T18:53:04Z",
+      "pushedAt": "2026-07-03T18:53:01Z",
       "isPrivate": false,
       "isArchived": false,
       "isFork": false,
@@ -69,10 +69,10 @@
         },
         {
           "name": "TypeScript",
-          "size": 76957
+          "size": 80215
         }
       ],
-      "totalCommits": 12,
+      "totalCommits": 15,
       "openIssues": 0,
       "openPRs": 0
     },
@@ -84,8 +84,8 @@
       "description": null,
       "url": "https://github.com/leav-dev/leav-dev",
       "createdAt": "2026-07-03T15:04:03Z",
-      "updatedAt": "2026-07-03T16:29:15Z",
-      "pushedAt": "2026-07-03T16:29:11Z",
+      "updatedAt": "2026-07-03T18:53:04Z",
+      "pushedAt": "2026-07-03T18:53:01Z",
       "isPrivate": false,
       "isArchived": false,
       "isFork": false,
@@ -100,10 +100,10 @@
         },
         {
           "name": "TypeScript",
-          "size": 76957
+          "size": 80215
         }
       ],
-      "totalCommits": 12,
+      "totalCommits": 15,
       "openIssues": 0,
       "openPRs": 0
     },
@@ -134,13 +134,112 @@
     },
     "repos": [
       {
+        "name": "homero",
+        "fullName": "superChangeMoney/homero",
+        "description": "front para super change money",
+        "url": "https://github.com/superChangeMoney/homero",
+        "createdAt": "2026-02-11T15:19:38Z",
+        "updatedAt": "2026-02-21T19:45:59Z",
+        "pushedAt": "2026-02-21T14:59:47Z",
+        "isPrivate": false,
+        "isArchived": false,
+        "isFork": false,
+        "isTemplate": false,
+        "forkCount": 0,
+        "stargazerCount": 0,
+        "primaryLanguage": "TypeScript",
+        "languages": [
+          {
+            "name": "TypeScript",
+            "size": 15022
+          },
+          {
+            "name": "HTML",
+            "size": 14195
+          },
+          {
+            "name": "CSS",
+            "size": 6299
+          },
+          {
+            "name": "JavaScript",
+            "size": 157
+          }
+        ],
+        "totalCommits": 11,
+        "openIssues": 0,
+        "openPRs": 0
+      },
+      {
+        "name": "marge",
+        "fullName": "superChangeMoney/marge",
+        "description": null,
+        "url": "https://github.com/superChangeMoney/marge",
+        "createdAt": "2026-02-12T03:00:24Z",
+        "updatedAt": "2026-02-21T19:46:26Z",
+        "pushedAt": "2026-02-21T14:59:06Z",
+        "isPrivate": false,
+        "isArchived": false,
+        "isFork": false,
+        "isTemplate": false,
+        "forkCount": 0,
+        "stargazerCount": 0,
+        "primaryLanguage": "C#",
+        "languages": [
+          {
+            "name": "C#",
+            "size": 23140
+          }
+        ],
+        "totalCommits": 13,
+        "openIssues": 0,
+        "openPRs": 0
+      },
+      {
+        "name": "kate",
+        "fullName": "katerine-proyect/kate",
+        "description": null,
+        "url": "https://github.com/katerine-proyect/kate",
+        "createdAt": "2026-02-22T22:33:03Z",
+        "updatedAt": "2026-03-22T20:15:30Z",
+        "pushedAt": "2026-03-22T20:15:27Z",
+        "isPrivate": false,
+        "isArchived": false,
+        "isFork": false,
+        "isTemplate": false,
+        "forkCount": 0,
+        "stargazerCount": 0,
+        "primaryLanguage": "TypeScript",
+        "languages": [
+          {
+            "name": "TypeScript",
+            "size": 96188
+          },
+          {
+            "name": "HTML",
+            "size": 75841
+          },
+          {
+            "name": "CSS",
+            "size": 15375
+          },
+          {
+            "name": "JavaScript",
+            "size": 780
+          }
+        ],
+        "totalCommits": 15,
+        "openIssues": 0,
+        "openPRs": 0
+      },
+      {
         "name": "leav-dev",
         "fullName": "leav-dev/leav-dev",
         "description": null,
         "url": "https://github.com/leav-dev/leav-dev",
         "createdAt": "2026-07-03T15:04:03Z",
-        "updatedAt": "2026-07-03T16:29:15Z",
-        "pushedAt": "2026-07-03T16:29:11Z",
+        "updatedAt": "2026-07-03T18:53:04Z",
+        "pushedAt": "2026-07-03T18:53:01Z",
         "isPrivate": false,
         "isArchived": false,
         "isFork": false,
@@ -155,10 +254,10 @@
           },
           {
             "name": "TypeScript",
-            "size": 76957
+            "size": 80215
           }
         ],
-        "totalCommits": 12,
+        "totalCommits": 15,
         "openIssues": 0,
         "openPRs": 0
       },
@@ -286,14 +385,14 @@
     "_meta": {}
   },
   "commits": {
-    "total": 110,
-    "today": 10,
-    "thisWeek": 40,
-    "thisMonth": 20,
-    "thisYear": 110,
-    "dailyAverage": 0.32,
-    "weeklyAverage": 2.08,
-    "monthlyAverage": 8.46,
+    "total": 112,
+    "today": 12,
+    "thisWeek": 42,
+    "thisMonth": 22,
+    "thisYear": 112,
+    "dailyAverage": 0.33,
+    "weeklyAverage": 2.11,
+    "monthlyAverage": 8.62,
     "busiestDay": {
       "date": "2026-03-29",
       "count": 23
@@ -301,7 +400,7 @@
     "busiestHour": 22,
     "distributionByDay": {
       "THU": 0.08,
-      "FRI": 0.42,
+      "FRI": 0.45,
       "SAT": 0.15,
       "SUN": 0.56,
       "MON": 0.19,
@@ -320,12 +419,12 @@
       "8": 2,
       "9": 6,
       "10": 8,
-      "11": 8,
+      "11": 9,
       "12": 0,
-      "13": 8,
+      "13": 9,
       "14": 13,
       "15": 6,
-      "16": 2,
+      "16": 3,
       "17": 2,
       "18": 3,
       "19": 1,
@@ -336,15 +435,15 @@
     },
     "firstCommit": "2025-11-10T00:00:00Z",
     "lastCommit": "2026-07-03T00:00:00Z",
-    "avgTimeBetweenCommits": 75,
+    "avgTimeBetweenCommits": 72.73,
     "_meta": {}
   },
   "contributions": {
-    "total": 117,
-    "today": 10,
-    "last7Days": 40,
-    "last30Days": 40,
-    "last365Days": 117,
+    "total": 119,
+    "today": 12,
+    "last7Days": 42,
+    "last30Days": 42,
+    "last365Days": 119,
     "currentStreak": 4,
     "longestStreak": 4,
     "activeDays": 25,
@@ -1812,7 +1911,7 @@
       },
       {
         "date": "2026-07-03",
-        "count": 10
+        "count": 12
       }
     ],
     "_meta": {}
@@ -1821,33 +1920,43 @@
     "languages": [
       {
         "name": "TypeScript",
-        "size": 177270,
-        "percentage": 69.64
+        "size": 291738,
+        "percentage": 57.79
+      },
+      {
+        "name": "HTML",
+        "size": 90036,
+        "percentage": 17.84
       },
       {
         "name": "Python",
         "size": 42010,
-        "percentage": 16.5
+        "percentage": 8.32
       },
       {
         "name": "Astro",
         "size": 29231,
-        "percentage": 11.48
+        "percentage": 5.79
+      },
+      {
+        "name": "C#",
+        "size": 23140,
+        "percentage": 4.58
+      },
+      {
+        "name": "CSS",
+        "size": 22813,
+        "percentage": 4.52
       },
       {
         "name": "JavaScript",
-        "size": 3450,
-        "percentage": 1.36
+        "size": 4387,
+        "percentage": 0.87
       },
       {
         "name": "Dockerfile",
         "size": 1466,
-        "percentage": 0.58
-      },
-      {
-        "name": "CSS",
-        "size": 1139,
-        "percentage": 0.45
+        "percentage": 0.29
       }
     ],
     "primary": "TypeScript",
@@ -1857,11 +1966,23 @@
         "repositories": 2
       },
       {
+        "name": "TypeScript",
+        "repositories": 1
+      },
+      {
+        "name": "HTML",
+        "repositories": 1
+      },
+      {
+        "name": "CSS",
+        "repositories": 1
+      },
+      {
         "name": "JavaScript",
         "repositories": 1
       },
       {
-        "name": "TypeScript",
+        "name": "C#",
         "repositories": 1
       },
       {
@@ -1871,19 +1992,17 @@
       {
         "name": "Astro",
         "repositories": 1
-      },
-      {
-        "name": "CSS",
-        "repositories": 1
       }
     ],
     "reposPerLanguage": {
-      "JavaScript": 1,
       "TypeScript": 1,
+      "HTML": 1,
+      "CSS": 1,
+      "JavaScript": 1,
+      "C#": 1,
       "Python": 1,
       "Dockerfile": 2,
-      "Astro": 1,
-      "CSS": 1
+      "Astro": 1
     },
     "_meta": {}
   },
@@ -1954,7 +2073,7 @@
       },
       {
         "month": "2026-07",
-        "count": 20
+        "count": 22
       }
     ],
     "byWeek": [
@@ -2168,7 +2287,7 @@
       },
       {
         "week": "2026-06-28",
-        "count": 40
+        "count": 42
       }
     ],
     "byDay": [
@@ -2194,7 +2313,7 @@
       },
       {
         "day": "Friday",
-        "count": 22
+        "count": 24
       },
       {
         "day": "Saturday",
@@ -2208,7 +2327,7 @@
     },
     "mostProductiveWeek": {
       "week": "2026-06-28",
-      "count": 40
+      "count": 42
     },
     "mostProductiveDay": {
       "day": "Tuesday",
@@ -2220,14 +2339,14 @@
     "productivityScore": 3,
     "consistencyScore": 0,
     "activityScore": 2,
-    "repositoryHealthScore": 54,
+    "repositoryHealthScore": 46,
     "contributionTrend": "DECLINING",
-    "trendPercentage": -42.86,
-    "codingVelocity": 4.4,
-    "repositoryGrowth": 60,
-    "monthlyGrowth": 0,
+    "trendPercentage": -40,
+    "codingVelocity": 4.48,
+    "repositoryGrowth": 75,
+    "monthlyGrowth": 10,
     "weeklyGrowth": 0,
-    "commitFrequency": 75,
+    "commitFrequency": 72.73,
     "activeDaysPercentage": 6.83,
     "_meta": {
       "activityScore": {
@@ -2292,6 +2411,6 @@
       }
     }
   },
-  "collectedAt": "2026-07-03T16:29:23.010Z",
+  "collectedAt": "2026-07-03T18:53:17.447Z",
   "errors": []
 }
