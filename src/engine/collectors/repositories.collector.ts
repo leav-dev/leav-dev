@@ -2,6 +2,7 @@ import type { MetricCollector, CollectContext, CollectResult } from '../types/en
 import type { RepositoryMetrics, RepoBrief } from '../types/metrics.js';
 
 interface GraphQLRepoNode {
+  [key: string]: unknown;
   name: string;
   nameWithOwner: string;
   description: string | null;
@@ -31,6 +32,37 @@ interface GraphQLRepos {
   totalCount: number;
   nodes: GraphQLRepoNode[];
   pageInfo: { hasNextPage: boolean; endCursor: string | null };
+}
+
+function toRepoBrief(n: {
+  name: string;
+  nameWithOwner: string;
+  [key: string]: unknown;
+}): RepoBrief {
+  const languages = n.languages as { totalSize: number; edges: { size: number; node: { name: string } }[] } | null;
+  const defaultBranchRef = n.defaultBranchRef as { target: { history: { totalCount: number } } } | null;
+  const issues = n.issues as { totalCount: number } | undefined;
+  const pullRequests = n.pullRequests as { totalCount: number } | undefined;
+  return {
+    name: n.name,
+    fullName: n.nameWithOwner,
+    description: n.description as string | null,
+    url: n.url as string,
+    createdAt: n.createdAt as string,
+    updatedAt: n.updatedAt as string,
+    pushedAt: n.pushedAt as string,
+    isPrivate: n.isPrivate as boolean,
+    isArchived: n.isArchived as boolean,
+    isFork: n.isFork as boolean,
+    isTemplate: n.isTemplate as boolean,
+    forkCount: n.forkCount as number,
+    stargazerCount: n.stargazerCount as number,
+    primaryLanguage: (n.primaryLanguage as { name: string } | null)?.name ?? null,
+    languages: languages ? languages.edges.map(e => ({ name: e.node.name, size: e.size })) : [],
+    totalCommits: defaultBranchRef?.target.history.totalCount ?? 0,
+    openIssues: issues?.totalCount ?? 0,
+    openPRs: pullRequests?.totalCount ?? 0,
+  };
 }
 
 export class RepositoriesCollector implements MetricCollector<RepositoryMetrics> {
@@ -65,28 +97,18 @@ export class RepositoriesCollector implements MetricCollector<RepositoryMetrics>
       allNodes.push(...reposData.nodes);
     }
 
-    const repos: RepoBrief[] = allNodes.map(n => ({
-      name: n.name,
-      fullName: n.nameWithOwner,
-      description: n.description,
-      url: n.url,
-      createdAt: n.createdAt,
-      updatedAt: n.updatedAt,
-      pushedAt: n.pushedAt,
-      isPrivate: n.isPrivate,
-      isArchived: n.isArchived,
-      isFork: n.isFork,
-      isTemplate: n.isTemplate,
-      forkCount: n.forkCount,
-      stargazerCount: n.stargazerCount,
-      primaryLanguage: n.primaryLanguage?.name ?? null,
-      languages: n.languages
-        ? n.languages.edges.map(e => ({ name: e.node.name, size: e.size }))
-        : [],
-      totalCommits: n.defaultBranchRef?.target.history.totalCount ?? 0,
-      openIssues: n.issues.totalCount,
-      openPRs: n.pullRequests.totalCount,
-    }));
+    // OWNER repos
+    const ownRepos = allNodes.map(toRepoBrief);
+
+    // Contributed repos (orgs, other people's repos, etc.)
+    const contributedData = ctx.shared.get('graphql:repositoriesContributedTo') as { nodes: { name: string; nameWithOwner: string; [key: string]: unknown }[] } | undefined;
+    const contributedRepos = (contributedData?.nodes ?? []).map(toRepoBrief);
+
+    // Merge: OWNER take priority over contributed (more accurate commit/issue/PR counts)
+    const repoMap = new Map<string, RepoBrief>();
+    for (const r of contributedRepos) repoMap.set(r.fullName, r);
+    for (const r of ownRepos) repoMap.set(r.fullName, r);
+    const repos = [...repoMap.values()];
 
     const total = repos.length;
     const publicRepos = repos.filter(r => !r.isPrivate);

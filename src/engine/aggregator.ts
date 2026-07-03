@@ -14,6 +14,40 @@ import { CacheManagerImpl } from './cache/index.js';
 import { calculateInsights } from './calculators/insights.calculator.js';
 import { defaultCollectors } from './collectors/index.js';
 
+const CONTRIBUTED_REPOS_QUERY = `
+query($login: String!, $cursor: String) {
+  user(login: $login) {
+    repositoriesContributedTo(first: 100, after: $cursor, contributionTypes: [COMMIT, PULL_REQUEST, ISSUE],
+                             orderBy: {field: UPDATED_AT, direction: DESC}) {
+      totalCount
+      nodes {
+        name
+        nameWithOwner
+        description
+        url
+        createdAt
+        updatedAt
+        pushedAt
+        isPrivate
+        isArchived
+        isFork
+        isTemplate
+        forkCount
+        stargazerCount
+        primaryLanguage { name }
+        languages(first: 10) { totalSize edges { size node { name } } }
+        defaultBranchRef {
+          target { ... on Commit { history(first: 0) { totalCount } } }
+        }
+        issues(states: [OPEN]) { totalCount }
+        pullRequests(states: [OPEN]) { totalCount }
+      }
+      pageInfo { hasNextPage endCursor }
+    }
+  }
+}
+`;
+
 const MAIN_QUERY = `
 query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
@@ -141,6 +175,10 @@ export class MetricsAggregator {
     shared.set('graphql:contributionCalendar', user.contributionsCollection.contributionCalendar);
     shared.set('graphql:commitContribByRepo', user.contributionsCollection.commitContributionsByRepository);
 
+    // ── Phase 1.5: Repos contributed to (orgs, etc.) ──
+    const contributedRepos = await this.fetchContributedRepos();
+    shared.set('graphql:repositoriesContributedTo', contributedRepos);
+
     // Account age for monthly averages
     const accountCreated = new Date(user.createdAt);
     const accountAgeMonths = (now.getFullYear() - accountCreated.getFullYear()) * 12
@@ -206,6 +244,27 @@ export class MetricsAggregator {
       collectedAt: now.toISOString(),
       errors,
     };
+  }
+
+  private async fetchContributedRepos(): Promise<Record<string, unknown>> {
+    const allNodes: Record<string, unknown>[] = [];
+    let cursor: string | null = null;
+    let hasNextPage = true;
+
+    while (hasNextPage && allNodes.length < 100) {
+      const result = await this.graphql.query<{ user: { repositoriesContributedTo: Record<string, unknown> } }>(
+        CONTRIBUTED_REPOS_QUERY,
+        { login: this.config.username, cursor },
+      );
+      const data = result.user.repositoriesContributedTo;
+      const nodes = data.nodes as Record<string, unknown>[];
+      allNodes.push(...nodes);
+      const pageInfo = data.pageInfo as { hasNextPage: boolean; endCursor: string | null };
+      hasNextPage = pageInfo.hasNextPage;
+      cursor = pageInfo.endCursor;
+    }
+
+    return { totalCount: allNodes.length, nodes: allNodes, pageInfo: { hasNextPage: false, endCursor: null } };
   }
 
   private topologicalSort(collectors: MetricCollector<unknown>[]): MetricCollector<unknown>[] {
