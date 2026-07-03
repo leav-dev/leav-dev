@@ -16,30 +16,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch GitHub Stats
-        run: |
-          mkdir -p stats
-          code=$(curl -s -o stats/github-stats.svg -w "%{http_code}" \
-            "https://github-readme-stats.vercel.app/api?username=leav-dev&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true")
-          if [ "$code" = "200" ]; then
-            echo "OK stats"
-          else
-            echo "FAIL stats (${code:-curl error})"
-          fi
+      - name: Create output directory
+        run: mkdir -p stats
 
-      - name: Fetch Top Languages
-        run: |
-          code=$(curl -s -o stats/top-langs.svg -w "%{http_code}" \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=leav-dev&layout=compact&langs_count=8&theme=tokyonight&hide_border=true")
-          if [ "$code" = "200" ]; then
-            echo "OK langs"
-          else
-            echo "FAIL langs (${code:-curl error})"
-          fi
+      - name: Generate Stats Card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true
+          path: stats/github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Top Languages Card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=tokyonight&hide_border=true
+          path: stats/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Validate SVGs
         run: |
           for f in stats/*.svg; do
+            [ -f "$f" ] || continue
             if head -1 "$f" | grep -q '<?xml\|<svg'; then
               echo "$f OK"
             else
