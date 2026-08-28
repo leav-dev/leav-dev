@@ -9,16 +9,16 @@
     "followers": 0,
     "following": 2,
     "createdAt": "2021-12-14T02:16:07Z",
-    "updatedAt": "2026-08-12T15:50:22Z",
+    "updatedAt": "2026-08-27T15:55:01Z",
     "avatarUrl": "https://avatars.githubusercontent.com/u/96095506?u=518215464e1acea776fe92a750bc5c280a9fb532&v=4",
     "_meta": {}
   },
   "repositories": {
-    "total": 8,
-    "public": 8,
+    "total": 9,
+    "public": 9,
     "private": 0,
     "archived": 0,
-    "forks": 0,
+    "forks": 1,
     "templates": 0,
     "totalStarred": 0,
     "totalForked": 0,
@@ -48,31 +48,31 @@
       "openPRs": 0
     },
     "newest": {
-      "name": "leav-dev",
-      "fullName": "leav-dev/leav-dev",
-      "description": null,
-      "url": "https://github.com/leav-dev/leav-dev",
-      "createdAt": "2026-07-03T15:04:03Z",
-      "updatedAt": "2026-08-26T01:44:53Z",
-      "pushedAt": "2026-08-26T01:44:47Z",
+      "name": "graphify-modules",
+      "fullName": "leav-dev/graphify-modules",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "url": "https://github.com/leav-dev/graphify-modules",
+      "createdAt": "2026-08-27T15:55:47Z",
+      "updatedAt": "2026-08-27T15:55:47Z",
+      "pushedAt": "2026-08-25T17:43:30Z",
       "isPrivate": false,
       "isArchived": false,
-      "isFork": false,
+      "isFork": true,
       "isTemplate": false,
       "forkCount": 0,
       "stargazerCount": 0,
-      "primaryLanguage": "TypeScript",
+      "primaryLanguage": "Python",
       "languages": [
         {
-          "name": "JavaScript",
-          "size": 1972
+          "name": "Python",
+          "size": 6296543
         },
         {
-          "name": "TypeScript",
-          "size": 80215
+          "name": "Dockerfile",
+          "size": 881
         }
       ],
-      "totalCommits": 73,
+      "totalCommits": 1568,
       "openIssues": 0,
       "openPRs": 0
     },
@@ -84,8 +84,8 @@
       "description": null,
       "url": "https://github.com/leav-dev/leav-dev",
       "createdAt": "2026-07-03T15:04:03Z",
-      "updatedAt": "2026-08-26T01:44:53Z",
-      "pushedAt": "2026-08-26T01:44:47Z",
+      "updatedAt": "2026-08-27T08:54:38Z",
+      "pushedAt": "2026-08-27T08:45:50Z",
       "isPrivate": false,
       "isArchived": false,
       "isFork": false,
@@ -103,36 +103,36 @@
           "size": 80215
         }
       ],
-      "totalCommits": 73,
+      "totalCommits": 74,
       "openIssues": 0,
       "openPRs": 0
     },
     "mostCommitted": {
-      "name": "leav-dev",
-      "fullName": "leav-dev/leav-dev",
-      "description": null,
-      "url": "https://github.com/leav-dev/leav-dev",
-      "createdAt": "2026-07-03T15:04:03Z",
-      "updatedAt": "2026-08-26T01:44:53Z",
-      "pushedAt": "2026-08-26T01:44:47Z",
+      "name": "graphify-modules",
+      "fullName": "leav-dev/graphify-modules",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "url": "https://github.com/leav-dev/graphify-modules",
+      "createdAt": "2026-08-27T15:55:47Z",
+      "updatedAt": "2026-08-27T15:55:47Z",
+      "pushedAt": "2026-08-25T17:43:30Z",
       "isPrivate": false,
       "isArchived": false,
-      "isFork": false,
+      "isFork": true,
       "isTemplate": false,
       "forkCount": 0,
       "stargazerCount": 0,
-      "primaryLanguage": "TypeScript",
+      "primaryLanguage": "Python",
       "languages": [
         {
-          "name": "JavaScript",
-          "size": 1972
+          "name": "Python",
+          "size": 6296543
         },
         {
-          "name": "TypeScript",
-          "size": 80215
+          "name": "Dockerfile",
+          "size": 881
         }
       ],
-      "totalCommits": 73,
+      "totalCommits": 1568,
       "openIssues": 0,
       "openPRs": 0
     },
@@ -237,13 +237,42 @@
         "openPRs": 0
       },
       {
+        "name": "graphify-modules",
+        "fullName": "leav-dev/graphify-modules",
+        "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+        "url": "https://github.com/leav-dev/graphify-modules",
+        "createdAt": "2026-08-27T15:55:47Z",
+        "updatedAt": "2026-08-27T15:55:47Z",
+        "pushedAt": "2026-08-25T17:43:30Z",
+        "isPrivate": false,
+        "isArchived": false,
+        "isFork": true,
+        "isTemplate": false,
+        "forkCount": 0,
+        "stargazerCount": 0,
+        "primaryLanguage": "Python",
+        "languages": [
+          {
+            "name": "Python",
+            "size": 6296543
+          },
+          {
+            "name": "Dockerfile",
+            "size": 881
+          }
+        ],
+        "totalCommits": 1568,
+        "openIssues": 0,
+        "openPRs": 0
+      },
+      {
         "name": "leav-dev",
         "fullName": "leav-dev/leav-dev",
         "description": null,
         "url": "https://github.com/leav-dev/leav-dev",
         "createdAt": "2026-07-03T15:04:03Z",
-        "updatedAt": "2026-08-26T01:44:53Z",
-        "pushedAt": "2026-08-26T01:44:47Z",
+        "updatedAt": "2026-08-27T08:54:38Z",
+        "pushedAt": "2026-08-27T08:45:50Z",
         "isPrivate": false,
         "isArchived": false,
         "isFork": false,
@@ -261,7 +290,7 @@
             "size": 80215
           }
         ],
-        "totalCommits": 73,
+        "totalCommits": 74,
         "openIssues": 0,
         "openPRs": 0
       },
@@ -389,27 +418,27 @@
     "_meta": {}
   },
   "commits": {
-    "total": 113,
+    "total": 114,
     "today": 0,
-    "thisWeek": 0,
-    "thisMonth": 0,
-    "thisYear": 113,
+    "thisWeek": 1,
+    "thisMonth": 1,
+    "thisYear": 114,
     "dailyAverage": 0.33,
-    "weeklyAverage": 2.13,
-    "monthlyAverage": 8.69,
+    "weeklyAverage": 2.15,
+    "monthlyAverage": 8.77,
     "busiestDay": {
       "date": "2026-03-29",
       "count": 23
     },
     "busiestHour": 3,
     "distributionByDay": {
-      "WED": 0.28,
-      "THU": 0.08,
-      "FRI": 0.48,
+      "THU": 0.09,
+      "FRI": 0.47,
       "SAT": 0.15,
       "SUN": 0.56,
       "MON": 0.19,
-      "TUE": 0.56
+      "TUE": 0.56,
+      "WED": 0.29
     },
     "distributionByHour": {
       "0": 2,
@@ -420,7 +449,7 @@
       "5": 0,
       "6": 0,
       "7": 0,
-      "8": 2,
+      "8": 3,
       "9": 6,
       "10": 8,
       "11": 9,
@@ -438,25 +467,21 @@
       "23": 4
     },
     "firstCommit": "2025-11-10T00:00:00Z",
-    "lastCommit": "2026-07-03T00:00:00Z",
+    "lastCommit": "2026-08-27T00:00:00Z",
     "avgTimeBetweenCommits": 72.73,
     "_meta": {}
   },
   "contributions": {
-    "total": 120,
+    "total": 121,
     "today": 0,
-    "last7Days": 0,
-    "last30Days": 0,
-    "last365Days": 120,
-    "currentStreak": 0,
+    "last7Days": 1,
+    "last30Days": 1,
+    "last365Days": 121,
+    "currentStreak": 1,
     "longestStreak": 4,
-    "activeDays": 25,
-    "inactiveDays": 341,
+    "activeDays": 26,
+    "inactiveDays": 340,
     "calendar": [
-      {
-        "date": "2025-08-27",
-        "count": 0
-      },
       {
         "date": "2025-08-28",
         "count": 0
@@ -1915,6 +1940,10 @@
       },
       {
         "date": "2026-08-27",
+        "count": 1
+      },
+      {
+        "date": "2026-08-28",
         "count": 0
       }
     ],
@@ -1923,47 +1952,47 @@
   "languages": {
     "languages": [
       {
+        "name": "Python",
+        "size": 6338553,
+        "percentage": 93.18
+      },
+      {
         "name": "TypeScript",
         "size": 291738,
-        "percentage": 57.79
+        "percentage": 4.29
       },
       {
         "name": "HTML",
         "size": 90036,
-        "percentage": 17.84
-      },
-      {
-        "name": "Python",
-        "size": 42010,
-        "percentage": 8.32
+        "percentage": 1.32
       },
       {
         "name": "Astro",
         "size": 29231,
-        "percentage": 5.79
+        "percentage": 0.43
       },
       {
         "name": "C#",
         "size": 23140,
-        "percentage": 4.58
+        "percentage": 0.34
       },
       {
         "name": "CSS",
         "size": 22813,
-        "percentage": 4.52
+        "percentage": 0.34
       },
       {
         "name": "JavaScript",
         "size": 4387,
-        "percentage": 0.87
+        "percentage": 0.06
       },
       {
         "name": "Dockerfile",
-        "size": 1466,
-        "percentage": 0.29
+        "size": 2347,
+        "percentage": 0.03
       }
     ],
-    "primary": "TypeScript",
+    "primary": "Python",
     "ranking": [
       {
         "name": "Dockerfile",
@@ -2077,12 +2106,12 @@
       },
       {
         "month": "2026-08",
-        "count": 0
+        "count": 1
       }
     ],
     "byWeek": [
       {
-        "week": "2025-08-27",
+        "week": "2025-08-28",
         "count": 0
       },
       {
@@ -2291,7 +2320,7 @@
       },
       {
         "week": "2026-08-23",
-        "count": 0
+        "count": 1
       }
     ],
     "byDay": [
@@ -2313,7 +2342,7 @@
       },
       {
         "day": "Thursday",
-        "count": 4
+        "count": 5
       },
       {
         "day": "Friday",
@@ -2343,15 +2372,15 @@
     "productivityScore": 3,
     "consistencyScore": 0,
     "activityScore": 2,
-    "repositoryHealthScore": 46,
+    "repositoryHealthScore": 47,
     "contributionTrend": "GROWING",
-    "trendPercentage": 10.26,
-    "codingVelocity": 4.52,
-    "repositoryGrowth": 75,
-    "monthlyGrowth": -100,
+    "trendPercentage": 33.33,
+    "codingVelocity": 4.38,
+    "repositoryGrowth": 77.78,
+    "monthlyGrowth": -95.65,
     "weeklyGrowth": 0,
     "commitFrequency": 72.73,
-    "activeDaysPercentage": 6.83,
+    "activeDaysPercentage": 7.1,
     "_meta": {
       "activityScore": {
         "source": "DERIVED",
@@ -2415,6 +2444,6 @@
       }
     }
   },
-  "collectedAt": "2026-08-27T08:45:40.802Z",
+  "collectedAt": "2026-08-28T10:58:40.148Z",
   "errors": []
 }

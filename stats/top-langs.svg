@@ -4,28 +4,28 @@
   <text x="20" y="30" font-family="Segoe UI, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e0e0e0">Most Used Languages</text>
 
   
-  <text x="20" y="56" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">TypeScript</text>
-  <rect x="20" y="62" width="200" height="12" rx="4" fill="#3178c6" opacity="0.8"/>
-  <text x="226" y="72" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">57.79%</text>
-  <text x="20" y="88" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">HTML</text>
-  <rect x="20" y="94" width="61.74078560304551" height="12" rx="4" fill="#e34c26" opacity="0.8"/>
-  <text x="87.74078560304551" y="104" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">17.84%</text>
-  <text x="20" y="120" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">Python</text>
-  <rect x="20" y="126" width="28.793908980792526" height="12" rx="4" fill="#3572a5" opacity="0.8"/>
-  <text x="54.79390898079252" y="136" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">8.32%</text>
+  <text x="20" y="56" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">Python</text>
+  <rect x="20" y="62" width="200" height="12" rx="4" fill="#3572a5" opacity="0.8"/>
+  <text x="226" y="72" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">93.18%</text>
+  <text x="20" y="88" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">TypeScript</text>
+  <rect x="20" y="94" width="9.207984546039922" height="12" rx="4" fill="#3178c6" opacity="0.8"/>
+  <text x="35.207984546039924" y="104" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">4.29%</text>
+  <text x="20" y="120" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">HTML</text>
+  <rect x="20" y="126" width="4" height="12" rx="4" fill="#e34c26" opacity="0.8"/>
+  <text x="30" y="136" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">1.32%</text>
   <text x="20" y="152" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">Astro</text>
-  <rect x="20" y="158" width="20.03806887004672" height="12" rx="4" fill="#ff5a03" opacity="0.8"/>
-  <text x="46.03806887004672" y="168" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">5.79%</text>
+  <rect x="20" y="158" width="4" height="12" rx="4" fill="#ff5a03" opacity="0.8"/>
+  <text x="30" y="168" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">0.43%</text>
   <text x="20" y="184" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">C#</text>
-  <rect x="20" y="190" width="15.850493164907423" height="12" rx="4" fill="#178600" opacity="0.8"/>
-  <text x="41.85049316490742" y="200" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">4.58%</text>
+  <rect x="20" y="190" width="4" height="12" rx="4" fill="#178600" opacity="0.8"/>
+  <text x="30" y="200" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">0.34%</text>
   <text x="20" y="216" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">CSS</text>
-  <rect x="20" y="222" width="15.6428447828344" height="12" rx="4" fill="#563d7c" opacity="0.8"/>
-  <text x="41.6428447828344" y="232" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">4.52%</text>
+  <rect x="20" y="222" width="4" height="12" rx="4" fill="#563d7c" opacity="0.8"/>
+  <text x="30" y="232" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">0.34%</text>
   <text x="20" y="248" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">JavaScript</text>
   <rect x="20" y="254" width="4" height="12" rx="4" fill="#f1e05a" opacity="0.8"/>
-  <text x="30" y="264" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">0.87%</text>
+  <text x="30" y="264" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">0.06%</text>
   <text x="20" y="280" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">Dockerfile</text>
   <rect x="20" y="286" width="4" height="12" rx="4" fill="#384d54" opacity="0.8"/>
-  <text x="30" y="296" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">0.29%</text>
+  <text x="30" y="296" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">0.03%</text>
 </svg>
