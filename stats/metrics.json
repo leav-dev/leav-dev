@@ -84,8 +84,8 @@
       "description": null,
       "url": "https://github.com/leav-dev/leav-dev",
       "createdAt": "2026-07-03T15:04:03Z",
-      "updatedAt": "2026-08-28T11:00:59Z",
-      "pushedAt": "2026-08-28T10:58:49Z",
+      "updatedAt": "2026-08-29T06:44:31Z",
+      "pushedAt": "2026-08-29T06:44:21Z",
       "isPrivate": false,
       "isArchived": false,
       "isFork": false,
@@ -103,7 +103,7 @@
           "size": 80215
         }
       ],
-      "totalCommits": 75,
+      "totalCommits": 76,
       "openIssues": 0,
       "openPRs": 0
     },
@@ -237,6 +237,35 @@
         "openPRs": 0
       },
       {
+        "name": "leav-dev",
+        "fullName": "leav-dev/leav-dev",
+        "description": null,
+        "url": "https://github.com/leav-dev/leav-dev",
+        "createdAt": "2026-07-03T15:04:03Z",
+        "updatedAt": "2026-08-29T06:44:31Z",
+        "pushedAt": "2026-08-29T06:44:21Z",
+        "isPrivate": false,
+        "isArchived": false,
+        "isFork": false,
+        "isTemplate": false,
+        "forkCount": 0,
+        "stargazerCount": 0,
+        "primaryLanguage": "TypeScript",
+        "languages": [
+          {
+            "name": "JavaScript",
+            "size": 1972
+          },
+          {
+            "name": "TypeScript",
+            "size": 80215
+          }
+        ],
+        "totalCommits": 76,
+        "openIssues": 0,
+        "openPRs": 0
+      },
+      {
         "name": "shaun",
         "fullName": "leav-dev/shaun",
         "description": "Plataforma de gestión de proyectos basado en Kanban, con arrastrar y soltar, trazabilidad de cambios y SQLite",
@@ -274,35 +303,6 @@
           }
         ],
         "totalCommits": 26,
-        "openIssues": 0,
-        "openPRs": 0
-      },
-      {
-        "name": "leav-dev",
-        "fullName": "leav-dev/leav-dev",
-        "description": null,
-        "url": "https://github.com/leav-dev/leav-dev",
-        "createdAt": "2026-07-03T15:04:03Z",
-        "updatedAt": "2026-08-28T11:00:59Z",
-        "pushedAt": "2026-08-28T10:58:49Z",
-        "isPrivate": false,
-        "isArchived": false,
-        "isFork": false,
-        "isTemplate": false,
-        "forkCount": 0,
-        "stargazerCount": 0,
-        "primaryLanguage": "TypeScript",
-        "languages": [
-          {
-            "name": "JavaScript",
-            "size": 1972
-          },
-          {
-            "name": "TypeScript",
-            "size": 80215
-          }
-        ],
-        "totalCommits": 75,
         "openIssues": 0,
         "openPRs": 0
       },
@@ -420,7 +420,7 @@
   "commits": {
     "total": 114,
     "today": 0,
-    "thisWeek": 1,
+    "thisWeek": 0,
     "thisMonth": 1,
     "thisYear": 114,
     "dailyAverage": 0.33,
@@ -432,13 +432,13 @@
     },
     "busiestHour": 3,
     "distributionByDay": {
-      "FRI": 0.47,
-      "SAT": 0.15,
-      "SUN": 0.56,
+      "SUN": 0.55,
       "MON": 0.19,
       "TUE": 0.56,
       "WED": 0.29,
-      "THU": 0.1
+      "THU": 0.1,
+      "FRI": 0.48,
+      "SAT": 0.15
     },
     "distributionByHour": {
       "0": 2,
@@ -447,7 +447,7 @@
       "3": 29,
       "4": 3,
       "5": 0,
-      "6": 0,
+      "6": 1,
       "7": 0,
       "8": 3,
       "9": 6,
@@ -480,16 +480,8 @@
     "currentStreak": 0,
     "longestStreak": 4,
     "activeDays": 26,
-    "inactiveDays": 340,
+    "inactiveDays": 339,
     "calendar": [
-      {
-        "date": "2025-08-29",
-        "count": 0
-      },
-      {
-        "date": "2025-08-30",
-        "count": 0
-      },
       {
         "date": "2025-08-31",
         "count": 0
@@ -1945,6 +1937,10 @@
       {
         "date": "2026-08-29",
         "count": 0
+      },
+      {
+        "date": "2026-08-30",
+        "count": 0
       }
     ],
     "_meta": {}
@@ -2110,10 +2106,6 @@
       }
     ],
     "byWeek": [
-      {
-        "week": "2025-08-29",
-        "count": 0
-      },
       {
         "week": "2025-08-31",
         "count": 0
@@ -2321,6 +2313,10 @@
       {
         "week": "2026-08-23",
         "count": 1
+      },
+      {
+        "week": "2026-08-30",
+        "count": 0
       }
     ],
     "byDay": [
@@ -2374,13 +2370,13 @@
     "activityScore": 2,
     "repositoryHealthScore": 47,
     "contributionTrend": "GROWING",
-    "trendPercentage": 46.67,
+    "trendPercentage": 51.72,
     "codingVelocity": 4.38,
     "repositoryGrowth": 77.78,
     "monthlyGrowth": -95.65,
-    "weeklyGrowth": 0,
+    "weeklyGrowth": -100,
     "commitFrequency": 72.73,
-    "activeDaysPercentage": 7.1,
+    "activeDaysPercentage": 7.12,
     "_meta": {
       "activityScore": {
         "source": "DERIVED",
@@ -2444,6 +2440,6 @@
       }
     }
   },
-  "collectedAt": "2026-08-29T06:44:11.678Z",
+  "collectedAt": "2026-08-30T04:56:56.739Z",
   "errors": []
 }
