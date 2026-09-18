@@ -6,13 +6,13 @@
   
   <text x="20" y="56" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">Python</text>
   <rect x="20" y="62" width="200" height="12" rx="4" fill="#3572a5" opacity="0.8"/>
-  <text x="226" y="72" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">93.18%</text>
+  <text x="226" y="72" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">93.16%</text>
   <text x="20" y="88" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">TypeScript</text>
-  <rect x="20" y="94" width="9.207984546039922" height="12" rx="4" fill="#3178c6" opacity="0.8"/>
-  <text x="35.207984546039924" y="104" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">4.29%</text>
+  <rect x="20" y="94" width="9.23142979819665" height="12" rx="4" fill="#3178c6" opacity="0.8"/>
+  <text x="35.23142979819665" y="104" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">4.3%</text>
   <text x="20" y="120" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">HTML</text>
   <rect x="20" y="126" width="4" height="12" rx="4" fill="#e34c26" opacity="0.8"/>
-  <text x="30" y="136" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">1.32%</text>
+  <text x="30" y="136" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">1.34%</text>
   <text x="20" y="152" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">Astro</text>
   <rect x="20" y="158" width="4" height="12" rx="4" fill="#ff5a03" opacity="0.8"/>
   <text x="30" y="168" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">0.43%</text>
