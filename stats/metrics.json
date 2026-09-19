@@ -79,13 +79,13 @@
     "mostStarred": null,
     "mostForked": null,
     "mostActive": {
-      "name": "kate",
-      "fullName": "katerine-proyect/kate",
+      "name": "leav-dev",
+      "fullName": "leav-dev/leav-dev",
       "description": null,
-      "url": "https://github.com/katerine-proyect/kate",
-      "createdAt": "2026-02-22T22:33:03Z",
-      "updatedAt": "2026-09-18T03:17:30Z",
-      "pushedAt": "2026-09-18T03:17:26Z",
+      "url": "https://github.com/leav-dev/leav-dev",
+      "createdAt": "2026-07-03T15:04:03Z",
+      "updatedAt": "2026-09-18T04:16:03Z",
+      "pushedAt": "2026-09-18T04:16:00Z",
       "isPrivate": false,
       "isArchived": false,
       "isFork": false,
@@ -95,23 +95,15 @@
       "primaryLanguage": "TypeScript",
       "languages": [
         {
-          "name": "TypeScript",
-          "size": 96906
-        },
-        {
-          "name": "HTML",
-          "size": 77058
-        },
-        {
-          "name": "CSS",
-          "size": 15375
-        },
-        {
           "name": "JavaScript",
-          "size": 780
+          "size": 1972
+        },
+        {
+          "name": "TypeScript",
+          "size": 80215
         }
       ],
-      "totalCommits": 17,
+      "totalCommits": 96,
       "openIssues": 0,
       "openPRs": 0
     },
@@ -250,8 +242,8 @@
         "description": null,
         "url": "https://github.com/leav-dev/leav-dev",
         "createdAt": "2026-07-03T15:04:03Z",
-        "updatedAt": "2026-09-17T04:31:04Z",
-        "pushedAt": "2026-09-17T04:31:00Z",
+        "updatedAt": "2026-09-18T04:16:03Z",
+        "pushedAt": "2026-09-18T04:16:00Z",
         "isPrivate": false,
         "isArchived": false,
         "isFork": false,
@@ -269,7 +261,7 @@
             "size": 80215
           }
         ],
-        "totalCommits": 95,
+        "totalCommits": 96,
         "openIssues": 0,
         "openPRs": 0
       },
@@ -440,20 +432,20 @@
     },
     "busiestHour": 3,
     "distributionByDay": {
-      "THU": 0.13,
       "FRI": 0.47,
       "SAT": 0.15,
       "SUN": 0.56,
       "MON": 0.19,
       "TUE": 0.56,
-      "WED": 0.29
+      "WED": 0.29,
+      "THU": 0.13
     },
     "distributionByHour": {
       "0": 2,
       "1": 12,
       "2": 10,
       "3": 29,
-      "4": 21,
+      "4": 22,
       "5": 1,
       "6": 1,
       "7": 0,
@@ -485,15 +477,11 @@
     "last7Days": 2,
     "last30Days": 3,
     "last365Days": 123,
-    "currentStreak": 1,
+    "currentStreak": 0,
     "longestStreak": 4,
     "activeDays": 27,
     "inactiveDays": 339,
     "calendar": [
-      {
-        "date": "2025-09-18",
-        "count": 0
-      },
       {
         "date": "2025-09-19",
         "count": 0
@@ -1953,6 +1941,10 @@
       {
         "date": "2026-09-18",
         "count": 0
+      },
+      {
+        "date": "2026-09-19",
+        "count": 0
       }
     ],
     "_meta": {}
@@ -2119,7 +2111,7 @@
     ],
     "byWeek": [
       {
-        "week": "2025-09-18",
+        "week": "2025-09-19",
         "count": 0
       },
       {
@@ -2452,6 +2444,6 @@
       }
     }
   },
-  "collectedAt": "2026-09-18T04:15:49.676Z",
+  "collectedAt": "2026-09-19T04:12:07.962Z",
   "errors": []
 }
