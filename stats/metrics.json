@@ -9,13 +9,13 @@
     "followers": 0,
     "following": 2,
     "createdAt": "2021-12-14T02:16:07Z",
-    "updatedAt": "2026-09-21T21:24:16Z",
+    "updatedAt": "2026-10-03T18:30:46Z",
     "avatarUrl": "https://avatars.githubusercontent.com/u/96095506?u=518215464e1acea776fe92a750bc5c280a9fb532&v=4",
     "_meta": {}
   },
   "repositories": {
-    "total": 9,
-    "public": 9,
+    "total": 10,
+    "public": 10,
     "private": 0,
     "archived": 0,
     "forks": 1,
@@ -48,62 +48,54 @@
       "openPRs": 0
     },
     "newest": {
-      "name": "graphify-modules",
-      "fullName": "leav-dev/graphify-modules",
-      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-      "url": "https://github.com/leav-dev/graphify-modules",
-      "createdAt": "2026-08-27T15:55:47Z",
-      "updatedAt": "2026-08-27T15:55:47Z",
-      "pushedAt": "2026-08-25T17:43:30Z",
-      "isPrivate": false,
-      "isArchived": false,
-      "isFork": true,
-      "isTemplate": false,
-      "forkCount": 0,
-      "stargazerCount": 0,
-      "primaryLanguage": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "size": 6296543
-        },
-        {
-          "name": "Dockerfile",
-          "size": 881
-        }
-      ],
-      "totalCommits": 1568,
-      "openIssues": 0,
-      "openPRs": 0
-    },
-    "mostStarred": null,
-    "mostForked": null,
-    "mostActive": {
-      "name": "leav-dev",
-      "fullName": "leav-dev/leav-dev",
+      "name": "tcode",
+      "fullName": "leav-dev/tcode",
       "description": null,
-      "url": "https://github.com/leav-dev/leav-dev",
-      "createdAt": "2026-07-03T15:04:03Z",
-      "updatedAt": "2026-10-02T05:11:25Z",
-      "pushedAt": "2026-10-02T05:11:21Z",
+      "url": "https://github.com/leav-dev/tcode",
+      "createdAt": "2026-10-03T14:36:20Z",
+      "updatedAt": "2026-10-03T21:22:34Z",
+      "pushedAt": "2026-10-03T21:22:28Z",
       "isPrivate": false,
       "isArchived": false,
       "isFork": false,
       "isTemplate": false,
       "forkCount": 0,
       "stargazerCount": 0,
-      "primaryLanguage": "TypeScript",
+      "primaryLanguage": "Go",
       "languages": [
         {
-          "name": "JavaScript",
-          "size": 1972
-        },
-        {
-          "name": "TypeScript",
-          "size": 80215
+          "name": "Go",
+          "size": 403241
         }
       ],
-      "totalCommits": 110,
+      "totalCommits": 34,
+      "openIssues": 0,
+      "openPRs": 0
+    },
+    "mostStarred": null,
+    "mostForked": null,
+    "mostActive": {
+      "name": "tcode",
+      "fullName": "leav-dev/tcode",
+      "description": null,
+      "url": "https://github.com/leav-dev/tcode",
+      "createdAt": "2026-10-03T14:36:20Z",
+      "updatedAt": "2026-10-03T21:22:34Z",
+      "pushedAt": "2026-10-03T21:22:28Z",
+      "isPrivate": false,
+      "isArchived": false,
+      "isFork": false,
+      "isTemplate": false,
+      "forkCount": 0,
+      "stargazerCount": 0,
+      "primaryLanguage": "Go",
+      "languages": [
+        {
+          "name": "Go",
+          "size": 403241
+        }
+      ],
+      "totalCommits": 34,
       "openIssues": 0,
       "openPRs": 0
     },
@@ -237,13 +229,38 @@
         "openPRs": 0
       },
       {
+        "name": "tcode",
+        "fullName": "leav-dev/tcode",
+        "description": null,
+        "url": "https://github.com/leav-dev/tcode",
+        "createdAt": "2026-10-03T14:36:20Z",
+        "updatedAt": "2026-10-03T21:22:34Z",
+        "pushedAt": "2026-10-03T21:22:28Z",
+        "isPrivate": false,
+        "isArchived": false,
+        "isFork": false,
+        "isTemplate": false,
+        "forkCount": 0,
+        "stargazerCount": 0,
+        "primaryLanguage": "Go",
+        "languages": [
+          {
+            "name": "Go",
+            "size": 403241
+          }
+        ],
+        "totalCommits": 34,
+        "openIssues": 0,
+        "openPRs": 0
+      },
+      {
         "name": "leav-dev",
         "fullName": "leav-dev/leav-dev",
         "description": null,
         "url": "https://github.com/leav-dev/leav-dev",
         "createdAt": "2026-07-03T15:04:03Z",
-        "updatedAt": "2026-10-02T05:11:25Z",
-        "pushedAt": "2026-10-02T05:11:21Z",
+        "updatedAt": "2026-10-03T04:53:50Z",
+        "pushedAt": "2026-10-03T04:53:46Z",
         "isPrivate": false,
         "isArchived": false,
         "isFork": false,
@@ -261,7 +278,7 @@
             "size": 80215
           }
         ],
-        "totalCommits": 110,
+        "totalCommits": 111,
         "openIssues": 0,
         "openPRs": 0
       },
@@ -418,78 +435,70 @@
     "_meta": {}
   },
   "commits": {
-    "total": 116,
+    "total": 151,
     "today": 0,
     "thisWeek": 0,
-    "thisMonth": 0,
-    "thisYear": 116,
-    "dailyAverage": 0.34,
-    "weeklyAverage": 2.19,
-    "monthlyAverage": 8.92,
+    "thisMonth": 35,
+    "thisYear": 151,
+    "dailyAverage": 0.43,
+    "weeklyAverage": 2.85,
+    "monthlyAverage": 11.62,
     "busiestDay": {
-      "date": "2026-03-29",
-      "count": 23
+      "date": "2026-10-03",
+      "count": 35
     },
     "busiestHour": 4,
     "distributionByDay": {
-      "FRI": 0.47,
-      "SAT": 0.15,
-      "SUN": 0.56,
+      "SUN": 0.55,
       "MON": 0.19,
       "TUE": 0.56,
       "WED": 0.29,
-      "THU": 0.13
+      "THU": 0.13,
+      "FRI": 0.48,
+      "SAT": 0.83
     },
     "distributionByHour": {
       "0": 2,
       "1": 12,
       "2": 10,
       "3": 29,
-      "4": 32,
+      "4": 33,
       "5": 5,
       "6": 1,
       "7": 0,
       "8": 3,
-      "9": 6,
-      "10": 9,
-      "11": 9,
+      "9": 8,
+      "10": 17,
+      "11": 13,
       "12": 0,
-      "13": 9,
-      "14": 13,
-      "15": 7,
-      "16": 3,
-      "17": 2,
-      "18": 5,
+      "13": 6,
+      "14": 22,
+      "15": 8,
+      "16": 6,
+      "17": 1,
+      "18": 4,
       "19": 1,
       "20": 9,
       "21": 8,
-      "22": 17,
+      "22": 16,
       "23": 4
     },
     "firstCommit": "2025-11-10T00:00:00Z",
-    "lastCommit": "2026-09-17T00:00:00Z",
-    "avgTimeBetweenCommits": 70.59,
+    "lastCommit": "2026-10-03T00:00:00Z",
+    "avgTimeBetweenCommits": 55.81,
     "_meta": {}
   },
   "contributions": {
-    "total": 123,
+    "total": 158,
     "today": 0,
-    "last7Days": 0,
-    "last30Days": 2,
-    "last365Days": 123,
-    "currentStreak": 0,
+    "last7Days": 35,
+    "last30Days": 37,
+    "last365Days": 158,
+    "currentStreak": 1,
     "longestStreak": 4,
-    "activeDays": 27,
-    "inactiveDays": 339,
+    "activeDays": 28,
+    "inactiveDays": 337,
     "calendar": [
-      {
-        "date": "2025-10-03",
-        "count": 0
-      },
-      {
-        "date": "2025-10-04",
-        "count": 0
-      },
       {
         "date": "2025-10-05",
         "count": 0
@@ -1944,6 +1953,10 @@
       },
       {
         "date": "2026-10-03",
+        "count": 35
+      },
+      {
+        "date": "2026-10-04",
         "count": 0
       }
     ],
@@ -1954,32 +1967,37 @@
       {
         "name": "Python",
         "size": 6338553,
-        "percentage": 93.16
+        "percentage": 87.94
+      },
+      {
+        "name": "Go",
+        "size": 403241,
+        "percentage": 5.59
       },
       {
         "name": "TypeScript",
         "size": 292456,
-        "percentage": 4.3
+        "percentage": 4.06
       },
       {
         "name": "HTML",
         "size": 91253,
-        "percentage": 1.34
+        "percentage": 1.27
       },
       {
         "name": "Astro",
         "size": 29231,
-        "percentage": 0.43
+        "percentage": 0.41
       },
       {
         "name": "C#",
         "size": 23140,
-        "percentage": 0.34
+        "percentage": 0.32
       },
       {
         "name": "CSS",
         "size": 22813,
-        "percentage": 0.34
+        "percentage": 0.32
       },
       {
         "name": "JavaScript",
@@ -2019,6 +2037,10 @@
         "repositories": 1
       },
       {
+        "name": "Go",
+        "repositories": 1
+      },
+      {
         "name": "Astro",
         "repositories": 1
       },
@@ -2033,6 +2055,7 @@
       "CSS": 1,
       "JavaScript": 1,
       "C#": 1,
+      "Go": 1,
       "Dockerfile": 2,
       "Astro": 1,
       "Python": 1
@@ -2106,14 +2129,10 @@
       },
       {
         "month": "2026-10",
-        "count": 0
+        "count": 35
       }
     ],
     "byWeek": [
-      {
-        "week": "2025-10-03",
-        "count": 0
-      },
       {
         "week": "2025-10-05",
         "count": 0
@@ -2320,6 +2339,10 @@
       },
       {
         "week": "2026-09-27",
+        "count": 35
+      },
+      {
+        "week": "2026-10-04",
         "count": 0
       }
     ],
@@ -2350,37 +2373,37 @@
       },
       {
         "day": "Saturday",
-        "count": 8
+        "count": 43
       }
     ],
     "byHour": [],
     "mostProductiveMonth": {
-      "month": "2026-03",
-      "count": 33
+      "month": "2026-10",
+      "count": 35
     },
     "mostProductiveWeek": {
       "week": "2026-06-28",
       "count": 43
     },
     "mostProductiveDay": {
-      "day": "Tuesday",
-      "count": 29
+      "day": "Saturday",
+      "count": 43
     },
     "_meta": {}
   },
   "insights": {
     "productivityScore": 3,
     "consistencyScore": 0,
-    "activityScore": 2,
-    "repositoryHealthScore": 40,
+    "activityScore": 3,
+    "repositoryHealthScore": 41,
     "contributionTrend": "DECLINING",
-    "trendPercentage": -93.02,
-    "codingVelocity": 4.3,
-    "repositoryGrowth": 77.78,
-    "monthlyGrowth": -100,
-    "weeklyGrowth": 0,
-    "commitFrequency": 70.59,
-    "activeDaysPercentage": 7.38,
+    "trendPercentage": -11.63,
+    "codingVelocity": 5.39,
+    "repositoryGrowth": 80,
+    "monthlyGrowth": 1650,
+    "weeklyGrowth": -100,
+    "commitFrequency": 55.81,
+    "activeDaysPercentage": 7.67,
     "_meta": {
       "activityScore": {
         "source": "DERIVED",
@@ -2444,6 +2467,6 @@
       }
     }
   },
-  "collectedAt": "2026-10-03T04:53:37.530Z",
+  "collectedAt": "2026-10-04T05:26:18.675Z",
   "errors": []
 }
