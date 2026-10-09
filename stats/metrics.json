@@ -53,8 +53,8 @@
       "description": "Homebrew tap for tcode",
       "url": "https://github.com/leav-dev/homebrew-tcode",
       "createdAt": "2026-10-05T19:02:30Z",
-      "updatedAt": "2026-10-07T21:53:02Z",
-      "pushedAt": "2026-10-07T21:52:57Z",
+      "updatedAt": "2026-10-08T16:34:07Z",
+      "pushedAt": "2026-10-08T16:34:03Z",
       "isPrivate": false,
       "isArchived": false,
       "isFork": false,
@@ -68,7 +68,7 @@
           "size": 1544
         }
       ],
-      "totalCommits": 4,
+      "totalCommits": 7,
       "openIssues": 0,
       "openPRs": 0
     },
@@ -80,26 +80,34 @@
       "description": null,
       "url": "https://github.com/leav-dev/tcode-extention",
       "createdAt": "2026-10-05T03:15:36Z",
-      "updatedAt": "2026-10-07T22:01:37Z",
-      "pushedAt": "2026-10-07T22:01:33Z",
+      "updatedAt": "2026-10-08T18:52:23Z",
+      "pushedAt": "2026-10-08T18:52:18Z",
       "isPrivate": false,
       "isArchived": false,
       "isFork": false,
       "isTemplate": false,
       "forkCount": 0,
       "stargazerCount": 0,
-      "primaryLanguage": "Lua",
+      "primaryLanguage": "HTML",
       "languages": [
         {
           "name": "Lua",
-          "size": 157392
+          "size": 162968
         },
         {
           "name": "Go",
-          "size": 44912
+          "size": 77222
+        },
+        {
+          "name": "Standard ML",
+          "size": 1576
+        },
+        {
+          "name": "HTML",
+          "size": 537019
         }
       ],
-      "totalCommits": 44,
+      "totalCommits": 53,
       "openIssues": 0,
       "openPRs": 0
     },
@@ -238,59 +246,34 @@
         "description": null,
         "url": "https://github.com/leav-dev/tcode-extention",
         "createdAt": "2026-10-05T03:15:36Z",
-        "updatedAt": "2026-10-07T22:01:37Z",
-        "pushedAt": "2026-10-07T22:01:33Z",
+        "updatedAt": "2026-10-08T18:52:23Z",
+        "pushedAt": "2026-10-08T18:52:18Z",
         "isPrivate": false,
         "isArchived": false,
         "isFork": false,
         "isTemplate": false,
         "forkCount": 0,
         "stargazerCount": 0,
-        "primaryLanguage": "Lua",
+        "primaryLanguage": "HTML",
         "languages": [
           {
             "name": "Lua",
-            "size": 157392
+            "size": 162968
           },
           {
             "name": "Go",
-            "size": 44912
-          }
-        ],
-        "totalCommits": 44,
-        "openIssues": 0,
-        "openPRs": 0
-      },
-      {
-        "name": "tcode",
-        "fullName": "leav-dev/tcode",
-        "description": null,
-        "url": "https://github.com/leav-dev/tcode",
-        "createdAt": "2026-10-03T14:36:20Z",
-        "updatedAt": "2026-10-07T22:01:29Z",
-        "pushedAt": "2026-10-07T22:01:24Z",
-        "isPrivate": false,
-        "isArchived": false,
-        "isFork": false,
-        "isTemplate": false,
-        "forkCount": 0,
-        "stargazerCount": 0,
-        "primaryLanguage": "Go",
-        "languages": [
-          {
-            "name": "Go",
-            "size": 1391401
+            "size": 77222
           },
           {
-            "name": "PowerShell",
-            "size": 6822
+            "name": "Standard ML",
+            "size": 1576
           },
           {
-            "name": "Shell",
-            "size": 11068
+            "name": "HTML",
+            "size": 537019
           }
         ],
-        "totalCommits": 217,
+        "totalCommits": 53,
         "openIssues": 0,
         "openPRs": 0
       },
@@ -300,8 +283,8 @@
         "description": "Homebrew tap for tcode",
         "url": "https://github.com/leav-dev/homebrew-tcode",
         "createdAt": "2026-10-05T19:02:30Z",
-        "updatedAt": "2026-10-07T21:53:02Z",
-        "pushedAt": "2026-10-07T21:52:57Z",
+        "updatedAt": "2026-10-08T16:34:07Z",
+        "pushedAt": "2026-10-08T16:34:03Z",
         "isPrivate": false,
         "isArchived": false,
         "isFork": false,
@@ -315,7 +298,40 @@
             "size": 1544
           }
         ],
-        "totalCommits": 4,
+        "totalCommits": 7,
+        "openIssues": 0,
+        "openPRs": 0
+      },
+      {
+        "name": "tcode",
+        "fullName": "leav-dev/tcode",
+        "description": null,
+        "url": "https://github.com/leav-dev/tcode",
+        "createdAt": "2026-10-03T14:36:20Z",
+        "updatedAt": "2026-10-08T16:32:14Z",
+        "pushedAt": "2026-10-08T16:32:09Z",
+        "isPrivate": false,
+        "isArchived": false,
+        "isFork": false,
+        "isTemplate": false,
+        "forkCount": 0,
+        "stargazerCount": 0,
+        "primaryLanguage": "Go",
+        "languages": [
+          {
+            "name": "Go",
+            "size": 1396535
+          },
+          {
+            "name": "PowerShell",
+            "size": 6822
+          },
+          {
+            "name": "Shell",
+            "size": 11068
+          }
+        ],
+        "totalCommits": 221,
         "openIssues": 0,
         "openPRs": 0
       },
@@ -325,8 +341,8 @@
         "description": null,
         "url": "https://github.com/leav-dev/leav-dev",
         "createdAt": "2026-07-03T15:04:03Z",
-        "updatedAt": "2026-10-07T05:29:24Z",
-        "pushedAt": "2026-10-07T05:29:20Z",
+        "updatedAt": "2026-10-08T05:37:46Z",
+        "pushedAt": "2026-10-08T05:37:42Z",
         "isPrivate": false,
         "isArchived": false,
         "isFork": false,
@@ -344,7 +360,7 @@
             "size": 80215
           }
         ],
-        "totalCommits": 115,
+        "totalCommits": 116,
         "openIssues": 0,
         "openPRs": 0
       },
@@ -501,27 +517,27 @@
     "_meta": {}
   },
   "commits": {
-    "total": 394,
+    "total": 402,
     "today": 0,
-    "thisWeek": 141,
-    "thisMonth": 278,
-    "thisYear": 394,
-    "dailyAverage": 1.1,
-    "weeklyAverage": 7.43,
-    "monthlyAverage": 30.31,
+    "thisWeek": 149,
+    "thisMonth": 286,
+    "thisYear": 402,
+    "dailyAverage": 1.12,
+    "weeklyAverage": 7.58,
+    "monthlyAverage": 30.92,
     "busiestDay": {
       "date": "2026-10-03",
       "count": 78
     },
     "busiestHour": 14,
     "distributionByDay": {
-      "WED": 1.26,
-      "THU": 0.13,
-      "FRI": 0.48,
+      "THU": 0.28,
+      "FRI": 0.47,
       "SAT": 1.65,
       "SUN": 1.69,
       "MON": 1.33,
-      "TUE": 1.13
+      "TUE": 1.13,
+      "WED": 1.29
     },
     "distributionByHour": {
       "0": 2,
@@ -533,11 +549,11 @@
       "6": 1,
       "7": 2,
       "8": 5,
-      "9": 15,
+      "9": 21,
       "10": 22,
-      "11": 12,
+      "11": 16,
       "12": 4,
-      "13": 17,
+      "13": 20,
       "14": 35,
       "15": 16,
       "16": 35,
@@ -550,25 +566,21 @@
       "23": 8
     },
     "firstCommit": "2025-11-10T00:00:00Z",
-    "lastCommit": "2026-10-07T00:00:00Z",
-    "avgTimeBetweenCommits": 21.82,
+    "lastCommit": "2026-10-08T00:00:00Z",
+    "avgTimeBetweenCommits": 21.43,
     "_meta": {}
   },
   "contributions": {
-    "total": 401,
+    "total": 409,
     "today": 0,
-    "last7Days": 278,
-    "last30Days": 280,
-    "last365Days": 401,
-    "currentStreak": 5,
-    "longestStreak": 5,
-    "activeDays": 32,
-    "inactiveDays": 334,
+    "last7Days": 286,
+    "last30Days": 288,
+    "last365Days": 409,
+    "currentStreak": 6,
+    "longestStreak": 6,
+    "activeDays": 33,
+    "inactiveDays": 333,
     "calendar": [
-      {
-        "date": "2025-10-08",
-        "count": 0
-      },
       {
         "date": "2025-10-09",
         "count": 0
@@ -2027,6 +2039,10 @@
       },
       {
         "date": "2026-10-08",
+        "count": 8
+      },
+      {
+        "date": "2026-10-09",
         "count": 0
       }
     ],
@@ -2037,47 +2053,47 @@
       {
         "name": "Python",
         "size": 6338553,
-        "percentage": 75.3
+        "percentage": 70.44
       },
       {
         "name": "Go",
-        "size": 1436313,
-        "percentage": 17.06
+        "size": 1473757,
+        "percentage": 16.38
+      },
+      {
+        "name": "HTML",
+        "size": 628272,
+        "percentage": 6.98
       },
       {
         "name": "TypeScript",
         "size": 292456,
-        "percentage": 3.47
+        "percentage": 3.25
       },
       {
         "name": "Lua",
-        "size": 157392,
-        "percentage": 1.87
-      },
-      {
-        "name": "HTML",
-        "size": 91253,
-        "percentage": 1.08
+        "size": 162968,
+        "percentage": 1.81
       },
       {
         "name": "Astro",
         "size": 29231,
-        "percentage": 0.35
+        "percentage": 0.32
       },
       {
         "name": "C#",
         "size": 23140,
-        "percentage": 0.27
+        "percentage": 0.26
       },
       {
         "name": "CSS",
         "size": 22813,
-        "percentage": 0.27
+        "percentage": 0.25
       },
       {
         "name": "Shell",
         "size": 11068,
-        "percentage": 0.13
+        "percentage": 0.12
       },
       {
         "name": "PowerShell",
@@ -2095,6 +2111,11 @@
         "percentage": 0.03
       },
       {
+        "name": "Standard ML",
+        "size": 1576,
+        "percentage": 0.02
+      },
+      {
         "name": "Ruby",
         "size": 1544,
         "percentage": 0.02
@@ -2102,6 +2123,10 @@
     ],
     "primary": "Python",
     "ranking": [
+      {
+        "name": "HTML",
+        "repositories": 2
+      },
       {
         "name": "Go",
         "repositories": 2
@@ -2112,10 +2137,6 @@
       },
       {
         "name": "TypeScript",
-        "repositories": 1
-      },
-      {
-        "name": "HTML",
         "repositories": 1
       },
       {
@@ -2135,15 +2156,19 @@
         "repositories": 1
       },
       {
+        "name": "Standard ML",
+        "repositories": 1
+      },
+      {
+        "name": "Ruby",
+        "repositories": 1
+      },
+      {
         "name": "PowerShell",
         "repositories": 1
       },
       {
         "name": "Shell",
-        "repositories": 1
-      },
-      {
-        "name": "Ruby",
         "repositories": 1
       },
       {
@@ -2157,15 +2182,16 @@
     ],
     "reposPerLanguage": {
       "TypeScript": 1,
-      "HTML": 1,
+      "HTML": 2,
       "CSS": 1,
       "JavaScript": 1,
       "C#": 1,
       "Lua": 1,
       "Go": 2,
+      "Standard ML": 1,
+      "Ruby": 1,
       "PowerShell": 1,
       "Shell": 1,
-      "Ruby": 1,
       "Dockerfile": 2,
       "Astro": 1,
       "Python": 1
@@ -2239,12 +2265,12 @@
       },
       {
         "month": "2026-10",
-        "count": 278
+        "count": 286
       }
     ],
     "byWeek": [
       {
-        "week": "2025-10-08",
+        "week": "2025-10-09",
         "count": 0
       },
       {
@@ -2453,7 +2479,7 @@
       },
       {
         "week": "2026-10-04",
-        "count": 200
+        "count": 208
       }
     ],
     "byDay": [
@@ -2475,7 +2501,7 @@
       },
       {
         "day": "Thursday",
-        "count": 7
+        "count": 15
       },
       {
         "day": "Friday",
@@ -2489,11 +2515,11 @@
     "byHour": [],
     "mostProductiveMonth": {
       "month": "2026-10",
-      "count": 278
+      "count": 286
     },
     "mostProductiveWeek": {
       "week": "2026-10-04",
-      "count": 200
+      "count": 208
     },
     "mostProductiveDay": {
       "day": "Sunday",
@@ -2507,13 +2533,13 @@
     "activityScore": 9,
     "repositoryHealthScore": 43,
     "contributionTrend": "GROWING",
-    "trendPercentage": 553.49,
-    "codingVelocity": 12.31,
+    "trendPercentage": 572.09,
+    "codingVelocity": 12.18,
     "repositoryGrowth": 83.33,
-    "monthlyGrowth": 13800,
-    "weeklyGrowth": 2.92,
-    "commitFrequency": 21.82,
-    "activeDaysPercentage": 8.74,
+    "monthlyGrowth": 14200,
+    "weeklyGrowth": 8.76,
+    "commitFrequency": 21.43,
+    "activeDaysPercentage": 9.02,
     "_meta": {
       "activityScore": {
         "source": "DERIVED",
@@ -2577,6 +2603,6 @@
       }
     }
   },
-  "collectedAt": "2026-10-08T05:37:32.658Z",
+  "collectedAt": "2026-10-09T05:41:51.797Z",
   "errors": []
 }
