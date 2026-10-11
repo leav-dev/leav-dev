@@ -75,39 +75,31 @@
     "mostStarred": null,
     "mostForked": null,
     "mostActive": {
-      "name": "tcode-extention",
-      "fullName": "leav-dev/tcode-extention",
+      "name": "leav-dev",
+      "fullName": "leav-dev/leav-dev",
       "description": null,
-      "url": "https://github.com/leav-dev/tcode-extention",
-      "createdAt": "2026-10-05T03:15:36Z",
-      "updatedAt": "2026-10-09T15:07:25Z",
-      "pushedAt": "2026-10-09T15:07:21Z",
+      "url": "https://github.com/leav-dev/leav-dev",
+      "createdAt": "2026-07-03T15:04:03Z",
+      "updatedAt": "2026-10-10T05:25:28Z",
+      "pushedAt": "2026-10-10T05:25:25Z",
       "isPrivate": false,
       "isArchived": false,
       "isFork": false,
       "isTemplate": false,
       "forkCount": 0,
       "stargazerCount": 0,
-      "primaryLanguage": "HTML",
+      "primaryLanguage": "TypeScript",
       "languages": [
         {
-          "name": "Lua",
-          "size": 181398
+          "name": "JavaScript",
+          "size": 1972
         },
         {
-          "name": "Go",
-          "size": 87512
-        },
-        {
-          "name": "Standard ML",
-          "size": 1576
-        },
-        {
-          "name": "HTML",
-          "size": 537019
+          "name": "TypeScript",
+          "size": 80215
         }
       ],
-      "totalCommits": 57,
+      "totalCommits": 118,
       "openIssues": 0,
       "openPRs": 0
     },
@@ -241,6 +233,35 @@
         "openPRs": 0
       },
       {
+        "name": "leav-dev",
+        "fullName": "leav-dev/leav-dev",
+        "description": null,
+        "url": "https://github.com/leav-dev/leav-dev",
+        "createdAt": "2026-07-03T15:04:03Z",
+        "updatedAt": "2026-10-10T05:25:28Z",
+        "pushedAt": "2026-10-10T05:25:25Z",
+        "isPrivate": false,
+        "isArchived": false,
+        "isFork": false,
+        "isTemplate": false,
+        "forkCount": 0,
+        "stargazerCount": 0,
+        "primaryLanguage": "TypeScript",
+        "languages": [
+          {
+            "name": "JavaScript",
+            "size": 1972
+          },
+          {
+            "name": "TypeScript",
+            "size": 80215
+          }
+        ],
+        "totalCommits": 118,
+        "openIssues": 0,
+        "openPRs": 0
+      },
+      {
         "name": "tcode-extention",
         "fullName": "leav-dev/tcode-extention",
         "description": null,
@@ -274,35 +295,6 @@
           }
         ],
         "totalCommits": 57,
-        "openIssues": 0,
-        "openPRs": 0
-      },
-      {
-        "name": "leav-dev",
-        "fullName": "leav-dev/leav-dev",
-        "description": null,
-        "url": "https://github.com/leav-dev/leav-dev",
-        "createdAt": "2026-07-03T15:04:03Z",
-        "updatedAt": "2026-10-09T05:42:06Z",
-        "pushedAt": "2026-10-09T05:42:03Z",
-        "isPrivate": false,
-        "isArchived": false,
-        "isFork": false,
-        "isTemplate": false,
-        "forkCount": 0,
-        "stargazerCount": 0,
-        "primaryLanguage": "TypeScript",
-        "languages": [
-          {
-            "name": "JavaScript",
-            "size": 1972
-          },
-          {
-            "name": "TypeScript",
-            "size": 80215
-          }
-        ],
-        "totalCommits": 117,
         "openIssues": 0,
         "openPRs": 0
       },
@@ -519,7 +511,7 @@
   "commits": {
     "total": 406,
     "today": 0,
-    "thisWeek": 153,
+    "thisWeek": 0,
     "thisMonth": 290,
     "thisYear": 406,
     "dailyAverage": 1.13,
@@ -531,13 +523,13 @@
     },
     "busiestHour": 14,
     "distributionByDay": {
-      "FRI": 0.55,
-      "SAT": 1.62,
-      "SUN": 1.69,
+      "SUN": 1.66,
       "MON": 1.33,
       "TUE": 1.13,
       "WED": 1.29,
-      "THU": 0.29
+      "THU": 0.29,
+      "FRI": 0.56,
+      "SAT": 1.65
     },
     "distributionByHour": {
       "0": 2,
@@ -573,22 +565,14 @@
   "contributions": {
     "total": 413,
     "today": 0,
-    "last7Days": 212,
+    "last7Days": 153,
     "last30Days": 292,
     "last365Days": 413,
-    "currentStreak": 7,
+    "currentStreak": 0,
     "longestStreak": 7,
     "activeDays": 34,
-    "inactiveDays": 332,
+    "inactiveDays": 331,
     "calendar": [
-      {
-        "date": "2025-10-10",
-        "count": 0
-      },
-      {
-        "date": "2025-10-11",
-        "count": 0
-      },
       {
         "date": "2025-10-12",
         "count": 0
@@ -2044,6 +2028,10 @@
       {
         "date": "2026-10-10",
         "count": 0
+      },
+      {
+        "date": "2026-10-11",
+        "count": 0
       }
     ],
     "_meta": {}
@@ -2270,10 +2258,6 @@
     ],
     "byWeek": [
       {
-        "week": "2025-10-10",
-        "count": 0
-      },
-      {
         "week": "2025-10-12",
         "count": 0
       },
@@ -2480,6 +2464,10 @@
       {
         "week": "2026-10-04",
         "count": 212
+      },
+      {
+        "week": "2026-10-11",
+        "count": 0
       }
     ],
     "byDay": [
@@ -2537,9 +2525,9 @@
     "codingVelocity": 11.94,
     "repositoryGrowth": 83.33,
     "monthlyGrowth": 14400,
-    "weeklyGrowth": 11.68,
+    "weeklyGrowth": -100,
     "commitFrequency": 21.24,
-    "activeDaysPercentage": 9.29,
+    "activeDaysPercentage": 9.32,
     "_meta": {
       "activityScore": {
         "source": "DERIVED",
@@ -2603,6 +2591,6 @@
       }
     }
   },
-  "collectedAt": "2026-10-10T05:25:15.593Z",
+  "collectedAt": "2026-10-11T05:18:42.510Z",
   "errors": []
 }
