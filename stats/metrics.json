@@ -80,8 +80,8 @@
       "description": null,
       "url": "https://github.com/leav-dev/leav-dev",
       "createdAt": "2026-07-03T15:04:03Z",
-      "updatedAt": "2026-10-14T04:29:10Z",
-      "pushedAt": "2026-10-14T04:29:07Z",
+      "updatedAt": "2026-10-15T14:51:18Z",
+      "pushedAt": "2026-10-15T14:51:13Z",
       "isPrivate": false,
       "isArchived": false,
       "isFork": false,
@@ -92,14 +92,14 @@
       "languages": [
         {
           "name": "JavaScript",
-          "size": 1972
+          "size": 2047
         },
         {
           "name": "TypeScript",
-          "size": 80215
+          "size": 80796
         }
       ],
-      "totalCommits": 122,
+      "totalCommits": 124,
       "openIssues": 0,
       "openPRs": 0
     },
@@ -238,8 +238,8 @@
         "description": null,
         "url": "https://github.com/leav-dev/leav-dev",
         "createdAt": "2026-07-03T15:04:03Z",
-        "updatedAt": "2026-10-14T04:29:10Z",
-        "pushedAt": "2026-10-14T04:29:07Z",
+        "updatedAt": "2026-10-15T14:51:18Z",
+        "pushedAt": "2026-10-15T14:51:13Z",
         "isPrivate": false,
         "isArchived": false,
         "isFork": false,
@@ -250,14 +250,14 @@
         "languages": [
           {
             "name": "JavaScript",
-            "size": 1972
+            "size": 2047
           },
           {
             "name": "TypeScript",
-            "size": 80215
+            "size": 80796
           }
         ],
-        "totalCommits": 122,
+        "totalCommits": 124,
         "openIssues": 0,
         "openPRs": 0
       },
@@ -2059,8 +2059,8 @@
       },
       {
         "name": "TypeScript",
-        "size": 292456,
-        "percentage": 3.24
+        "size": 293037,
+        "percentage": 3.25
       },
       {
         "name": "Lua",
@@ -2094,7 +2094,7 @@
       },
       {
         "name": "JavaScript",
-        "size": 4387,
+        "size": 4462,
         "percentage": 0.05
       },
       {
@@ -2595,6 +2595,6 @@
       }
     }
   },
-  "collectedAt": "2026-10-15T04:11:27.798Z",
+  "collectedAt": "2026-10-15T14:51:27.980Z",
   "errors": []
 }
