@@ -21,6 +21,7 @@ export function renderStatsCard(m: GitHubMetrics): string {
   const c = m.commits;
   const ct = m.contributions;
   const i = m.insights;
+  const displayName = p?.name ?? p?.login ?? 'GitHub Stats';
 
   const statItems = [
     { label: 'Repos', value: String(r?.total ?? 0), color: C.accent },
@@ -38,7 +39,8 @@ export function renderStatsCard(m: GitHubMetrics): string {
 
   const cols = [140, 300, 460];
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="320" viewBox="0 0 600 320">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="320" viewBox="0 0 600 320" role="img">
+  <title>${escapeXml(displayName)} — GitHub stats</title>
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#414bd7" stop-opacity="0.15"/>
@@ -50,7 +52,7 @@ export function renderStatsCard(m: GitHubMetrics): string {
 
   <!-- Header -->
   ${p?.avatarUrl ? `<image x="20" y="18" width="40" height="40" rx="20" href="${escapeXml(p.avatarUrl)}" clip-path="circle(20px at 40px 38px)"/>` : ''}
-  <text x="72" y="34" font-family="Segoe UI, system-ui, sans-serif" font-size="16" font-weight="700" fill="${C.heading}">${escapeXml(p?.name ?? '')}</text>
+  <text x="72" y="34" font-family="Segoe UI, system-ui, sans-serif" font-size="16" font-weight="700" fill="${C.heading}">${escapeXml(displayName)}</text>
   <text x="72" y="52" font-family="Segoe UI, system-ui, sans-serif" font-size="12" fill="${C.text}">@${escapeXml(p?.login ?? '')}</text>
 
   <!-- Stats Grid -->
@@ -93,6 +95,8 @@ export function renderStatsCard(m: GitHubMetrics): string {
 
 export function renderLangsCard(m: GitHubMetrics): string {
   const langs = m.languages?.languages ?? [];
+  const reposPerLanguage = m.languages?.reposPerLanguage ?? {};
+  const totalRepos = m.repositories?.total ?? 0;
   const top = langs.slice(0, 8);
   const maxPct = top[0]?.percentage ?? 100;
 
@@ -100,15 +104,18 @@ export function renderLangsCard(m: GitHubMetrics): string {
   <rect width="360" height="${90 + top.length * 32}" rx="12" fill="${C.bg}" stroke="${C.border}" stroke-width="1.5"/>
 
   <text x="20" y="30" font-family="Segoe UI, system-ui, sans-serif" font-size="14" font-weight="700" fill="${C.heading}">Most Used Languages</text>
+  <text x="340" y="30" text-anchor="end" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="${C.text}">${totalRepos} repos</text>
 
   ${top.map((lang, i) => {
     const barW = Math.max(4, (lang.percentage / maxPct) * 200);
     const y = 56 + i * 32;
     const color = langColor(lang.name);
+    const repoCount = reposPerLanguage[lang.name] ?? 0;
+    const repoLabel = repoCount === 1 ? '1 repo' : `${repoCount} repos`;
     return `
   <text x="20" y="${y}" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="${C.text}">${escapeXml(lang.name)}</text>
   <rect x="20" y="${y + 6}" width="${barW}" height="12" rx="4" fill="${color}" opacity="0.8"/>
-  <text x="${20 + barW + 6}" y="${y + 16}" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="${C.text}">${lang.percentage}%</text>`;
+  <text x="${20 + barW + 6}" y="${y + 16}" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="${C.text}">${lang.percentage}% · ${repoLabel}</text>`;
   }).join('')}
 </svg>`;
 }
@@ -119,7 +126,8 @@ export function renderMetricsJson(m: GitHubMetrics): string {
 
 // ─── Helpers ───
 
-function escapeXml(s: string): string {
+function escapeXml(s: string | null | undefined): string {
+  if (s == null) return '';
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" role="img">
+  <title>Gracias por visitar</title>
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1b27"/>
+      <stop offset="1" stop-color="#24273d"/>
+    </linearGradient>
+    <linearGradient id="fbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7dcfff"/>
+      <stop offset="1" stop-color="#667eea"/>
+    </linearGradient>
+    <pattern id="fgrid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#2d3355" stroke-width="1"/>
+    </pattern>
+    <clipPath id="fclip"><rect width="1200" height="140" rx="12"/></clipPath>
+  </defs>
+  <rect width="1200" height="140" rx="12" fill="url(#fbg)" stroke="#2d3355" stroke-width="2"/>
+  <g clip-path="url(#fclip)">
+    <rect width="1200" height="140" fill="url(#fgrid)" opacity="0.35"/>
+    <rect x="980" y="-120" width="320" height="320" rx="160" fill="#7dcfff" opacity="0.06"/>
+  </g>
+  <g font-family="'JetBrains Mono','Fira Code',SFMono-Regular,Consolas,'Courier New',monospace">
+    <text x="32" y="34" font-size="14" fill="#9ece6a">✓ build passing</text>
+    <text x="1168" y="34" text-anchor="end" font-size="14" fill="#565f89">leav-dev · 2026</text>
+    <text x="600" y="72" text-anchor="middle" font-size="21"><tspan fill="#9ece6a">$</tspan><tspan fill="#ffffff"> thanks --for-visiting</tspan></text>
+    <text x="600" y="110" text-anchor="middle" font-size="23" fill="#bb9af7">→ gracias por visitar ✦</text>
+  </g>
+  <rect x="0" y="137" width="1200" height="3" fill="url(#fbar)"/>
+</svg>

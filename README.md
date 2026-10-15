@@ -1,10 +1,7 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=200&section=header&text=Luis%20Eduardo%20Albor%20Vega&fontSize=40&fontColor=ffffff&animation=fadeIn" width="100%" />
+  <img src="assets/header.svg" width="100%" alt="LEAV terminal header" />
 </div>
 
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=7000&pause=1000&color=667EEA&center=true&vCenter=true&width=435&lines=Full-Stack+Developer;React+%7C+Angular+%7C+Python+%7C+AWS" alt="Typing SVG" />
-</h1>
 
 ```yaml
 ---
@@ -16,13 +13,15 @@ role: Full-Stack Developer
 
 stack:
   frontend: [React, Angular, TypeScript, JavaScript, TailwindCSS]
-  backend:  [Python, Django, FastAPI, Java, C#]
+  backend:  [Python, Go, Lua, Ruby, Django, FastAPI, Java, C#]
   cloud:    [AWS (S3, Lambda, ECS, EC2, ECR, RDS, CloudFront, Route53, WAF), Docker, K8s]
   database: [PostgreSQL, SQLite]
+  ides:     [DBeaver, VSCode, VSCodium, Visual Studio Community, PyCharm]
   tools:    [GitHub Actions, CI/CD, Web Scraping, OpenCV]
+  ai:       [opencode, Cursor, gentle-pi, Kiro, MCP, RAG, Prompt Engineering]
 
-experience: 28+ months
-focus: Clean Architecture, Scalable Systems, Team Leadership
+experience: 58+ months (desde dic 2021)
+focus: Clean Architecture, Scalable Systems, Team Leadership, AI-Augmented Delivery
 
 ---
 ```
@@ -34,13 +33,41 @@ focus: Clean Architecture, Scalable Systems, Team Leadership
 <table align="center">
   <tr>
     <td align="center" width="50%">
+      <a href="https://github.com/leav-dev/tcode">
+        <h3>tcode</h3>
+      </a>
+      <sub>CLI en Go — repo propio más activo (221 commits)</sub>
+      <br /><br />
+      <img src="https://skillicons.dev/icons?i=go" height="40" alt="" />
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/leav-dev/tcode-extention">
+        <h3>tcode-extention</h3>
+      </a>
+      <sub>Companion de tcode en Lua/Go/HTML (57 commits)</sub>
+      <br /><br />
+      <img src="https://skillicons.dev/icons?i=lua,go,html" height="40" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://github.com/leav-dev/homebrew-tcode">
+        <h3>homebrew-tcode</h3>
+      </a>
+      <sub>Homebrew tap for tcode</sub>
+      <br /><br />
+      <img src="https://skillicons.dev/icons?i=ruby" height="40" alt="" />
+    </td>
+    <td align="center" width="50%">
       <a href="https://github.com/leav-dev/shaun">
         <h3>shaun</h3>
       </a>
-      <sub>Kanban board</sub>
+      <sub>Plataforma de gestión de proyectos basado en Kanban, con arrastrar y soltar, trazabilidad de cambios y SQLite</sub>
       <br /><br />
       <img src="https://skillicons.dev/icons?i=astro,sqlite,docker" height="40" alt="" />
     </td>
+  </tr>
+  <tr>
     <td align="center" width="50%">
       <a href="https://github.com/leav-dev/utilspress">
         <h3>utilspress</h3>
@@ -49,21 +76,21 @@ focus: Clean Architecture, Scalable Systems, Team Leadership
       <br /><br />
       <img src="https://skillicons.dev/icons?i=flutter,python" height="40" alt="" />
     </td>
-  </tr>
-  <tr>
     <td align="center" width="50%">
       <a href="https://github.com/leav-dev/api-clima">
         <h3>api-clima</h3>
       </a>
-      <sub>API meteorológica</sub>
+      <sub>API meteorológica con FastAPI + OpenWeatherMap. Consulta el clima actual de cualquier ciudad via geocoding. Docker ready.</sub>
       <br /><br />
       <img src="https://skillicons.dev/icons?i=fastapi,docker" height="40" alt="" />
     </td>
-    <td align="center" width="50%">
+  </tr>
+  <tr>
+    <td align="center" width="50%" colspan="2">
       <a href="https://github.com/leav-dev/bot-detector">
         <h3>bot-detector</h3>
       </a>
-      <sub>GUI automation bot</sub>
+      <sub>Bot de automatización GUI basado en detección de imágenes con Python y OpenCV</sub>
       <br /><br />
       <img src="https://skillicons.dev/icons?i=opencv,python" height="40" alt="" />
     </td>
@@ -89,6 +116,9 @@ focus: Clean Architecture, Scalable Systems, Team Leadership
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" />
 
   <h3>Cloud & DevOps</h3>
   <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
@@ -99,6 +129,26 @@ focus: Clean Architecture, Scalable Systems, Team Leadership
   <h3>Base de Datos</h3>
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" />
+
+  <h3>IDEs & Data Tools</h3>
+  <img src="https://img.shields.io/badge/DBeaver-382A24?style=for-the-badge&logo=dbeaver&logoColor=white" />
+  <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+  <img src="https://img.shields.io/badge/VSCodium-2F80ED?style=for-the-badge&logo=vscodium&logoColor=white" />
+  <img src="https://img.shields.io/badge/Visual_Studio_Community-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyCharm-21D789?style=for-the-badge&logo=pycharm&logoColor=white" />
+</div>
+
+<div align="center">
+  <h2>Desarrollo Aumentado con IA</h2>
+  <p>Trabajo con agentes de IA en el loop: diseño, código, tests y review asistidos. La IA acelera, yo decido.</p>
+  <img src="https://img.shields.io/badge/opencode-1A1B27?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cursor-2D3355?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/gentle--pi-667EEA?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kiro-BB9AF7?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/MCP-9ECE6A?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/RAG-FF9E64?style=for-the-badge&logoColor=white" />
+  <br />
+  <sub>Mi stack de agentes: opencode · Cursor · gentle-pi (Pi) · Kiro — automatización con MCP · RAG sobre docs del repo · reviews asistidas con criterio humano</sub>
 </div>
 
 <div align="center">
@@ -106,6 +156,8 @@ focus: Clean Architecture, Scalable Systems, Team Leadership
 </div>
 
 <div align="center">
+  <img src="stats/github-stats.svg" />
+  <br />
   <img height="500px" src="stats/top-langs.svg" />
 </div>
 
@@ -123,5 +175,5 @@ focus: Clean Architecture, Scalable Systems, Team Leadership
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=120&section=footer" width="100%" />
+  <img src="assets/footer.svg" width="100%" alt="Gracias por visitar" />
 </div>
