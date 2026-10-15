@@ -98,6 +98,40 @@ focus: Clean Architecture, Scalable Systems, Team Leadership, AI-Augmented Deliv
 </table>
 
 <div align="center">
+  <h2>Experiencia Profesional</h2>
+  <h3>Grupo Educate Colombia</h3>
+  <sub>Desarrollador Full-Stack · QA · Project Manager · Tester · DBA</sub>
+  <br />
+  <sub>📅 19 feb 2024 — actualidad · 📍 Colombia</sub>
+</div>
+
+<table align="center">
+  <tr>
+    <td width="50%">
+      <h4>🔧 Backend — Plataforma empresarial</h4>
+      <sub>🔒 Repositorio privado — sin acceso público</sub>
+      <br /><br />
+      <ul>
+        <li>API en <b>Python + Django</b> con <b>PostgreSQL</b>: [N endpoints / módulos principales]</li>
+        <li>Microservicios en <b>AWS Lambda</b>: [funciones / eventos que orquestan]</li>
+        <li>Rol <b>DBA</b>: modelado de datos, migraciones, optimización de consultas y respaldos</li>
+        <li><b>QA / Tester</b>: estrategia de pruebas, ambientes y criterios de aceptación</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h4>🎨 Frontend — Plataforma empresarial</h4>
+      <sub>🔒 Repositorio privado — sin acceso público</sub>
+      <br /><br />
+      <ul>
+        <li>SPA en <b>Angular</b> consumiendo la API: [módulos / pantallas principales]</li>
+        <li>Rol <b>Project Manager</b>: planificación, sprints y coordinación del equipo de [N personas]</li>
+        <li>Impacto: [N usuarios / sedes / procesos digitalizados]</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<div align="center">
   <h2>Stack Tecnológico</h2>
 </div>
 
