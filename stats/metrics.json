@@ -75,27 +75,31 @@
     "mostStarred": null,
     "mostForked": null,
     "mostActive": {
-      "name": "utilspress",
-      "fullName": "leav-dev/utilspress",
+      "name": "leav-dev",
+      "fullName": "leav-dev/leav-dev",
       "description": null,
-      "url": "https://github.com/leav-dev/utilspress",
-      "createdAt": "2025-06-04T03:56:43Z",
-      "updatedAt": "2026-10-24T15:45:15Z",
-      "pushedAt": "2026-10-24T15:45:15Z",
+      "url": "https://github.com/leav-dev/leav-dev",
+      "createdAt": "2026-07-03T15:04:03Z",
+      "updatedAt": "2026-10-25T04:13:50Z",
+      "pushedAt": "2026-10-25T04:13:46Z",
       "isPrivate": false,
       "isArchived": false,
       "isFork": false,
       "isTemplate": false,
       "forkCount": 0,
       "stargazerCount": 0,
-      "primaryLanguage": "Python",
+      "primaryLanguage": "TypeScript",
       "languages": [
         {
-          "name": "Python",
-          "size": 58915
+          "name": "JavaScript",
+          "size": 2047
+        },
+        {
+          "name": "TypeScript",
+          "size": 80796
         }
       ],
-      "totalCommits": 42,
+      "totalCommits": 137,
       "openIssues": 0,
       "openPRs": 0
     },
@@ -229,6 +233,35 @@
         "openPRs": 0
       },
       {
+        "name": "leav-dev",
+        "fullName": "leav-dev/leav-dev",
+        "description": null,
+        "url": "https://github.com/leav-dev/leav-dev",
+        "createdAt": "2026-07-03T15:04:03Z",
+        "updatedAt": "2026-10-25T04:13:50Z",
+        "pushedAt": "2026-10-25T04:13:46Z",
+        "isPrivate": false,
+        "isArchived": false,
+        "isFork": false,
+        "isTemplate": false,
+        "forkCount": 0,
+        "stargazerCount": 0,
+        "primaryLanguage": "TypeScript",
+        "languages": [
+          {
+            "name": "JavaScript",
+            "size": 2047
+          },
+          {
+            "name": "TypeScript",
+            "size": 80796
+          }
+        ],
+        "totalCommits": 137,
+        "openIssues": 0,
+        "openPRs": 0
+      },
+      {
         "name": "utilspress",
         "fullName": "leav-dev/utilspress",
         "description": null,
@@ -250,35 +283,6 @@
           }
         ],
         "totalCommits": 42,
-        "openIssues": 0,
-        "openPRs": 0
-      },
-      {
-        "name": "leav-dev",
-        "fullName": "leav-dev/leav-dev",
-        "description": null,
-        "url": "https://github.com/leav-dev/leav-dev",
-        "createdAt": "2026-07-03T15:04:03Z",
-        "updatedAt": "2026-10-24T04:11:15Z",
-        "pushedAt": "2026-10-24T04:11:11Z",
-        "isPrivate": false,
-        "isArchived": false,
-        "isFork": false,
-        "isTemplate": false,
-        "forkCount": 0,
-        "stargazerCount": 0,
-        "primaryLanguage": "TypeScript",
-        "languages": [
-          {
-            "name": "JavaScript",
-            "size": 2047
-          },
-          {
-            "name": "TypeScript",
-            "size": 80796
-          }
-        ],
-        "totalCommits": 136,
         "openIssues": 0,
         "openPRs": 0
       },
@@ -520,7 +524,7 @@
     "busiestHour": 14,
     "distributionByDay": {
       "SUN": 1.66,
-      "MON": 1.33,
+      "MON": 1.3,
       "TUE": 1.13,
       "WED": 1.31,
       "THU": 0.31,
@@ -564,10 +568,10 @@
     "last7Days": 10,
     "last30Days": 301,
     "last365Days": 424,
-    "currentStreak": 2,
+    "currentStreak": 0,
     "longestStreak": 7,
     "activeDays": 38,
-    "inactiveDays": 327,
+    "inactiveDays": 328,
     "calendar": [
       {
         "date": "2025-10-26",
@@ -2028,6 +2032,10 @@
       {
         "date": "2026-10-25",
         "count": 0
+      },
+      {
+        "date": "2026-10-26",
+        "count": 0
       }
     ],
     "_meta": {}
@@ -2523,7 +2531,7 @@
     "monthlyGrowth": 14950,
     "weeklyGrowth": -100,
     "commitFrequency": 20.69,
-    "activeDaysPercentage": 10.41,
+    "activeDaysPercentage": 10.38,
     "_meta": {
       "activityScore": {
         "source": "DERIVED",
@@ -2587,6 +2595,6 @@
       }
     }
   },
-  "collectedAt": "2026-10-25T04:13:36.781Z",
+  "collectedAt": "2026-10-26T04:17:47.012Z",
   "errors": []
 }
