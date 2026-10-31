@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="idcard-title">
+  <title id="idcard-title">Luis Eduardo Albor Vega — Full-Stack Developer · Colombia (UTC−5)</title>
+  <defs>
+    <linearGradient id="idbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1b27"/>
+      <stop offset="1" stop-color="#24273d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="230" rx="14" fill="url(#idbg)" stroke="#2d3355" stroke-width="1.5"/>
+
+  <!-- Monogram -->
+  <rect x="40" y="40" width="72" height="72" rx="16" fill="#20233c" stroke="#2d3355"/>
+  <text x="51" y="83" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="20" font-weight="700" fill="#ffffff">L</text>
+  <text x="63" y="83" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="20" font-weight="700" fill="#7aa2f7">EAV</text>
+
+  <!-- Name, role, availability -->
+  <text x="132" y="66" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Luis Eduardo Albor Vega</text>
+  <text x="132" y="90" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="13" fill="#a9b1d6">Full-Stack Developer · Colombia (UTC−5)</text>
+  <rect x="132" y="102" width="196" height="26" rx="13" fill="#1e2a1f" stroke="#33502f"/>
+  <circle cx="148" cy="115" r="4" fill="#9ece6a"/>
+  <text x="160" y="119" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11.5" fill="#9ece6a">abierto a oportunidades remotas</text>
+
+  <text x="40" y="164" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11.5" fill="#7c85b0">58 meses escribiendo software en producción</text>
+  <text x="40" y="184" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11.5" fill="#7c85b0">Grupo Educate Colombia · desde feb 2024</text>
+
+  <!-- Divider -->
+  <line x1="480" y1="32" x2="480" y2="198" stroke="#2d3355"/>
+
+  <!-- Languages -->
+  <text x="512" y="44" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="10.5" letter-spacing="1.6" fill="#7c85b0">CÓDIGO QUE ESCRIBO HOY</text>
+  <rect x="512.0" y="58" width="359.8" height="12" fill="#3178c6" stroke="#1a1b27" stroke-width="1"/><rect x="871.8" y="58" width="173.7" height="12" fill="#3572a5" stroke="#1a1b27" stroke-width="1"/><rect x="1045.6" y="58" width="45.0" height="12" fill="#f1e05a" stroke="#1a1b27" stroke-width="1"/><rect x="1090.5" y="58" width="40.4" height="12" fill="#00add8" stroke="#1a1b27" stroke-width="1"/><rect x="1130.9" y="58" width="29.1" height="12" fill="#6c6c6c" stroke="#1a1b27" stroke-width="1"/>
+  <circle cx="516" cy="92" r="4" fill="#3178c6"/>
+  <text x="526" y="96" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11.5" fill="#a9b1d6">TypeScript</text>
+  <text x="624" y="96" text-anchor="end" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11" fill="#7c85b0">55,5 %</text>
+  <circle cx="644" cy="92" r="4" fill="#3572a5"/>
+  <text x="654" y="96" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11.5" fill="#a9b1d6">Python</text>
+  <text x="752" y="96" text-anchor="end" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11" fill="#7c85b0">26,8 %</text>
+  <circle cx="772" cy="92" r="4" fill="#f1e05a"/>
+  <text x="782" y="96" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11.5" fill="#a9b1d6">JavaScript</text>
+  <text x="880" y="96" text-anchor="end" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11" fill="#7c85b0">6,9 %</text>
+  <circle cx="900" cy="92" r="4" fill="#00add8"/>
+  <text x="910" y="96" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11.5" fill="#a9b1d6">Go</text>
+  <text x="1008" y="96" text-anchor="end" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11" fill="#7c85b0">6,2 %</text>
+  <circle cx="1028" cy="92" r="4" fill="#6c6c6c"/>
+  <text x="1038" y="96" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11.5" fill="#a9b1d6">Otros</text>
+  <text x="1136" y="96" text-anchor="end" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="11" fill="#7c85b0">4,5 %</text>
+
+  <line x1="512" y1="124" x2="1160" y2="124" stroke="#2d3355"/>
+
+  <!-- Evidence -->
+  <text x="512" y="150" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="10.5" letter-spacing="1.6" fill="#7c85b0">EVIDENCIA</text>
+  <text x="512" y="181" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="24" font-weight="700" fill="#9ece6a">429</text>
+  <text x="512" y="199" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="10.5" fill="#7c85b0">contribuciones · 365 d</text>
+  <text x="674" y="181" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="24" font-weight="700" fill="#7dcfff">13</text>
+  <text x="674" y="199" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="10.5" fill="#7c85b0">repositorios públicos</text>
+  <text x="836" y="181" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="24" font-weight="700" fill="#bb9af7">14</text>
+  <text x="836" y="199" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="10.5" fill="#7c85b0">pull requests mergeados</text>
+  <text x="998" y="181" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="24" font-weight="700" fill="#ff9e64">306</text>
+  <text x="998" y="199" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="10.5" fill="#7c85b0">commits · últimos 30 d</text>
+</svg>

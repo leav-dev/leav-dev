@@ -2,7 +2,7 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Engine } from '../dist/engine/index.js';
-import { renderStatsCard, renderLangsCard, renderMetricsJson } from '../dist/renderer/svg-templates.js';
+import { renderStatsCard, renderLangsCard, renderIdentityCard, renderMetricsJson } from '../dist/renderer/svg-templates.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const statsDir = resolve(__dirname, '..', 'stats');
@@ -36,6 +36,10 @@ async function main() {
 
   // Generate SVGs
   console.log('🎨 Generating SVG cards...');
+  const identitySvg = renderIdentityCard(metrics);
+  writeFileSync(resolve(statsDir, 'identity-card.svg'), identitySvg, 'utf-8');
+  console.log('   ✓ stats/identity-card.svg');
+
   const statsSvg = renderStatsCard(metrics);
   writeFileSync(resolve(statsDir, 'github-stats.svg'), statsSvg, 'utf-8');
   console.log('   ✓ stats/github-stats.svg');

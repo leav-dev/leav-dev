@@ -7,12 +7,25 @@ const C = {
   border: '#2d3355',
   text: '#ffffff',
   heading: '#e0e0e0',
+  body: '#a9b1d6',
+  muted: '#7c85b0',
   accent: '#7aa2f7',
   green: '#9ece6a',
   orange: '#ff9e64',
   red: '#f7768e',
   purple: '#bb9af7',
   cyan: '#7dcfff',
+} as const;
+
+// Identity shown on the profile card. These values are not derivable from the
+// GitHub API: the account name is a handle ("LEAV") and the bio is empty, so
+// they are declared here instead of guessed from profile fields.
+const IDENTITY = {
+  name: 'Luis Eduardo Albor Vega',
+  role: 'Full-Stack Developer · Colombia (UTC−5)',
+  availability: 'abierto a oportunidades remotas',
+  seniority: '58 meses escribiendo software en producción',
+  current: 'Grupo Educate Colombia · desde feb 2024',
 } as const;
 
 export function renderStatsCard(m: GitHubMetrics): string {
@@ -122,6 +135,104 @@ export function renderLangsCard(m: GitHubMetrics): string {
 
 export function renderMetricsJson(m: GitHubMetrics): string {
   return JSON.stringify(m, null, 2);
+}
+
+/**
+ * Identity card for the profile README: name and role on the left, the real
+ * language mix and the verifiable evidence counters on the right.
+ * Everything except IDENTITY comes from collected metrics, so the card stays
+ * current when CI regenerates it.
+ */
+export function renderIdentityCard(m: GitHubMetrics): string {
+  const W = 1200;
+  const H = 230;
+  const sans = 'Segoe UI, system-ui, -apple-system, Roboto, sans-serif';
+  const nameSize = 22;
+
+  const languages = (m.languages?.languages ?? []).filter(l => l.percentage >= 1);
+  const top = languages.slice(0, 4);
+  const rest = 100 - top.reduce((sum, l) => sum + l.percentage, 0);
+  const segments = rest > 0.5
+    ? [...top, { name: 'Otros', percentage: Number(rest.toFixed(2)), size: 0 }]
+    : top;
+
+  const barX = 512;
+  const barW = 648;
+  let cursor = barX;
+  const bars = segments
+    .map(lang => {
+      const w = (lang.percentage / 100) * barW;
+      const rect = `<rect x="${cursor.toFixed(1)}" y="58" width="${Math.max(2, w).toFixed(1)}" height="12" fill="${langColor(lang.name)}" stroke="${C.bg}" stroke-width="1"/>`;
+      cursor += w;
+      return rect;
+    })
+    .join('');
+
+  const legend = segments
+    .map((lang, i) => {
+      const x = barX + i * 128;
+      return `<circle cx="${x + 4}" cy="92" r="4" fill="${langColor(lang.name)}"/>
+  <text x="${x + 14}" y="96" font-family="${sans}" font-size="11.5" fill="${C.body}">${escapeXml(lang.name)}</text>
+  <text x="${x + 112}" y="96" text-anchor="end" font-family="${sans}" font-size="11" fill="${C.muted}">${formatPct(lang.percentage)}</text>`;
+    })
+    .join('\n  ');
+
+  const evidence = [
+    { value: String(m.contributions?.last365Days ?? 0), label: 'contribuciones · 365 d', color: C.green },
+    { value: String(m.repositories?.public ?? 0), label: 'repositorios públicos', color: C.cyan },
+    { value: String(m.pull_requests?.merged ?? 0), label: 'pull requests mergeados', color: C.purple },
+    { value: String(m.commits?.thisMonth ?? 0), label: 'commits · últimos 30 d', color: C.orange },
+  ]
+    .map((item, i) => {
+      const x = barX + i * 162;
+      return `<text x="${x}" y="181" font-family="${sans}" font-size="24" font-weight="700" fill="${item.color}">${item.value}</text>
+  <text x="${x}" y="199" font-family="${sans}" font-size="10.5" fill="${C.muted}">${escapeXml(item.label)}</text>`;
+    })
+    .join('\n  ');
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="idcard-title">
+  <title id="idcard-title">${escapeXml(IDENTITY.name)} — ${escapeXml(IDENTITY.role)}</title>
+  <defs>
+    <linearGradient id="idbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1b27"/>
+      <stop offset="1" stop-color="#24273d"/>
+    </linearGradient>
+  </defs>
+  <rect width="${W}" height="${H}" rx="14" fill="url(#idbg)" stroke="${C.border}" stroke-width="1.5"/>
+
+  <!-- Monogram -->
+  <rect x="40" y="40" width="72" height="72" rx="16" fill="#20233c" stroke="${C.border}"/>
+  <text x="51" y="83" font-family="${sans}" font-size="20" font-weight="700" fill="${C.text}">L</text>
+  <text x="63" y="83" font-family="${sans}" font-size="20" font-weight="700" fill="${C.accent}">EAV</text>
+
+  <!-- Name, role, availability -->
+  <text x="132" y="66" font-family="${sans}" font-size="${nameSize}" font-weight="700" fill="${C.text}">${escapeXml(IDENTITY.name)}</text>
+  <text x="132" y="90" font-family="${sans}" font-size="13" fill="${C.body}">${escapeXml(IDENTITY.role)}</text>
+  <rect x="132" y="102" width="196" height="26" rx="13" fill="#1e2a1f" stroke="#33502f"/>
+  <circle cx="148" cy="115" r="4" fill="${C.green}"/>
+  <text x="160" y="119" font-family="${sans}" font-size="11.5" fill="${C.green}">${escapeXml(IDENTITY.availability)}</text>
+
+  <text x="40" y="164" font-family="${sans}" font-size="11.5" fill="${C.muted}">${escapeXml(IDENTITY.seniority)}</text>
+  <text x="40" y="184" font-family="${sans}" font-size="11.5" fill="${C.muted}">${escapeXml(IDENTITY.current)}</text>
+
+  <!-- Divider -->
+  <line x1="480" y1="32" x2="480" y2="198" stroke="${C.border}"/>
+
+  <!-- Languages -->
+  <text x="${barX}" y="44" font-family="${sans}" font-size="10.5" letter-spacing="1.6" fill="${C.muted}">CÓDIGO QUE ESCRIBO HOY</text>
+  ${bars}
+  ${legend}
+
+  <line x1="${barX}" y1="124" x2="1160" y2="124" stroke="${C.border}"/>
+
+  <!-- Evidence -->
+  <text x="${barX}" y="150" font-family="${sans}" font-size="10.5" letter-spacing="1.6" fill="${C.muted}">EVIDENCIA</text>
+  ${evidence}
+</svg>`;
+}
+
+function formatPct(value: number): string {
+  return `${value.toFixed(1).replace('.', ',')} %`;
 }
 
 // ─── Helpers ───
