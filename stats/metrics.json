@@ -14,11 +14,11 @@
     "_meta": {}
   },
   "repositories": {
-    "total": 12,
-    "public": 12,
+    "total": 13,
+    "public": 13,
     "private": 0,
     "archived": 0,
-    "forks": 1,
+    "forks": 2,
     "templates": 0,
     "totalStarred": 0,
     "totalForked": 0,
@@ -48,89 +48,153 @@
       "openPRs": 0
     },
     "newest": {
-      "name": "homebrew-tcode",
-      "fullName": "leav-dev/homebrew-tcode",
-      "description": "Homebrew tap for tcode",
-      "url": "https://github.com/leav-dev/homebrew-tcode",
-      "createdAt": "2026-10-05T19:02:30Z",
-      "updatedAt": "2026-10-08T16:34:07Z",
-      "pushedAt": "2026-10-08T16:34:03Z",
-      "isPrivate": false,
-      "isArchived": false,
-      "isFork": false,
-      "isTemplate": false,
-      "forkCount": 0,
-      "stargazerCount": 0,
-      "primaryLanguage": "Ruby",
-      "languages": [
-        {
-          "name": "Ruby",
-          "size": 1544
-        }
-      ],
-      "totalCommits": 7,
-      "openIssues": 0,
-      "openPRs": 0
-    },
-    "mostStarred": null,
-    "mostForked": null,
-    "mostActive": {
-      "name": "leav-dev",
-      "fullName": "leav-dev/leav-dev",
-      "description": null,
-      "url": "https://github.com/leav-dev/leav-dev",
-      "createdAt": "2026-07-03T15:04:03Z",
-      "updatedAt": "2026-10-29T05:21:38Z",
-      "pushedAt": "2026-10-29T05:21:34Z",
-      "isPrivate": false,
-      "isArchived": false,
-      "isFork": false,
-      "isTemplate": false,
-      "forkCount": 0,
-      "stargazerCount": 0,
-      "primaryLanguage": "TypeScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "size": 2047
-        },
-        {
-          "name": "TypeScript",
-          "size": 80796
-        }
-      ],
-      "totalCommits": 141,
-      "openIssues": 0,
-      "openPRs": 0
-    },
-    "mostCommitted": {
-      "name": "graphify-modules",
-      "fullName": "leav-dev/graphify-modules",
-      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-      "url": "https://github.com/leav-dev/graphify-modules",
-      "createdAt": "2026-08-27T15:55:47Z",
-      "updatedAt": "2026-08-27T15:55:47Z",
-      "pushedAt": "2026-08-25T17:43:30Z",
+      "name": "atreus",
+      "fullName": "leav-dev/atreus",
+      "description": "Atreus: an open-source fork of gentle-shell building an always-on agent that does many things, on your laptop or a VPS, with ODD discipline.",
+      "url": "https://github.com/leav-dev/atreus",
+      "createdAt": "2026-10-30T14:53:41Z",
+      "updatedAt": "2026-10-30T15:13:22Z",
+      "pushedAt": "2026-10-30T16:14:24Z",
       "isPrivate": false,
       "isArchived": false,
       "isFork": true,
       "isTemplate": false,
       "forkCount": 0,
       "stargazerCount": 0,
-      "primaryLanguage": "Python",
+      "primaryLanguage": "TypeScript",
       "languages": [
         {
-          "name": "Python",
-          "size": 6296543
+          "name": "Shell",
+          "size": 19516
         },
         {
-          "name": "Dockerfile",
-          "size": 881
+          "name": "JavaScript",
+          "size": 1646593
+        },
+        {
+          "name": "PowerShell",
+          "size": 72113
+        },
+        {
+          "name": "TypeScript",
+          "size": 12925161
+        },
+        {
+          "name": "CSS",
+          "size": 36203
+        },
+        {
+          "name": "HTML",
+          "size": 7769
+        },
+        {
+          "name": "Batchfile",
+          "size": 26502
         }
       ],
-      "totalCommits": 1568,
-      "openIssues": 0,
-      "openPRs": 0
+      "totalCommits": 6510,
+      "openIssues": 1,
+      "openPRs": 1
+    },
+    "mostStarred": null,
+    "mostForked": null,
+    "mostActive": {
+      "name": "atreus",
+      "fullName": "leav-dev/atreus",
+      "description": "Atreus: an open-source fork of gentle-shell building an always-on agent that does many things, on your laptop or a VPS, with ODD discipline.",
+      "url": "https://github.com/leav-dev/atreus",
+      "createdAt": "2026-10-30T14:53:41Z",
+      "updatedAt": "2026-10-30T15:13:22Z",
+      "pushedAt": "2026-10-30T16:14:24Z",
+      "isPrivate": false,
+      "isArchived": false,
+      "isFork": true,
+      "isTemplate": false,
+      "forkCount": 0,
+      "stargazerCount": 0,
+      "primaryLanguage": "TypeScript",
+      "languages": [
+        {
+          "name": "Shell",
+          "size": 19516
+        },
+        {
+          "name": "JavaScript",
+          "size": 1646593
+        },
+        {
+          "name": "PowerShell",
+          "size": 72113
+        },
+        {
+          "name": "TypeScript",
+          "size": 12925161
+        },
+        {
+          "name": "CSS",
+          "size": 36203
+        },
+        {
+          "name": "HTML",
+          "size": 7769
+        },
+        {
+          "name": "Batchfile",
+          "size": 26502
+        }
+      ],
+      "totalCommits": 6510,
+      "openIssues": 1,
+      "openPRs": 1
+    },
+    "mostCommitted": {
+      "name": "atreus",
+      "fullName": "leav-dev/atreus",
+      "description": "Atreus: an open-source fork of gentle-shell building an always-on agent that does many things, on your laptop or a VPS, with ODD discipline.",
+      "url": "https://github.com/leav-dev/atreus",
+      "createdAt": "2026-10-30T14:53:41Z",
+      "updatedAt": "2026-10-30T15:13:22Z",
+      "pushedAt": "2026-10-30T16:14:24Z",
+      "isPrivate": false,
+      "isArchived": false,
+      "isFork": true,
+      "isTemplate": false,
+      "forkCount": 0,
+      "stargazerCount": 0,
+      "primaryLanguage": "TypeScript",
+      "languages": [
+        {
+          "name": "Shell",
+          "size": 19516
+        },
+        {
+          "name": "JavaScript",
+          "size": 1646593
+        },
+        {
+          "name": "PowerShell",
+          "size": 72113
+        },
+        {
+          "name": "TypeScript",
+          "size": 12925161
+        },
+        {
+          "name": "CSS",
+          "size": 36203
+        },
+        {
+          "name": "HTML",
+          "size": 7769
+        },
+        {
+          "name": "Batchfile",
+          "size": 26502
+        }
+      ],
+      "totalCommits": 6510,
+      "openIssues": 1,
+      "openPRs": 1
     },
     "repos": [
       {
@@ -233,13 +297,62 @@
         "openPRs": 0
       },
       {
+        "name": "atreus",
+        "fullName": "leav-dev/atreus",
+        "description": "Atreus: an open-source fork of gentle-shell building an always-on agent that does many things, on your laptop or a VPS, with ODD discipline.",
+        "url": "https://github.com/leav-dev/atreus",
+        "createdAt": "2026-10-30T14:53:41Z",
+        "updatedAt": "2026-10-30T15:13:22Z",
+        "pushedAt": "2026-10-30T16:14:24Z",
+        "isPrivate": false,
+        "isArchived": false,
+        "isFork": true,
+        "isTemplate": false,
+        "forkCount": 0,
+        "stargazerCount": 0,
+        "primaryLanguage": "TypeScript",
+        "languages": [
+          {
+            "name": "Shell",
+            "size": 19516
+          },
+          {
+            "name": "JavaScript",
+            "size": 1646593
+          },
+          {
+            "name": "PowerShell",
+            "size": 72113
+          },
+          {
+            "name": "TypeScript",
+            "size": 12925161
+          },
+          {
+            "name": "CSS",
+            "size": 36203
+          },
+          {
+            "name": "HTML",
+            "size": 7769
+          },
+          {
+            "name": "Batchfile",
+            "size": 26502
+          }
+        ],
+        "totalCommits": 6510,
+        "openIssues": 1,
+        "openPRs": 1
+      },
+      {
         "name": "leav-dev",
         "fullName": "leav-dev/leav-dev",
         "description": null,
         "url": "https://github.com/leav-dev/leav-dev",
         "createdAt": "2026-07-03T15:04:03Z",
-        "updatedAt": "2026-10-29T05:21:38Z",
-        "pushedAt": "2026-10-29T05:21:34Z",
+        "updatedAt": "2026-10-30T05:21:18Z",
+        "pushedAt": "2026-10-30T05:21:14Z",
         "isPrivate": false,
         "isArchived": false,
         "isFork": false,
@@ -257,7 +370,7 @@
             "size": 80796
           }
         ],
-        "totalCommits": 141,
+        "totalCommits": 142,
         "openIssues": 0,
         "openPRs": 0
       },
@@ -509,27 +622,27 @@
     "_meta": {}
   },
   "commits": {
-    "total": 419,
+    "total": 422,
     "today": 0,
-    "thisWeek": 2,
-    "thisMonth": 303,
-    "thisYear": 419,
-    "dailyAverage": 1.16,
-    "weeklyAverage": 7.91,
-    "monthlyAverage": 32.23,
+    "thisWeek": 5,
+    "thisMonth": 306,
+    "thisYear": 422,
+    "dailyAverage": 1.17,
+    "weeklyAverage": 7.96,
+    "monthlyAverage": 32.46,
     "busiestDay": {
       "date": "2026-10-03",
       "count": 78
     },
     "busiestHour": 14,
     "distributionByDay": {
-      "THU": 0.3,
-      "FRI": 0.6,
-      "SAT": 1.77,
+      "FRI": 0.66,
+      "SAT": 1.74,
       "SUN": 1.69,
       "MON": 1.37,
       "TUE": 1.13,
-      "WED": 1.31
+      "WED": 1.31,
+      "THU": 0.31
     },
     "distributionByHour": {
       "0": 2,
@@ -558,25 +671,21 @@
       "23": 8
     },
     "firstCommit": "2025-11-10T00:00:00Z",
-    "lastCommit": "2026-10-26T00:00:00Z",
-    "avgTimeBetweenCommits": 20.69,
+    "lastCommit": "2026-10-30T00:00:00Z",
+    "avgTimeBetweenCommits": 20.51,
     "_meta": {}
   },
   "contributions": {
-    "total": 426,
+    "total": 429,
     "today": 0,
-    "last7Days": 8,
-    "last30Days": 303,
-    "last365Days": 426,
-    "currentStreak": 0,
+    "last7Days": 5,
+    "last30Days": 306,
+    "last365Days": 429,
+    "currentStreak": 1,
     "longestStreak": 7,
-    "activeDays": 39,
-    "inactiveDays": 327,
+    "activeDays": 40,
+    "inactiveDays": 326,
     "calendar": [
-      {
-        "date": "2025-10-30",
-        "count": 0
-      },
       {
         "date": "2025-10-31",
         "count": 0
@@ -2035,6 +2144,10 @@
       },
       {
         "date": "2026-10-30",
+        "count": 3
+      },
+      {
+        "date": "2026-10-31",
         "count": 0
       }
     ],
@@ -2043,83 +2156,96 @@
   "languages": {
     "languages": [
       {
+        "name": "TypeScript",
+        "size": 13218198,
+        "percentage": 55.53
+      },
+      {
         "name": "Python",
         "size": 6380818,
-        "percentage": 70.35
+        "percentage": 26.81
+      },
+      {
+        "name": "JavaScript",
+        "size": 1651055,
+        "percentage": 6.94
       },
       {
         "name": "Go",
         "size": 1484047,
-        "percentage": 16.36
+        "percentage": 6.23
       },
       {
         "name": "HTML",
-        "size": 628272,
-        "percentage": 6.93
-      },
-      {
-        "name": "TypeScript",
-        "size": 293037,
-        "percentage": 3.23
+        "size": 636041,
+        "percentage": 2.67
       },
       {
         "name": "Lua",
         "size": 181398,
-        "percentage": 2
+        "percentage": 0.76
       },
       {
-        "name": "Astro",
-        "size": 29231,
-        "percentage": 0.32
-      },
-      {
-        "name": "C#",
-        "size": 23140,
-        "percentage": 0.26
+        "name": "PowerShell",
+        "size": 78935,
+        "percentage": 0.33
       },
       {
         "name": "CSS",
-        "size": 22813,
+        "size": 59016,
         "percentage": 0.25
       },
       {
         "name": "Shell",
-        "size": 11068,
+        "size": 30584,
+        "percentage": 0.13
+      },
+      {
+        "name": "Astro",
+        "size": 29231,
         "percentage": 0.12
       },
       {
-        "name": "PowerShell",
-        "size": 6822,
-        "percentage": 0.08
+        "name": "Batchfile",
+        "size": 26502,
+        "percentage": 0.11
       },
       {
-        "name": "JavaScript",
-        "size": 4462,
-        "percentage": 0.05
+        "name": "C#",
+        "size": 23140,
+        "percentage": 0.1
       },
       {
         "name": "Dockerfile",
         "size": 2347,
-        "percentage": 0.03
+        "percentage": 0.01
       },
       {
         "name": "Standard ML",
         "size": 1576,
-        "percentage": 0.02
+        "percentage": 0.01
       },
       {
         "name": "Ruby",
         "size": 1544,
-        "percentage": 0.02
+        "percentage": 0.01
       }
     ],
-    "primary": "Python",
+    "primary": "TypeScript",
     "ranking": [
       {
         "name": "HTML",
         "repositories": 2
       },
       {
+        "name": "Shell",
+        "repositories": 2
+      },
+      {
+        "name": "PowerShell",
+        "repositories": 2
+      },
+      {
         "name": "Go",
         "repositories": 2
       },
@@ -2144,6 +2270,10 @@
         "repositories": 1
       },
       {
+        "name": "Batchfile",
+        "repositories": 1
+      },
+      {
         "name": "Python",
         "repositories": 1
       },
@@ -2157,14 +2287,6 @@
       },
       {
         "name": "Ruby",
-        "repositories": 1
-      },
-      {
-        "name": "PowerShell",
-        "repositories": 1
-      },
-      {
-        "name": "Shell",
         "repositories": 1
       },
       {
@@ -2178,30 +2300,31 @@
       "CSS": 1,
       "JavaScript": 1,
       "C#": 1,
+      "Shell": 2,
+      "PowerShell": 2,
+      "Batchfile": 1,
       "Python": 1,
       "Lua": 1,
       "Go": 2,
       "Standard ML": 1,
       "Ruby": 1,
-      "PowerShell": 1,
-      "Shell": 1,
       "Dockerfile": 2,
       "Astro": 1
     },
     "_meta": {}
   },
   "pull_requests": {
-    "open": 0,
+    "open": 1,
     "closed": 14,
     "merged": 14,
-    "total": 14,
-    "monthlyAverage": 0.24,
+    "total": 15,
+    "monthlyAverage": 0.26,
     "_meta": {}
   },
   "issues": {
-    "open": 0,
+    "open": 1,
     "closed": 0,
-    "total": 0,
+    "total": 1,
     "resolved": 0,
     "_meta": {}
   },
@@ -2257,12 +2380,12 @@
       },
       {
         "month": "2026-10",
-        "count": 303
+        "count": 306
       }
     ],
     "byWeek": [
       {
-        "week": "2025-10-30",
+        "week": "2025-10-31",
         "count": 0
       },
       {
@@ -2471,7 +2594,7 @@
       },
       {
         "week": "2026-10-25",
-        "count": 2
+        "count": 5
       }
     ],
     "byDay": [
@@ -2497,7 +2620,7 @@
       },
       {
         "day": "Friday",
-        "count": 32
+        "count": 35
       },
       {
         "day": "Saturday",
@@ -2507,7 +2630,7 @@
     "byHour": [],
     "mostProductiveMonth": {
       "month": "2026-10",
-      "count": 303
+      "count": 306
     },
     "mostProductiveWeek": {
       "week": "2026-10-04",
@@ -2523,15 +2646,15 @@
     "productivityScore": 7,
     "consistencyScore": 0,
     "activityScore": 9,
-    "repositoryHealthScore": 45,
+    "repositoryHealthScore": 46,
     "contributionTrend": "GROWING",
-    "trendPercentage": 611.63,
-    "codingVelocity": 10.74,
-    "repositoryGrowth": 83.33,
-    "monthlyGrowth": 15050,
-    "weeklyGrowth": -80,
-    "commitFrequency": 20.69,
-    "activeDaysPercentage": 10.66,
+    "trendPercentage": 618.6,
+    "codingVelocity": 10.55,
+    "repositoryGrowth": 84.62,
+    "monthlyGrowth": 15200,
+    "weeklyGrowth": -50,
+    "commitFrequency": 20.51,
+    "activeDaysPercentage": 10.93,
     "_meta": {
       "activityScore": {
         "source": "DERIVED",
@@ -2595,6 +2718,6 @@
       }
     }
   },
-  "collectedAt": "2026-10-30T05:21:04.746Z",
+  "collectedAt": "2026-10-31T05:04:02.959Z",
   "errors": []
 }
