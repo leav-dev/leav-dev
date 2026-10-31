@@ -24,10 +24,6 @@
 | [homebrew-tcode](https://github.com/leav-dev/homebrew-tcode) | El tap que hace instalable a tcode en macOS. | `Ruby` | Propio | 7 commits |
 | [shaun](https://github.com/leav-dev/shaun) | Gestión de proyectos Kanban con arrastrar y soltar, trazabilidad de cambios y SQLite. | `Astro` `TypeScript` `SQLite` `Docker` | Propio | 26 commits |
 | [utilspress](https://github.com/leav-dev/utilspress) | App de escritorio estilo iLovePDF, pero en tu propia máquina: comprime imágenes y PDF sin subir un solo archivo a un servidor. | `Python` `Flet` `Pillow` `PyMuPDF` | Propio | 44 commits |
-| [graphify-modules](https://github.com/leav-dev/graphify-modules) | Convierte codebase, docs, esquemas SQL, configs y PDFs en un grafo de conocimiento consultable. | `Python` `MCP` `RAG` | Fork | Mantenido |
-| [atreus](https://github.com/leav-dev/atreus) | Agente siempre-on sobre gentle-shell, con disciplina ODD. | `TypeScript` `MCP` | Fork | Mantenido |
-
-Además: [api-clima](https://github.com/leav-dev/api-clima) (FastAPI + OpenWeatherMap, Docker) y [bot-detector](https://github.com/leav-dev/bot-detector) (automatización GUI con Python y OpenCV).
 
 ## Experiencia
 
@@ -57,14 +53,6 @@ El equipo éramos **tres personas, yo incluido**, y entre nosotros cubríamos de
 Trabajo con agentes de IA dentro del loop: diseño, código, tests y review asistidos, con ODD (documento de tarea, specs numeradas, verificación y criterio humano al final). Corro MCP y RAG sobre la documentación y el esquema SQL del repo, y mantengo los agentes que uso.
 
 **La IA acelera, yo decido.**
-
-## Estadísticas
-
-Generadas por el motor de este repo ([`.github/workflows/stats.yml`](.github/workflows/stats.yml)) contra la API de GitHub, sin servicios de terceros.
-
-<img src="stats/github-stats.svg" width="600" alt="Tarjeta de estadísticas: repositorios, estrellas, forks, seguidores, rachas de contribución, commits y mapa de actividad de las últimas 26 semanas." />
-
-<img src="stats/top-langs.svg" width="360" alt="Ranking de lenguajes por porcentaje del código y cantidad de repositorios por lenguaje." />
 
 ## Contacto
 
