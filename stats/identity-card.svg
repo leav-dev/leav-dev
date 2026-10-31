@@ -49,12 +49,12 @@
 
   <!-- Evidence -->
   <text x="512" y="150" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="10.5" letter-spacing="1.6" fill="#7c85b0">EVIDENCIA</text>
-  <text x="512" y="181" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="24" font-weight="700" fill="#9ece6a">432</text>
+  <text x="512" y="181" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="24" font-weight="700" fill="#9ece6a">433</text>
   <text x="512" y="199" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="10.5" fill="#7c85b0">contribuciones · 365 d</text>
   <text x="674" y="181" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="24" font-weight="700" fill="#7dcfff">13</text>
   <text x="674" y="199" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="10.5" fill="#7c85b0">repositorios públicos</text>
   <text x="836" y="181" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="24" font-weight="700" fill="#bb9af7">14</text>
   <text x="836" y="199" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="10.5" fill="#7c85b0">pull requests mergeados</text>
-  <text x="998" y="181" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="24" font-weight="700" fill="#ff9e64">309</text>
+  <text x="998" y="181" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="24" font-weight="700" fill="#ff9e64">310</text>
   <text x="998" y="199" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="10.5" fill="#7c85b0">commits · últimos 30 d</text>
 </svg>
