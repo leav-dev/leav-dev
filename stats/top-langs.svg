@@ -7,19 +7,19 @@
   
   <text x="20" y="56" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">TypeScript</text>
   <rect x="20" y="62" width="200" height="12" rx="4" fill="#3178c6" opacity="0.8"/>
-  <text x="226" y="72" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">55.53% · 1 repo</text>
+  <text x="226" y="72" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">55.42% · 1 repo</text>
   <text x="20" y="88" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">Python</text>
-  <rect x="20" y="94" width="96.5604177921844" height="12" rx="4" fill="#3572a5" opacity="0.8"/>
-  <text x="122.5604177921844" y="104" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">26.81% · 1 repo</text>
+  <rect x="20" y="94" width="96.49945867917718" height="12" rx="4" fill="#3572a5" opacity="0.8"/>
+  <text x="122.49945867917718" y="104" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">26.74% · 1 repo</text>
   <text x="20" y="120" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">JavaScript</text>
-  <rect x="20" y="126" width="24.995497929047364" height="12" rx="4" fill="#f1e05a" opacity="0.8"/>
-  <text x="50.99549792904736" y="136" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">6.94% · 1 repo</text>
+  <rect x="20" y="126" width="24.972933958859617" height="12" rx="4" fill="#f1e05a" opacity="0.8"/>
+  <text x="50.97293395885961" y="136" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">6.92% · 1 repo</text>
   <text x="20" y="152" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">Go</text>
-  <rect x="20" y="158" width="22.438321627948856" height="12" rx="4" fill="#00add8" opacity="0.8"/>
-  <text x="48.43832162794885" y="168" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">6.23% · 2 repos</text>
+  <rect x="20" y="158" width="22.44677011909058" height="12" rx="4" fill="#00add8" opacity="0.8"/>
+  <text x="48.44677011909058" y="168" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">6.22% · 2 repos</text>
   <text x="20" y="184" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">HTML</text>
-  <rect x="20" y="190" width="9.616423554835224" height="12" rx="4" fill="#e34c26" opacity="0.8"/>
-  <text x="35.61642355483522" y="200" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">2.67% · 2 repos</text>
+  <rect x="20" y="190" width="10.393359797906893" height="12" rx="4" fill="#e34c26" opacity="0.8"/>
+  <text x="36.393359797906896" y="200" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">2.88% · 2 repos</text>
   <text x="20" y="216" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">Lua</text>
   <rect x="20" y="222" width="4" height="12" rx="4" fill="#000080" opacity="0.8"/>
   <text x="30" y="232" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#ffffff">0.76% · 1 repo</text>

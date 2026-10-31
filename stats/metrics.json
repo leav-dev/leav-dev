@@ -99,53 +99,37 @@
     "mostStarred": null,
     "mostForked": null,
     "mostActive": {
-      "name": "atreus",
-      "fullName": "leav-dev/atreus",
-      "description": "Atreus: an open-source fork of gentle-shell building an always-on agent that does many things, on your laptop or a VPS, with ODD discipline.",
-      "url": "https://github.com/leav-dev/atreus",
-      "createdAt": "2026-10-30T14:53:41Z",
-      "updatedAt": "2026-10-30T15:13:22Z",
-      "pushedAt": "2026-10-30T16:14:24Z",
+      "name": "leav-dev",
+      "fullName": "leav-dev/leav-dev",
+      "description": null,
+      "url": "https://github.com/leav-dev/leav-dev",
+      "createdAt": "2026-07-03T15:04:03Z",
+      "updatedAt": "2026-10-31T14:23:00Z",
+      "pushedAt": "2026-10-31T14:22:56Z",
       "isPrivate": false,
       "isArchived": false,
-      "isFork": true,
+      "isFork": false,
       "isTemplate": false,
       "forkCount": 0,
       "stargazerCount": 0,
       "primaryLanguage": "TypeScript",
       "languages": [
         {
-          "name": "Shell",
-          "size": 19516
-        },
-        {
           "name": "JavaScript",
-          "size": 1646593
-        },
-        {
-          "name": "PowerShell",
-          "size": 72113
+          "size": 2247
         },
         {
           "name": "TypeScript",
-          "size": 12925161
-        },
-        {
-          "name": "CSS",
-          "size": 36203
+          "size": 85986
         },
         {
           "name": "HTML",
-          "size": 7769
-        },
-        {
-          "name": "Batchfile",
-          "size": 26502
+          "size": 50770
         }
       ],
-      "totalCommits": 6510,
-      "openIssues": 1,
-      "openPRs": 1
+      "totalCommits": 146,
+      "openIssues": 0,
+      "openPRs": 0
     },
     "mostCommitted": {
       "name": "atreus",
@@ -297,6 +281,39 @@
         "openPRs": 0
       },
       {
+        "name": "leav-dev",
+        "fullName": "leav-dev/leav-dev",
+        "description": null,
+        "url": "https://github.com/leav-dev/leav-dev",
+        "createdAt": "2026-07-03T15:04:03Z",
+        "updatedAt": "2026-10-31T14:23:00Z",
+        "pushedAt": "2026-10-31T14:22:56Z",
+        "isPrivate": false,
+        "isArchived": false,
+        "isFork": false,
+        "isTemplate": false,
+        "forkCount": 0,
+        "stargazerCount": 0,
+        "primaryLanguage": "TypeScript",
+        "languages": [
+          {
+            "name": "JavaScript",
+            "size": 2247
+          },
+          {
+            "name": "TypeScript",
+            "size": 85986
+          },
+          {
+            "name": "HTML",
+            "size": 50770
+          }
+        ],
+        "totalCommits": 146,
+        "openIssues": 0,
+        "openPRs": 0
+      },
+      {
         "name": "atreus",
         "fullName": "leav-dev/atreus",
         "description": "Atreus: an open-source fork of gentle-shell building an always-on agent that does many things, on your laptop or a VPS, with ODD discipline.",
@@ -344,35 +361,6 @@
         "totalCommits": 6510,
         "openIssues": 1,
         "openPRs": 1
-      },
-      {
-        "name": "leav-dev",
-        "fullName": "leav-dev/leav-dev",
-        "description": null,
-        "url": "https://github.com/leav-dev/leav-dev",
-        "createdAt": "2026-07-03T15:04:03Z",
-        "updatedAt": "2026-10-30T05:21:18Z",
-        "pushedAt": "2026-10-30T05:21:14Z",
-        "isPrivate": false,
-        "isArchived": false,
-        "isFork": false,
-        "isTemplate": false,
-        "forkCount": 0,
-        "stargazerCount": 0,
-        "primaryLanguage": "TypeScript",
-        "languages": [
-          {
-            "name": "JavaScript",
-            "size": 2047
-          },
-          {
-            "name": "TypeScript",
-            "size": 80796
-          }
-        ],
-        "totalCommits": 142,
-        "openIssues": 0,
-        "openPRs": 0
       },
       {
         "name": "utilspress",
@@ -622,22 +610,22 @@
     "_meta": {}
   },
   "commits": {
-    "total": 422,
-    "today": 0,
-    "thisWeek": 5,
-    "thisMonth": 306,
-    "thisYear": 422,
-    "dailyAverage": 1.17,
-    "weeklyAverage": 7.96,
-    "monthlyAverage": 32.46,
+    "total": 425,
+    "today": 3,
+    "thisWeek": 8,
+    "thisMonth": 309,
+    "thisYear": 425,
+    "dailyAverage": 1.18,
+    "weeklyAverage": 8.02,
+    "monthlyAverage": 32.69,
     "busiestDay": {
       "date": "2026-10-03",
       "count": 78
     },
-    "busiestHour": 14,
+    "busiestHour": 4,
     "distributionByDay": {
       "FRI": 0.66,
-      "SAT": 1.74,
+      "SAT": 1.79,
       "SUN": 1.69,
       "MON": 1.37,
       "TUE": 1.13,
@@ -645,46 +633,46 @@
       "THU": 0.31
     },
     "distributionByHour": {
-      "0": 2,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 1,
+      "0": 1,
+      "1": 12,
+      "2": 10,
+      "3": 30,
+      "4": 46,
+      "5": 18,
+      "6": 3,
       "7": 2,
-      "8": 6,
-      "9": 28,
-      "10": 25,
-      "11": 17,
+      "8": 7,
+      "9": 33,
+      "10": 31,
+      "11": 22,
       "12": 4,
-      "13": 20,
+      "13": 21,
       "14": 38,
-      "15": 16,
-      "16": 36,
-      "17": 24,
+      "15": 17,
+      "16": 39,
+      "17": 23,
       "18": 14,
       "19": 7,
       "20": 32,
-      "21": 19,
-      "22": 35,
+      "21": 16,
+      "22": 29,
       "23": 8
     },
     "firstCommit": "2025-11-10T00:00:00Z",
-    "lastCommit": "2026-10-30T00:00:00Z",
-    "avgTimeBetweenCommits": 20.51,
+    "lastCommit": "2026-10-31T00:00:00Z",
+    "avgTimeBetweenCommits": 20.34,
     "_meta": {}
   },
   "contributions": {
-    "total": 429,
-    "today": 0,
-    "last7Days": 5,
-    "last30Days": 306,
-    "last365Days": 429,
-    "currentStreak": 1,
+    "total": 432,
+    "today": 3,
+    "last7Days": 8,
+    "last30Days": 309,
+    "last365Days": 432,
+    "currentStreak": 2,
     "longestStreak": 7,
-    "activeDays": 40,
-    "inactiveDays": 326,
+    "activeDays": 41,
+    "inactiveDays": 325,
     "calendar": [
       {
         "date": "2025-10-31",
@@ -2148,7 +2136,7 @@
       },
       {
         "date": "2026-10-31",
-        "count": 0
+        "count": 3
       }
     ],
     "_meta": {}
@@ -2157,28 +2145,28 @@
     "languages": [
       {
         "name": "TypeScript",
-        "size": 13218198,
-        "percentage": 55.53
+        "size": 13223388,
+        "percentage": 55.42
       },
       {
         "name": "Python",
         "size": 6380818,
-        "percentage": 26.81
+        "percentage": 26.74
       },
       {
         "name": "JavaScript",
-        "size": 1651055,
-        "percentage": 6.94
+        "size": 1651255,
+        "percentage": 6.92
       },
       {
         "name": "Go",
         "size": 1484047,
-        "percentage": 6.23
+        "percentage": 6.22
       },
       {
         "name": "HTML",
-        "size": 636041,
-        "percentage": 2.67
+        "size": 686811,
+        "percentage": 2.88
       },
       {
         "name": "Lua",
@@ -2380,7 +2368,7 @@
       },
       {
         "month": "2026-10",
-        "count": 306
+        "count": 309
       }
     ],
     "byWeek": [
@@ -2594,7 +2582,7 @@
       },
       {
         "week": "2026-10-25",
-        "count": 5
+        "count": 8
       }
     ],
     "byDay": [
@@ -2624,13 +2612,13 @@
       },
       {
         "day": "Saturday",
-        "count": 92
+        "count": 95
       }
     ],
     "byHour": [],
     "mostProductiveMonth": {
       "month": "2026-10",
-      "count": 306
+      "count": 309
     },
     "mostProductiveWeek": {
       "week": "2026-10-04",
@@ -2638,7 +2626,7 @@
     },
     "mostProductiveDay": {
       "day": "Saturday",
-      "count": 92
+      "count": 95
     },
     "_meta": {}
   },
@@ -2648,13 +2636,13 @@
     "activityScore": 9,
     "repositoryHealthScore": 46,
     "contributionTrend": "GROWING",
-    "trendPercentage": 618.6,
-    "codingVelocity": 10.55,
+    "trendPercentage": 625.58,
+    "codingVelocity": 10.37,
     "repositoryGrowth": 84.62,
-    "monthlyGrowth": 15200,
-    "weeklyGrowth": -50,
-    "commitFrequency": 20.51,
-    "activeDaysPercentage": 10.93,
+    "monthlyGrowth": 15350,
+    "weeklyGrowth": -20,
+    "commitFrequency": 20.34,
+    "activeDaysPercentage": 11.2,
     "_meta": {
       "activityScore": {
         "source": "DERIVED",
@@ -2718,6 +2706,6 @@
       }
     }
   },
-  "collectedAt": "2026-10-31T05:04:02.959Z",
+  "collectedAt": "2026-10-31T14:23:09.202Z",
   "errors": []
 }
