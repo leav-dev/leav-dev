@@ -1,213 +1,72 @@
-<div align="center">
-  <img src="assets/header.svg" width="100%" alt="LEAV terminal header" />
-</div>
+# Luis Eduardo Albor Vega
 
+**Full-Stack Developer** · Colombia (UTC−5) · backend, frontend y datos en el mismo equipo
 
-```yaml
----
+<img src="stats/identity-card.svg" width="100%" alt="Tarjeta de identidad de Luis Eduardo Albor Vega: Full-Stack Developer en Colombia, disponible para trabajo remoto; a la derecha, la distribución de lenguajes que escribe hoy y contadores de contribuciones, repositorios públicos, pull requests mergeados y commits de los últimos 30 días." />
 
-name: Luis Eduardo Albor Vega
-alias: LEAV
-location: Colombia
-role: Full-Stack Developer
+## Perfil
 
-stack:
-  frontend: [React, Angular, TypeScript, JavaScript, TailwindCSS]
-  backend:  [Python, Go, Lua, Ruby, Django, FastAPI, Java, C#]
-  cloud:    [AWS (S3, Lambda, ECS, EC2, ECR, RDS, CloudFront, Route53, WAF), Docker, K8s]
-  database: [PostgreSQL, SQLite]
-  ides:     [DBeaver, VSCode, VSCodium, Visual Studio Community, PyCharm]
-  tools:    [GitHub Actions, CI/CD, Web Scraping, OpenCV]
-  ai:       [opencode, Cursor, gentle-pi, Kiro, MCP, RAG, Prompt Engineering]
+> Tomo un producto de la idea a producción: backend, frontend, datos y despliegue. Casi cinco años trabajando sobre plataformas reales en Colombia, cubriendo **Django REST Framework + PostgreSQL, SPA en Angular, infraestructura en AWS y la calidad del resultado**. Además mantengo herramientas propias que se instalan con Homebrew: si algo se usa, lo sostengo.
 
-experience: 58+ months (desde dic 2021)
-focus: Clean Architecture, Scalable Systems, Team Leadership, AI-Augmented Delivery
+## Dónde encajo
 
----
-```
+| Equipos chicos de producto | Sistemas que escalan | Entrega con criterio |
+| --- | --- | --- |
+| Gente que necesita a alguien que mueva backend y frontend sin esperar a tres personas. | Clean Architecture, migraciones y consultas medidas, no adivinadas. | Agentes de IA en el loop de código, tests y review: la IA acelera, la decisión es mía. |
+| **5 roles** cubiertos a la vez: dev, QA, tester, DBA y coordinación | **AWS** — Lambda · S3 · EC2 · ECS · RDS · CloudFront · Route 53 · WAF | **CI/CD** con pipelines que compilan y despliegan solos |
 
-<div align="center">
-  <h2>Proyectos Destacados</h2>
-</div>
+## Trabajo seleccionado
 
-<table align="center">
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://github.com/leav-dev/tcode">
-        <h3>tcode</h3>
-      </a>
-      <sub>CLI en Go — repo propio más activo (221 commits)</sub>
-      <br /><br />
-      <img src="https://skillicons.dev/icons?i=go" height="40" alt="" />
-    </td>
-    <td align="center" width="50%">
-      <a href="https://github.com/leav-dev/tcode-extention">
-        <h3>tcode-extention</h3>
-      </a>
-      <sub>Companion de tcode en Lua/Go/HTML (57 commits)</sub>
-      <br /><br />
-      <img src="https://skillicons.dev/icons?i=lua,go,html" height="40" alt="" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://github.com/leav-dev/homebrew-tcode">
-        <h3>homebrew-tcode</h3>
-      </a>
-      <sub>Homebrew tap for tcode</sub>
-      <br /><br />
-      <img src="https://skillicons.dev/icons?i=ruby" height="40" alt="" />
-    </td>
-    <td align="center" width="50%">
-      <a href="https://github.com/leav-dev/shaun">
-        <h3>shaun</h3>
-      </a>
-      <sub>Plataforma de gestión de proyectos basado en Kanban, con arrastrar y soltar, trazabilidad de cambios y SQLite</sub>
-      <br /><br />
-      <img src="https://skillicons.dev/icons?i=astro,sqlite,docker" height="40" alt="" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://github.com/leav-dev/utilspress">
-        <h3>utilspress</h3>
-      </a>
-      <sub>Procesamiento de imágenes y PDF</sub>
-      <br /><br />
-      <img src="https://skillicons.dev/icons?i=flutter,python" height="40" alt="" />
-    </td>
-    <td align="center" width="50%">
-      <a href="https://github.com/leav-dev/api-clima">
-        <h3>api-clima</h3>
-      </a>
-      <sub>API meteorológica con FastAPI + OpenWeatherMap. Consulta el clima actual de cualquier ciudad via geocoding. Docker ready.</sub>
-      <br /><br />
-      <img src="https://skillicons.dev/icons?i=fastapi,docker" height="40" alt="" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%" colspan="2">
-      <a href="https://github.com/leav-dev/bot-detector">
-        <h3>bot-detector</h3>
-      </a>
-      <sub>Bot de automatización GUI basado en detección de imágenes con Python y OpenCV</sub>
-      <br /><br />
-      <img src="https://skillicons.dev/icons?i=opencv,python" height="40" alt="" />
-    </td>
-  </tr>
-</table>
+| Proyecto | Qué es | Stack | Tipo | Actividad |
+| --- | --- | --- | --- | --- |
+| [tcode](https://github.com/leav-dev/tcode) | CLI para el flujo de código diario: un binario, sin runtime, `brew install leav-dev/tcode/tcode`. | `Go` `Homebrew` `CI/CD` | Propio | 221 commits |
+| [tcode-extention](https://github.com/leav-dev/tcode-extention) | Companion de tcode: capa de extensión con UI, publicada junto al CLI. | `Lua` `Go` `HTML` | Propio | 57 commits |
+| [homebrew-tcode](https://github.com/leav-dev/homebrew-tcode) | El tap que hace instalable a tcode en macOS. | `Ruby` | Propio | 7 commits |
+| [shaun](https://github.com/leav-dev/shaun) | Gestión de proyectos Kanban con arrastrar y soltar, trazabilidad de cambios y SQLite. | `Astro` `TypeScript` `SQLite` `Docker` | Propio | 26 commits |
+| [utilspress](https://github.com/leav-dev/utilspress) | App de escritorio estilo iLovePDF, pero en tu propia máquina: comprime imágenes y PDF sin subir un solo archivo a un servidor. | `Python` `Flet` `Pillow` `PyMuPDF` | Propio | 44 commits |
+| [graphify-modules](https://github.com/leav-dev/graphify-modules) | Convierte codebase, docs, esquemas SQL, configs y PDFs en un grafo de conocimiento consultable. | `Python` `MCP` `RAG` | Fork | Mantenido |
+| [atreus](https://github.com/leav-dev/atreus) | Agente siempre-on sobre gentle-shell, con disciplina ODD. | `TypeScript` `MCP` | Fork | Mantenido |
 
-<div align="center">
-  <h2>Experiencia Profesional</h2>
-  <h3>Grupo Educate Colombia</h3>
-  <sub>Desarrollador Full-Stack · QA · Project Manager · Tester · DBA</sub>
-  <br />
-  <sub>📅 19 feb 2024 — actualidad · 📍 Colombia</sub>
-</div>
+Además: [api-clima](https://github.com/leav-dev/api-clima) (FastAPI + OpenWeatherMap, Docker) y [bot-detector](https://github.com/leav-dev/bot-detector) (automatización GUI con Python y OpenCV).
 
-<table align="center">
-  <tr>
-    <td width="50%">
-      <h4>🔧 Backend — Plataforma empresarial</h4>
-      <sub>🔒 Repositorio privado — sin acceso público</sub>
-      <br /><br />
-      <ul>
-        <li>API en <b>Python + Django</b> con <b>PostgreSQL</b>: [N endpoints / módulos principales]</li>
-        <li>Microservicios en <b>AWS Lambda</b>: [funciones / eventos que orquestan]</li>
-        <li>Rol <b>DBA</b>: modelado de datos, migraciones, optimización de consultas y respaldos</li>
-        <li><b>QA / Tester</b>: estrategia de pruebas, ambientes y criterios de aceptación</li>
-      </ul>
-    </td>
-    <td width="50%">
-      <h4>🎨 Frontend — Plataforma empresarial</h4>
-      <sub>🔒 Repositorio privado — sin acceso público</sub>
-      <br /><br />
-      <ul>
-        <li>SPA en <b>Angular</b> consumiendo la API: [módulos / pantallas principales]</li>
-        <li>Rol <b>Project Manager</b>: planificación, sprints y coordinación del equipo de [N personas]</li>
-        <li>Impacto: [N usuarios / sedes / procesos digitalizados]</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+## Experiencia
 
-<div align="center">
-  <h2>Stack Tecnológico</h2>
-</div>
+**Grupo Educate Colombia** — Desarrollador Full-Stack · 19 feb 2024 — actualidad · Colombia · 🔒 repositorio privado
 
-<div align="center">
-  <h3>Frontend</h3>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  <img src="https://img.shields.io/badge/Astro-FF5D01?style=for-the-badge&logo=astro&logoColor=white" />
+Roles: `Full-Stack` `QA` `Tester` `DBA` `Project Manager`
 
-  <h3>Backend</h3>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-  <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" />
-  <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" />
+- **Backend:** API construida con **Django REST Framework** sobre PostgreSQL, y microservicios serverless en AWS Lambda moviendo la lógica que no necesita estar despierta todo el día.
+- **Frontend:** SPA en **Angular** consumiendo esa API para las áreas operativas — pantalla y contrato hablando el mismo idioma.
+- **Datos:** como DBA, modelado, migraciones y consultas optimizadas, con respaldos que dejaban dormir tranquilo.
+- **CI/CD:** armé las pipelines que automatizan builds y despliegues. Un release dejó de depender de la memoria de alguien y de un viernes a la tarde.
+- **Calidad:** proyecto con **Sonar** que puso un ojo automático sobre posibles errores y código duplicado, antes de que el problema llegara a producción.
+- **Coordinación:** planificación por sprints, criterios de aceptación y estrategia de pruebas para que el equipo no rehiciera lo que ya estaba bien.
 
-  <h3>Cloud & DevOps</h3>
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />
+El equipo éramos **tres personas, yo incluido**, y entre nosotros cubríamos desarrollo, calidad, datos y planificación. Eso obliga a que cada tarea que se automatiza devuelva tiempo libre: de ahí las pipelines, los chequeos con Sonar y los criterios de aceptación escritos antes del código.
 
-  <h3>Base de Datos</h3>
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" />
+## Stack por nivel
 
-  <h3>IDEs & Data Tools</h3>
-  <img src="https://img.shields.io/badge/DBeaver-382A24?style=for-the-badge&logo=dbeaver&logoColor=white" />
-  <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-  <img src="https://img.shields.io/badge/VSCodium-2F80ED?style=for-the-badge&logo=vscodium&logoColor=white" />
-  <img src="https://img.shields.io/badge/Visual_Studio_Community-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white" />
-  <img src="https://img.shields.io/badge/PyCharm-21D789?style=for-the-badge&logo=pycharm&logoColor=white" />
-</div>
+| Nivel | Tecnologías |
+| --- | --- |
+| **Núcleo** | `TypeScript` `Python` `Go` `Django REST Framework` `FastAPI` `React` `Angular` `PostgreSQL` `AWS` `Docker` `Kubernetes` `GitHub Actions` |
+| **Sólido** | `Lua` `Ruby` `C#` `Java` `Astro` `TailwindCSS` `SQLite` `OpenCV` `Web Scraping` |
+| **Con IA** | `opencode` `Cursor` `gentle-pi` `Kiro` `MCP` `RAG` |
 
-<div align="center">
-  <h2>Desarrollo Aumentado con IA</h2>
-  <p>Trabajo con agentes de IA en el loop: diseño, código, tests y review asistidos. La IA acelera, yo decido.</p>
-  <img src="https://img.shields.io/badge/opencode-1A1B27?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cursor-2D3355?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/gentle--pi-667EEA?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kiro-BB9AF7?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/MCP-9ECE6A?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/RAG-FF9E64?style=for-the-badge&logoColor=white" />
-  <br />
-  <sub>Mi stack de agentes: opencode · Cursor · gentle-pi (Pi) · Kiro — automatización con MCP · RAG sobre docs del repo · reviews asistidas con criterio humano</sub>
-</div>
+## Desarrollo aumentado con IA
 
-<div align="center">
-  <h2>Estadísticas</h2>
-</div>
+Trabajo con agentes de IA dentro del loop: diseño, código, tests y review asistidos, con ODD (documento de tarea, specs numeradas, verificación y criterio humano al final). Corro MCP y RAG sobre la documentación y el esquema SQL del repo, y mantengo los agentes que uso.
 
-<div align="center">
-  <img src="stats/github-stats.svg" />
-  <br />
-  <img height="500px" src="stats/top-langs.svg" />
-</div>
+**La IA acelera, yo decido.**
 
-<div align="center">
-  <h2>Conecta conmigo</h2>
-  <a href="mailto:luise.albor@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/luis-albor/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://github.com/leav-dev">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</div>
+## Estadísticas
 
-<div align="center">
-  <img src="assets/footer.svg" width="100%" alt="Gracias por visitar" />
-</div>
+Generadas por el motor de este repo ([`.github/workflows/stats.yml`](.github/workflows/stats.yml)) contra la API de GitHub, sin servicios de terceros.
+
+<img src="stats/github-stats.svg" width="600" alt="Tarjeta de estadísticas: repositorios, estrellas, forks, seguidores, rachas de contribución, commits y mapa de actividad de las últimas 26 semanas." />
+
+<img src="stats/top-langs.svg" width="360" alt="Ranking de lenguajes por porcentaje del código y cantidad de repositorios por lenguaje." />
+
+## Contacto
+
+- 💼 [LinkedIn — Luis Albor](https://www.linkedin.com/in/luis-albor/)
+- 🐙 [GitHub](https://github.com/leav-dev)
