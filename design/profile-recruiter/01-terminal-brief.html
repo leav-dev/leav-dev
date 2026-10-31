@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01 — Terminal briefing (leav-dev profile)</title>
+<style>
+  :root{
+    --bg:#1a1b27; --surface:#24273d; --border:#2d3355;
+    --text:#ffffff; --body:#a9b1d6; --muted:#7c85b0;
+    --blue:#7aa2f7; --cyan:#7dcfff; --green:#9ece6a; --amber:#e0af68;
+    --red:#f7768e; --purple:#bb9af7; --orange:#ff9e64; --grid:#667eea;
+    --mono:'JetBrains Mono','Fira Code',SFMono-Regular,Consolas,'Courier New',monospace;
+    --sans:'Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:#0f1017; color:var(--body);
+    font-family:var(--sans); line-height:1.5;
+  }
+  a{color:var(--cyan)}
+  a:focus-visible,button:focus-visible{
+    outline:2px solid var(--amber); outline-offset:3px; border-radius:4px;
+  }
+  .chrome{
+    display:flex; align-items:center; gap:12px;
+    padding:10px 24px; background:#15161f; border-bottom:1px solid #22232e;
+    font-family:var(--mono); font-size:13px; color:var(--muted);
+  }
+  .chrome b{color:var(--body); font-weight:600}
+  .chrome .tabs{margin-left:auto; display:flex; gap:18px}
+  .chrome .on{color:var(--text); border-bottom:2px solid var(--amber); padding-bottom:2px}
+  .page{max-width:1060px; margin:0 auto; padding:24px 24px 48px}
+  main{display:flex; flex-direction:column; gap:28px}
+
+  /* ── identity strip ─────────────────────────────── */
+  .term{
+    position:relative; overflow:hidden;
+    background:linear-gradient(135deg,var(--bg) 0%,var(--surface) 100%);
+    border:1px solid var(--border); border-radius:12px;
+    padding:14px 22px 20px;
+  }
+  .term::before{
+    content:''; position:absolute; inset:0;
+    background-image:linear-gradient(var(--border) 1px,transparent 1px),
+                     linear-gradient(90deg,var(--border) 1px,transparent 1px);
+    background-size:44px 44px; opacity:.18; pointer-events:none;
+  }
+  .dots{display:flex; gap:7px; align-items:center}
+  .dots i{width:10px; height:10px; border-radius:50%; display:block}
+  .dots .r{background:var(--red)} .dots .y{background:var(--amber)} .dots .g{background:var(--green)}
+  .dots span{margin-left:10px; font-family:var(--mono); font-size:12px; color:var(--blue)}
+  .dots em{margin-left:auto; font-style:normal; font-family:var(--mono); font-size:12px; color:var(--green)}
+  .rule{height:2px; margin:12px -22px 16px; background:linear-gradient(90deg,var(--grid),var(--cyan))}
+  .l1{font-family:var(--mono); font-size:14px; color:var(--text); margin:0}
+  .l1 .p{color:var(--green)}
+  h1{
+    font-family:var(--mono); font-size:31px; line-height:1.22; letter-spacing:-.4px;
+    color:var(--text); margin:8px 0 6px; font-weight:700;
+  }
+  h1 .k{color:var(--blue)}
+  .l2{font-family:var(--mono); font-size:15px; color:var(--body); margin:0; max-width:64ch}
+  .l2 .c{color:var(--muted)}
+  .loc{
+    display:flex; flex-wrap:wrap; gap:8px 10px; margin-top:16px;
+    font-family:var(--mono); font-size:12.5px;
+  }
+  .loc b{
+    font-weight:500; color:var(--body);
+    background:rgba(122,162,247,.12); border:1px solid var(--border);
+    border-radius:999px; padding:3px 11px;
+  }
+  .loc b.ok{color:var(--green); border-color:#3b5b3a; background:rgba(158,206,106,.1)}
+
+  /* ── section heads ──────────────────────────────── */
+  h2{
+    font-family:var(--mono); font-size:13px; font-weight:600; letter-spacing:1.6px;
+    text-transform:uppercase; color:var(--muted); margin:0 0 12px;
+    display:flex; align-items:center; gap:10px;
+  }
+  h2::before{content:'$'; color:var(--green); font-size:14px}
+  h2::after{content:''; flex:1; height:1px; background:var(--border)}
+
+  /* ── proof strip ────────────────────────────────── */
+  .proof{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
+  .fig{
+    background:var(--bg); border:1px solid var(--border); border-radius:10px;
+    padding:14px 16px;
+  }
+  .fig strong{
+    display:block; font-family:var(--mono); font-size:26px; color:var(--cyan);
+    letter-spacing:-.5px; line-height:1;
+  }
+  .fig span{display:block; margin-top:8px; font-size:12.5px; color:var(--body); line-height:1.4}
+  .fig small{display:block; margin-top:6px; font-family:var(--mono); font-size:11px; color:var(--muted)}
+
+  /* ── work cards ─────────────────────────────────── */
+  .work{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+  .card{
+    display:flex; flex-direction:column; gap:10px;
+    background:linear-gradient(180deg,var(--bg),#1d1f2e);
+    border:1px solid var(--border); border-radius:12px; padding:18px;
+    transition:transform .18s ease, border-color .18s ease;
+  }
+  .card:hover{transform:translateY(-3px); border-color:var(--blue)}
+  .card h3{margin:0; font-family:var(--mono); font-size:19px; color:var(--text)}
+  .card h3 a{color:var(--text); text-decoration:none; border-bottom:1px dashed var(--blue)}
+  .card h3 a:hover{color:var(--cyan)}
+  .card .kind{
+    align-self:flex-start; font-family:var(--mono); font-size:10.5px; letter-spacing:1px;
+    text-transform:uppercase; color:var(--purple);
+    background:rgba(187,154,247,.1); border:1px solid #3d3a63; border-radius:5px; padding:2px 8px;
+  }
+  .card p{margin:0; font-size:13.5px; color:var(--body)}
+  .card .impact{
+    margin:0; padding:9px 11px; border-left:2px solid var(--green);
+    background:rgba(158,206,106,.07); font-size:12.5px; color:var(--body);
+  }
+  .card .impact b{color:var(--green); font-family:var(--mono); font-weight:600}
+  .chips{display:flex; flex-wrap:wrap; gap:6px; margin-top:auto}
+  .chips i{
+    font-style:normal; font-family:var(--mono); font-size:11px; color:var(--muted);
+    border:1px solid var(--border); border-radius:4px; padding:2px 7px;
+  }
+  .meta{font-family:var(--mono); font-size:11.5px; color:var(--muted)}
+
+  /* ── role band ──────────────────────────────────── */
+  .role{
+    display:grid; grid-template-columns:250px 1fr; gap:24px;
+    background:var(--bg); border:1px solid var(--border); border-radius:12px; padding:20px 22px;
+  }
+  .role .who h3{margin:0; font-size:18px; color:var(--text); font-family:var(--mono)}
+  .role .who p{margin:8px 0 0; font-size:12.5px; color:var(--muted); font-family:var(--mono)}
+  .role .who .tags{display:flex; flex-direction:column; gap:6px; margin-top:14px}
+  .role .who .tags b{
+    font-family:var(--mono); font-size:11.5px; font-weight:500; color:var(--amber);
+    border:1px solid #4a3d24; border-radius:5px; padding:3px 9px; align-self:flex-start;
+  }
+  .duties{margin:0; padding:0; list-style:none; display:grid; gap:10px}
+  .duties li{display:grid; grid-template-columns:15px 1fr; gap:10px; font-size:13.5px}
+  .duties li::before{content:'▸'; color:var(--blue); font-family:var(--mono)}
+  .duties b{color:var(--text); font-weight:600}
+  .gap{
+    display:inline-block; margin-left:6px; font-family:var(--mono); font-size:11px;
+    color:var(--orange); border:1px dashed #5b3f2b; border-radius:4px; padding:1px 7px;
+  }
+
+  /* ── stack tiers ────────────────────────────────── */
+  .tiers{display:grid; gap:10px}
+  .tier{
+    display:grid; grid-template-columns:118px 1fr; gap:16px; align-items:baseline;
+    padding:12px 16px; background:var(--bg); border:1px solid var(--border); border-radius:10px;
+  }
+  .tier dt{font-family:var(--mono); font-size:12px; letter-spacing:.6px; text-transform:uppercase; margin:0}
+  .tier.t1 dt{color:var(--green)} .tier.t2 dt{color:var(--blue)} .tier.t3 dt{color:var(--purple)}
+  .tier dd{margin:0; font-family:var(--mono); font-size:13px; color:var(--body)}
+  .tier dd em{font-style:normal; color:var(--muted)}
+
+  /* ── contact ────────────────────────────────────── */
+  .contact{
+    background:linear-gradient(120deg,#1d2136,var(--bg));
+    border:1px solid var(--border); border-radius:12px; padding:20px 22px;
+    display:flex; align-items:center; gap:20px; flex-wrap:wrap;
+  }
+  .contact .cmd{font-family:var(--mono); font-size:16px; color:var(--text); margin:0}
+  .contact .cmd .p{color:var(--green)}
+  .contact .cmd .cur{display:inline-block; width:9px; height:17px; background:var(--green);
+    vertical-align:-3px; margin-left:4px; animation:blink 1.1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .btns{display:flex; gap:10px; margin-left:auto; flex-wrap:wrap}
+  .btn{
+    font-family:var(--mono); font-size:13px; text-decoration:none;
+    border:1px solid var(--blue); border-radius:8px; padding:9px 16px; color:var(--cyan);
+    background:rgba(122,162,247,.1);
+  }
+  .btn.primary{background:var(--blue); color:#11131c; font-weight:700; border-color:var(--blue)}
+  .btn:hover{filter:brightness(1.15)}
+
+  .foot{
+    font-family:var(--mono); font-size:11.5px; color:var(--muted);
+    border-top:1px solid var(--border); padding-top:12px;
+  }
+  .foot b{color:var(--amber); font-weight:500}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important; transition:none!important}
+  }
+</style>
+</head>
+<body>
+<div class="chrome">
+  <span>github.com /</span><b>leav-dev</b><span>/</span><b>leav-dev</b>
+  <div class="tabs"><span>Repositorios</span><span class="on">README</span><span>Paquetes</span></div>
+</div>
+
+<div class="page">
+<main>
+
+  <header class="term">
+    <div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i>
+      <span>leav-dev@github — zsh</span><em>● disponible</em>
+    </div>
+    <div class="rule"></div>
+    <p class="l1"><span class="p">$</span> whoami</p>
+    <h1>Full-stack developer: <span class="k">sistemas que se instalan, se despliegan y se prueban</span></h1>
+    <p class="l2">Luis Eduardo Albor Vega <span class="c">//</span> Django&nbsp;+&nbsp;TypeScript&nbsp;+&nbsp;Go en AWS <span class="c">//</span> casi cinco años en producto, 5 roles cubiertos en el mismo equipo</p>
+    <div class="loc">
+      <b>Colombia · UTC−5</b>
+      <b>desde dic 2021</b>
+      <b>Clean Architecture</b>
+      <b>Scalable Systems</b>
+      <b>Team Leadership</b>
+      <b class="ok">AI-Augmented Delivery</b>
+    </div>
+  </header>
+
+  <section aria-labelledby="s-proof">
+    <h2 id="s-proof">En números, verificables</h2>
+    <div class="proof">
+      <div class="fig">
+        <strong>58</strong>
+        <span>meses escribiendo software en producción</span>
+        <small>dic 2021 → hoy</small>
+      </div>
+      <div class="fig">
+        <strong>422</strong>
+        <span>commits públicos en los últimos 365 días</span>
+        <small>github.com/leav-dev</small>
+      </div>
+      <div class="fig">
+        <strong>3</strong>
+        <span>herramientas propias con distribución real</span>
+        <small>tcode · brew tap · extensión</small>
+      </div>
+      <div class="fig">
+        <strong>14</strong>
+        <span>pull requests mergeados en upstream</span>
+        <small>15 abiertos+cerrados</small>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="s-work">
+    <h2 id="s-work">Lo que construí</h2>
+    <div class="work">
+      <article class="card">
+        <span class="kind">Producto propio</span>
+        <h3><a href="https://github.com/leav-dev/tcode">tcode</a></h3>
+        <p>CLI en Go para trabajar con código: un solo binario, sin runtime, instalable con Homebrew.</p>
+        <p class="impact"><b>221</b> commits · <b>brew install leav-dev/tcode/tcode</b></p>
+        <div class="chips"><i>Go</i><i>Homebrew</i><i>CI/CD</i><i>Lua</i></div>
+      </article>
+      <article class="card">
+        <span class="kind">Línea de producto</span>
+        <h3><a href="https://github.com/leav-dev/tcode-extention">tcode-extention</a></h3>
+        <p>Companion de tcode: capa de extensión en Lua con UI HTML, empaquetada y versionada junto al CLI.</p>
+        <p class="impact"><b>57</b> commits · tres lenguajes, un pipeline de release</p>
+        <div class="chips"><i>Lua</i><i>Go</i><i>HTML</i></div>
+      </article>
+      <article class="card">
+        <span class="kind">Interno · producción</span>
+        <h3><a href="https://github.com/leav-dev/shaun">shaun</a></h3>
+        <p>Plataforma Kanban con arrastrar y soltar y trazabilidad de cambios sobre SQLite.</p>
+        <p class="impact">Usada para <b>gestionar proyectos reales</b> del equipo</p>
+        <div class="chips"><i>Astro</i><i>TypeScript</i><i>SQLite</i><i>Docker</i></div>
+      </article>
+    </div>
+    <p class="meta" style="margin:12px 0 0">Además: <a href="https://github.com/leav-dev/graphify-modules">graphify-modules</a> (Python · grafo de conocimiento desde codebase, docs, SQL y PDFs), <a href="https://github.com/leav-dev/atreus">atreus</a> (agente siempre-on con ODD), <a href="https://github.com/leav-dev/api-clima">api-clima</a>, <a href="https://github.com/leav-dev/utilspress">utilspress</a>, <a href="https://github.com/leav-dev/bot-detector">bot-detector</a>.</p>
+  </section>
+
+  <section aria-labelledby="s-role">
+    <h2 id="s-role">Dónde trabajé con eso</h2>
+    <div class="role">
+      <div class="who">
+        <h3>Grupo Educate Colombia</h3>
+        <p>19 feb 2024 — actualidad</p>
+        <p>Plataforma empresarial<br>repo privado</p>
+        <div class="tags">
+          <b>Full-Stack</b><b>QA</b><b>Project Manager</b><b>Tester</b><b>DBA</b>
+        </div>
+      </div>
+      <ul class="duties">
+        <li><span><b>Backend:</b> API en Python + Django sobre PostgreSQL y microservicios en AWS Lambda; modelado de datos, migraciones y optimización de consultas como DBA.</span></li>
+        <li><span><b>Frontend:</b> SPA en Angular consumiendo esa API, con Tailwind y componentes compartidos entre sedes.<span class="gap">falta métrica: módulos/pantallas</span></span></li>
+        <li><span><b>Coordinación:</b> planificación por sprints y coordinación del equipo de desarrollo.<span class="gap">falta métrica: N personas</span></span></li>
+        <li><span><b>Calidad:</b> estrategia de pruebas, ambientes y criterios de aceptación antes de cada release.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="s-stack">
+    <h2 id="s-stack">Stack por nivel real</h2>
+    <dl class="tiers">
+      <div class="tier t1">
+        <dt>Núcleo</dt>
+        <dd>TypeScript <em>·</em> Python <em>·</em> Go <em>·</em> Django <em>·</em> FastAPI <em>·</em> React <em>·</em> Angular <em>·</em> PostgreSQL <em>·</em> AWS <em>·</em> Docker <em>·</em> Kubernetes <em>·</em> GitHub Actions</dd>
+      </div>
+      <div class="tier t2">
+        <dt>Sólido</dt>
+        <dd>Lua <em>·</em> Ruby <em>·</em> C# <em>·</em> Java <em>·</em> Astro <em>·</em> TailwindCSS <em>·</em> SQLite <em>·</em> OpenCV <em>·</em> Web Scraping</dd>
+      </div>
+      <div class="tier t3">
+        <dt>Con IA</dt>
+        <dd>opencode <em>·</em> Cursor <em>·</em> gentle-pi <em>·</em> Kiro <em>·</em> MCP <em>·</em> RAG sobre docs del repo <em>·</em> <span style="color:var(--green)">la IA acelera, yo decido</span></dd>
+      </div>
+    </dl>
+  </section>
+
+  <section aria-labelledby="s-contact">
+    <h2 id="s-contact">Conecta</h2>
+    <div class="contact">
+      <p class="cmd"><span class="p">$</span> contact --via linkedin --responds-in "&lt;24h"<span class="cur" aria-hidden="true"></span></p>
+      <div class="btns">
+        <a class="btn primary" href="https://www.linkedin.com/in/luis-albor/">LinkedIn</a>
+        <a class="btn" href="https://github.com/leav-dev">github.com/leav-dev</a>
+      </div>
+    </div>
+  </section>
+
+  <p class="foot"><b>Tradeoff de esta dirección:</b> mantiene tu identidad terminal y pone la propuesta de valor arriba del fold, pero la tipografía mono chica cansa al escaneo rápido y un reclutador conservador puede leerlo como "estético" antes que como evidencia. Ocupa ~1 pantalla de scroll extra.</p>
+
+</main>
+</div>
+</body>
+</html>

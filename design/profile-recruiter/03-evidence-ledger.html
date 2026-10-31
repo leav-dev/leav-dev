@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>03 — Evidence ledger (leav-dev profile)</title>
+<style>
+  :root{
+    --bg:#151622; --card:#1a1b27; --surface:#24273d; --line:#2d3355;
+    --text:#ffffff; --body:#a9b1d6; --muted:#7c85b0;
+    --blue:#7aa2f7; --cyan:#7dcfff; --green:#9ece6a; --amber:#e0af68;
+    --red:#f7768e; --purple:#bb9af7; --orange:#ff9e64;
+    --sans:'Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+    --mono:'JetBrains Mono','Fira Code',SFMono-Regular,Consolas,'Courier New',monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:#0e0f16; color:var(--body); font-family:var(--sans); line-height:1.55}
+  a{color:var(--cyan)}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--amber); outline-offset:3px; border-radius:4px}
+  code{font-family:var(--mono); font-size:.92em; color:var(--body); background:#ffffff0d; padding:1px 5px; border-radius:4px}
+  .chrome{display:flex; align-items:center; gap:10px; padding:10px 24px; background:#15161f;
+    border-bottom:1px solid #22232e; font-family:var(--mono); font-size:13px; color:var(--muted)}
+  .chrome b{color:var(--body)}
+  .chrome .tabs{margin-left:auto; display:flex; gap:18px}
+  .chrome .on{color:var(--text); border-bottom:2px solid var(--amber); padding-bottom:2px}
+  .page{max-width:1060px; margin:0 auto; padding:24px 24px 52px}
+
+  /* masthead */
+  .mast{
+    background:linear-gradient(120deg,var(--card),#20223a); border:1px solid var(--line);
+    border-radius:14px; padding:24px 26px;
+  }
+  .mast .eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:var(--muted); margin:0}
+  .mast h1{margin:10px 0 0; font-size:32px; line-height:1.2; color:var(--text); letter-spacing:-.5px; font-weight:700}
+  .mast h1 em{font-style:normal; color:var(--blue)}
+  .mast .sub{margin:10px 0 0; font-size:15px; color:var(--body); max-width:64ch}
+  .mast .bar{display:flex; flex-wrap:wrap; gap:10px 22px; margin-top:18px; padding-top:16px; border-top:1px solid var(--line); font-family:var(--mono); font-size:12.5px; color:var(--muted)}
+  .mast .bar b{color:var(--green); font-weight:500}
+
+  /* ledger entries */
+  h2.sec{font-family:var(--mono); font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--muted); font-weight:600; margin:30px 0 14px; display:flex; gap:10px; align-items:center}
+  h2.sec::after{content:''; flex:1; height:1px; background:var(--line)}
+  .entry{
+    display:grid; grid-template-columns:62px 1fr; gap:0;
+    border:1px solid var(--line); border-radius:12px; overflow:hidden;
+    background:var(--card); margin-bottom:14px;
+  }
+  .entry > .n{
+    background:linear-gradient(180deg,#20233c,#1a1b27); border-right:1px solid var(--line);
+    display:grid; place-content:center; font-family:var(--mono); font-size:20px; color:var(--blue);
+    font-weight:700; letter-spacing:1px;
+  }
+  .entry > .n small{display:block; font-size:9px; letter-spacing:1.6px; color:var(--muted); text-align:center; margin-top:4px; font-weight:400}
+  .body{padding:18px 22px 20px; display:grid; gap:14px}
+  .body h3{margin:0; font-size:21px; color:var(--text); letter-spacing:-.2px; font-weight:650}
+  .body p{margin:0; font-size:14px; color:var(--body); max-width:70ch}
+  .verdict{
+    display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:11.5px;
+    letter-spacing:.8px; text-transform:uppercase; color:var(--green);
+    border:1px solid #33502f; background:#1e2a1f; border-radius:5px; padding:3px 10px;
+  }
+  .verdict.warn{color:var(--amber); border-color:#4d3d1c; background:#2a2313}
+  .src{
+    font-family:var(--mono); font-size:12px; color:var(--muted);
+    border-left:2px solid var(--line); padding:6px 0 6px 12px;
+  }
+  .src a{font-family:var(--mono)}
+
+  /* heatmap */
+  .heat{background:#16172400; border:1px solid var(--line); border-radius:10px; padding:14px 16px}
+  .heat .cap{display:flex; align-items:baseline; gap:14px; margin-bottom:10px; font-family:var(--mono); font-size:12px; color:var(--muted)}
+  .heat .cap b{color:var(--text); font-size:19px; font-weight:600}
+  .heat .cap .v{margin-left:auto; color:var(--green)}
+  .cells{display:grid; grid-auto-flow:column; grid-template-rows:repeat(7,1fr); gap:3px; overflow:hidden}
+  .cells i{width:11px; height:11px; border-radius:2px; background:#22243a; display:block}
+  .cells i.l1{background:#2d4a35} .cells i.l2{background:#47794f}
+  .cells i.l3{background:#6fae5b} .cells i.l4{background:#9ece6a}
+  .scale{display:flex; align-items:center; gap:5px; margin-top:10px; font-family:var(--mono); font-size:11px; color:var(--muted); justify-content:flex-end}
+  .scale i{width:10px; height:10px; border-radius:2px; display:block}
+
+  /* mini stats */
+  .mini{display:grid; grid-template-columns:repeat(4,1fr); gap:10px}
+  .mini div{border:1px solid var(--line); border-radius:9px; padding:11px 13px; background:#1c1e2e}
+  .mini strong{display:block; font-family:var(--mono); font-size:20px; color:var(--cyan); letter-spacing:-.4px}
+  .mini span{display:block; font-size:11.5px; color:var(--muted); margin-top:4px; line-height:1.35}
+
+  /* flagship case */
+  .case{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+  .case > div{border:1px solid var(--line); border-radius:10px; padding:14px 16px; background:#1c1e2e}
+  .case h4{margin:0 0 8px; font-family:var(--mono); font-size:11px; letter-spacing:1.4px; text-transform:uppercase; color:var(--purple)}
+  .case p{margin:0; font-size:13px; color:var(--body)}
+  .pipe{font-family:var(--mono); font-size:12.5px; color:var(--text); background:#12131f; border:1px solid var(--line);
+    border-radius:8px; padding:12px 14px; overflow-x:auto}
+  .pipe .p{color:var(--green)} .pipe .o{color:var(--muted)}
+
+  /* verification table */
+  table.vt{width:100%; border-collapse:collapse; font-size:13.5px; border:1px solid var(--line); border-radius:12px; overflow:hidden}
+  .vt th,.vt td{padding:11px 14px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top}
+  .vt th{background:#20223a; font-family:var(--mono); font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:var(--muted); font-weight:600}
+  .vt tr:last-child td{border-bottom:0}
+  .vt td:first-child{color:var(--text)}
+  .vt td:last-child{font-family:var(--mono); font-size:12px; color:var(--muted)}
+
+  /* contact */
+  .contact{display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between;
+    background:linear-gradient(120deg,#20233c,var(--card)); border:1px solid var(--line); border-radius:12px; padding:20px 24px}
+  .contact p{margin:0; font-size:15px; color:var(--text)}
+  .contact .btns{display:flex; gap:10px; flex-wrap:wrap}
+  .btn{font-family:var(--mono); font-size:13px; text-decoration:none; border:1px solid var(--blue);
+    border-radius:8px; padding:9px 16px; color:var(--cyan); background:#7aa2f71a}
+  .btn.primary{background:var(--blue); color:#11131c; font-weight:700}
+  .btn:hover{text-decoration:none; filter:brightness(1.15)}
+
+  .foot{margin-top:26px; font-size:12.5px; color:var(--muted); border-top:1px solid var(--line); padding-top:14px}
+  .foot b{color:var(--amber); font-weight:600}
+
+  @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+</head>
+<body>
+<div class="chrome">
+  <span>github.com /</span><b>leav-dev</b><span>/</span><b>leav-dev</b>
+  <div class="tabs"><span>Repositorios</span><span class="on">README</span><span>Paquetes</span></div>
+</div>
+
+<div class="page">
+<main>
+
+  <header class="mast">
+    <p class="eyebrow">Registro de evidencia · actualizado por CI · 31 oct 2026</p>
+    <h1>Luis Eduardo Albor Vega — <em>full-stack developer</em> que deja rastro verificable</h1>
+    <p class="sub">Casi cinco años construyendo plataformas empresariales en Django + Angular + AWS, y herramientas propias que se instalan con Homebrew. Cada afirmación de este perfil tiene un enlace donde comprobarla.</p>
+    <div class="bar">
+      <span>Colombia · UTC−5</span>
+      <span>en GitHub desde <b>dic 2021</b></span>
+      <span><b>13</b> repos públicos</span>
+      <span><b>422</b> commits / 365 días</span>
+      <span><b>14</b> PR mergeados</span>
+      <span>respondo en <b>&lt;24 h</b></span>
+    </div>
+  </header>
+
+  <h2 class="sec">Afirmaciones, con su fuente</h2>
+
+  <article class="entry">
+    <div class="n">01<small>constancia</small></div>
+    <div class="body">
+      <h3>Programo todos los días, y lo puedo mostrar</h3>
+      <p>No es una promesa de actitud: es el registro de contribuciones de los últimos 365 días, regenerado por un workflow de GitHub Actions contra la API de GitHub. Los meses flojos también se ven; eso es lo que hace creíble el resto.</p>
+      <div class="heat">
+        <div class="cap"><b>429</b> contribuciones <span>· 40 días activos · pico de 78 el 2026‑10‑03</span><span class="v">tendencia: creciendo (+618 %)</span></div>
+        <div class="cells" id="cells" role="img" aria-label="Mapa de contribuciones de los últimos 365 días: 429 contribuciones en 40 días activos, con un pico fuerte en octubre de 2026"></div>
+        <div class="scale" aria-hidden="true">menos
+          <i style="background:#22243a"></i><i style="background:#2d4a35"></i><i style="background:#47794f"></i><i style="background:#6fae5b"></i><i style="background:#9ece6a"></i>
+          más
+        </div>
+      </div>
+      <div class="mini">
+        <div><strong>306</strong><span>contribuciones en los últimos 30 días</span></div>
+        <div><strong>422</strong><span>commits en 365 días</span></div>
+        <div><strong>1,17</strong><span>commits por día en promedio</span></div>
+        <div><strong>7</strong><span>mejor racha de días seguidos</span></div>
+      </div>
+      <p class="src">Fuente: <a href="https://github.com/leav-dev/leav-dev/actions/workflows/stats.yml">.github/workflows/stats.yml</a> → <code>stats/metrics.json</code> (cálculo propio, sin servicios externos).</p>
+    </div>
+  </article>
+
+  <article class="entry">
+    <div class="n">02<small>producto</small></div>
+    <div class="body">
+      <h3>Mantengo software que otras personas instalan</h3>
+      <p><b style="color:var(--text)">tcode</b> es un CLI en Go: binario único, companion extensible en Lua y un tap de Homebrew propio. Tres repos que se versionan juntos — el mismo pipeline que publico para mis herramientas es el que uso en trabajo de equipo.</p>
+      <div class="pipe"><span class="p">$</span> brew install leav-dev/tcode/tcode<br><span class="o">→ fórmula Ruby en homebrew-tcode · CLI Go con releases y Actions · extensión Lua/HTML</span></div>
+      <div class="case">
+        <div><h4>Problema</h4><p>Herramientas de desarrollo repartidas en scripts sueltos, sin instalación ni versionado.</p></div>
+        <div><h4>Decisión</h4><p>Un CLI en Go con extensiones en Lua: rápido, sin runtime, y editable sin recompilar.</p></div>
+        <div><h4>Resultado</h4><p>221 commits en el CLI, 57 en el companion, 7 en el tap. Ciclo de release publicable en un comando.</p></div>
+      </div>
+      <p class="src">Fuente: <a href="https://github.com/leav-dev/tcode">tcode</a> · <a href="https://github.com/leav-dev/tcode-extention">tcode-extention</a> · <a href="https://github.com/leav-dev/homebrew-tcode">homebrew-tcode</a></p>
+    </div>
+  </article>
+
+  <article class="entry">
+    <div class="n">03<small>empresa</small></div>
+    <div class="body">
+      <h3>Trabajo en producción con datos ajenos y roles que se superponen</h3>
+      <p>En <b style="color:var(--text)">Grupo Educate Colombia</b> desde febrero de 2024: API en Django sobre PostgreSQL, microservicios en AWS Lambda, SPA en Angular. Y encima del código, las otras cuatro sombrillas del equipo: QA, tester, DBA y coordinación de sprints.</p>
+      <div class="case">
+        <div><h4>Datos</h4><p>Modelado, migraciones y optimización de consultas. Respaldos y criterios de aceptación antes de cada release.</p></div>
+        <div><h4>Entrega</h4><p>Planificación por sprints y coordinación del equipo, con ambientes de prueba controlados.</p></div>
+        <div><h4>Límite honesto</h4><p>El repositorio es privado: no puedo mostrar el diff, pero sí los procesos que sostuve.</p></div>
+      </div>
+      <span class="verdict warn">⚠ una métrica propia falta todavía: endpoints servidos, sedes o tamaño del equipo</span>
+      <p class="src">Fuente: <a href="https://www.linkedin.com/in/luis-albor/">LinkedIn — Luis Albor</a> (historia laboral verificable por referencia).</p>
+    </div>
+  </article>
+
+  <article class="entry">
+    <div class="n">04<small>IA aplicada</small></div>
+    <div class="body">
+      <h3>Uso agentes de IA con un método, no como ornamentación</h3>
+      <p>Trabajo con ODD (Organic Driven Development): documentos de tarea, specs numeradas, revisiones asistidas y criterio humano al final. Sobre ese loop corro MCP y RAG contra la documentación y el esquema SQL del repo, y mantengo los agentes que uso.</p>
+      <div class="mini">
+        <div><strong>2</strong><span>forks que mantengo contra upstream: graphify-modules y atreus</span></div>
+        <div><strong>11</strong><span>repositorios propios, sin contar forks</span></div>
+        <div><strong>14</strong><span>pull requests mergeados sobre código ajeno</span></div>
+        <div><strong>6</strong><span>herramientas de agente en el loop diario</span></div>
+      </div>
+      <p class="src">Fuente: <a href="https://github.com/leav-dev/graphify-modules">graphify-modules</a> · <a href="https://github.com/leav-dev/atreus">atreus</a> · opencode, Cursor, gentle-pi, Kiro, MCP, RAG.</p>
+    </div>
+  </article>
+
+  <h2 class="sec">Cómo comprobar esto sin creerme</h2>
+  <table class="vt">
+    <caption class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Afirmaciones y dónde verificarlas</caption>
+    <thead>
+      <tr><th scope="col">Afirmación</th><th scope="col">Dónde se verifica</th><th scope="col">Qué muestra</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Actividad real, no decorada</td><td>leav-dev/leav-dev/actions</td><td>última corrida del workflow, 31‑10‑2026</td></tr>
+      <tr><td>Publico software terminado</td><td>leav-dev/homebrew-tcode</td><td>fórmula Ruby y releases</td></tr>
+      <tr><td>Trabajo sobre código de otros</td><td>leav-dev?tab=pull_requests</td><td>14 PR mergeados</td></tr>
+      <tr><td>Escribo en Go, Python y TS</td><td>stats/top-langs.svg</td><td>TS 55,5 % · Python 26,8 % · Go 6,2 %</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">Cierre</h2>
+  <div class="contact">
+    <p>Si necesitás a alguien que sostenga backend, frontend y datos en un mismo equipo, escribime.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://www.linkedin.com/in/luis-albor/">LinkedIn</a>
+      <a class="btn" href="https://github.com/leav-dev">github.com/leav-dev</a>
+    </div>
+  </div>
+
+  <p class="foot"><b>Tradeoff de esta dirección:</b> es la que más confianza construye con un reclutador técnico porque cada afirmación trae su enlace, pero es larga (tres pantallas), exige mantener los números frescos en CI y su estructura de "registro" se tiene que resolver con SVG generados o tablas HTML, porque GitHub no deja pasar <code>&lt;style&gt;</code> ni <code>&lt;script&gt;</code> en un README.</p>
+
+</main>
+</div>
+
+<script>
+  const cal = /*__CAL__*/[0,0,0,0,0,0,0,0,0,0,3,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,2,3,1,2,0,0,0,0,0,0,0,0,0,0,0,0,5,0,6,0,0,1,5,0,0,2,2,0,1,0,0,0,0,6,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,23,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,9,1,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,78,59,59,30,52,8,4,0,0,0,0,0,1,0,0,0,0,0,1,0,3,6,0,2,0,0,0,3,0];
+  const cells = document.getElementById('cells');
+  const frag = document.createDocumentFragment();
+  cal.forEach(c => {
+    const i = document.createElement('i');
+    if (c > 0) i.className = 'l' + (c >= 21 ? 4 : c >= 11 ? 3 : c >= 4 ? 2 : 1);
+    i.title = c + ' contribuciones';
+    frag.appendChild(i);
+  });
+  cells.appendChild(frag);
+</script>
+</body>
+</html>

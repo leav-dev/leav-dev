@@ -1,0 +1,28 @@
+{
+  "title": "GitHub profile — enfoque reclutador",
+  "brief": "Rediseñar el README del perfil leav-dev para un reclutador o cliente que lo encuentra: propuesta de valor arriba del fold, evidencia verificable y CTA de contacto. Contenido tomado de stats/metrics.json (2026-10-31), sin inventar métricas.",
+  "feature": "odd/tasks/profile-refresh.md",
+  "artboards": [
+    {
+      "file": "01-terminal-brief.html",
+      "title": "Terminal briefing",
+      "tradeoff": "Conserva la identidad Tokyonight y ordena la lectura por evidencia, pero la tipografía monoespaciada chica cansa el escaneo rápido y puede leerse como estético antes que como CV.",
+      "width": 1440,
+      "height": 1740
+    },
+    {
+      "file": "02-recruiter-resume.html",
+      "title": "One-screen résumé",
+      "tradeoff": "Máxima claridad en 20 segundos con riel de contacto (sin correo personal) y lenguajes reales; el trabajo privado se sostiene con tecnologías y decisiones, no con números, y la doble columna no es nativa de un README de GitHub.",
+      "width": 1440,
+      "height": 1520
+    },
+    {
+      "file": "03-evidence-ledger.html",
+      "title": "Evidence ledger",
+      "tradeoff": "La que más confianza genera: cada afirmación trae su enlace y el heatmap real de 365 días, pero es larga, exige mantener los números en CI y se tiene que implementar con SVG generados o tablas.",
+      "width": 1440,
+      "height": 2260
+    }
+  ]
+}
