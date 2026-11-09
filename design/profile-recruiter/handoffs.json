@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "chosen": "02-recruiter-resume.html",
+  "handoffs": {
+    "02-recruiter-resume.html": {
+      "status": "implemented",
+      "queued": false,
+      "sentAt": "2026-10-31T14:18:18.300Z",
+      "startedAt": "2026-10-31T14:18:28.565Z",
+      "implementedAt": "2026-10-31T14:19:18.638Z",
+      "feature": "odd/tasks/profile-refresh.md",
+      "note": "Verificado y sincronizado: utilspress en README y artboard, identity-card.svg idéntico al renderer, typecheck/build verdes, sin correo ni servicios externos. Sin app corriendo (repo estático), sin previewUrl."
+    }
+  }
+}

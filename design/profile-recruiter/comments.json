@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "comments": [
+    {
+      "id": "s82607bb",
+      "file": "02-recruiter-resume.html",
+      "selector": "body > div:nth-of-type(2) > div > aside > dl > div:nth-of-type(5)",
+      "excerpt": "Email luise.albor@gmail.com",
+      "comment": "no es necesaria, ademas deja al descubierto mi correo pesonal",
+      "createdAt": "2026-10-31T14:02:47.525Z",
+      "status": "resolved",
+      "sentAt": "2026-10-31T14:02:47.600Z",
+      "resolvedAt": "2026-10-31T14:03:17.644Z"
+    },
+    {
+      "id": "1k86zxfg",
+      "file": "02-recruiter-resume.html",
+      "selector": "body > div:nth-of-type(2) > div > aside > a",
+      "excerpt": "Escribirme por email",
+      "comment": "tambien expone mi correo personal",
+      "createdAt": "2026-10-31T14:03:14.572Z",
+      "status": "resolved",
+      "sentAt": "2026-10-31T14:03:14.583Z",
+      "resolvedAt": "2026-10-31T14:03:36.414Z"
+    },
+    {
+      "id": "mdc5xn2s",
+      "file": "02-recruiter-resume.html",
+      "selector": "body > div:nth-of-type(2) > div > main > section:nth-of-type(4) > div",
+      "excerpt": "Grupo Educate Colombia — Desarrollador Full-Stack 19 feb 2024 — actualidad · Colombia Backend: API en Python + Django sobre PostgreSQL; microservicios serverless en AWS Lambda. Datos: rol DBA — modelado, migraciones, optimización de consultas y respaldos. Frontend: SPA en Angular consumiendo la API",
+      "comment": "me gusta la idea, pero no me gusta dejar vacio lo que he hecho, mis impactos son como en optimizacion de tareas, mi trabaje con un grupo  3 personas icluyendome, maneje el tema de ci/cd, ademas de pipelines para automatizacion de lismos, realice proyecto con sonar para la deteccion de psoibles errores y codigo duplicado, puedes hacer que suene mas pintorezco, no se puedne colocar metricas pero podemos colocar las tecnologias, que don angulr y django rest framework",
+      "createdAt": "2026-10-31T14:06:50.835Z",
+      "status": "resolved",
+      "sentAt": "2026-10-31T14:06:50.907Z",
+      "resolvedAt": "2026-10-31T14:07:43.710Z"
+    }
+  ]
+}
