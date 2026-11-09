@@ -2,18 +2,22 @@
 
 **Full-Stack Developer** · Colombia (UTC−5) · backend, frontend y datos en el mismo equipo
 
-<img src="stats/identity-card.svg" width="100%" alt="Tarjeta de identidad de Luis Eduardo Albor Vega: Full-Stack Developer en Colombia, disponible para trabajo remoto; a la derecha, la distribución de lenguajes que escribe hoy y contadores de contribuciones, repositorios públicos, pull requests mergeados y commits de los últimos 30 días." />
+<img src="stats/identity-card.svg" width="800" alt="Monograma LEAV con distribución de lenguajes y contribuciones" />
 
 ## Perfil
 
 > Tomo un producto de la idea a producción: backend, frontend, datos y despliegue. Casi cinco años trabajando sobre plataformas reales en Colombia, cubriendo **Django REST Framework + PostgreSQL, SPA en Angular, infraestructura en AWS y la calidad del resultado**. Además mantengo herramientas propias que se instalan con Homebrew: si algo se usa, lo sostengo.
 
 ## Dónde encajo
-
-| Equipos chicos de producto | Sistemas que escalan | Entrega con criterio |
+| Roles | Fortalezas | Resultados |
 | --- | --- | --- |
+| Equipos chicos de producto | Sistemas que escalan | Entrega con criterio |
 | Gente que necesita a alguien que mueva backend y frontend sin esperar a tres personas. | Clean Architecture, migraciones y consultas medidas, no adivinadas. | Agentes de IA en el loop de código, tests y review: la IA acelera, la decisión es mía. |
-| **5 roles** cubiertos a la vez: dev, QA, tester, DBA y coordinación | **AWS** — Lambda · S3 · EC2 · ECS · RDS · CloudFront · Route 53 · WAF | **CI/CD** con pipelines que compilan y despliegan solos |
+| DEV | Python, Angular, React, Js, TS| Aplicaciones escalables, seguras y estables|
+| QA | Reviciones rapides y eficientes con buen criterio | Buenos acabados, diseños modernos, diseños intuitivos y faciles de usar|
+| DBA | Manejo de bases de datos postgres | Consultas SQL eficientes, con bajo nivel de complejidad|
+| COORDINACION | Identificación de prioridades, lider, afrontar restos | Avances oportunos, con criterio |
+| DevOps | Creacion de pipelines para la autmatización de procesos delicados como son CI/CD| Reducción de errores en los despliegues y las actualizaciones |
 
 ## Trabajo seleccionado
 
@@ -27,7 +31,7 @@
 
 ## Experiencia
 
-**Grupo Educate Colombia** — Desarrollador Full-Stack · 19 feb 2024 — actualidad · Colombia · 🔒 repositorio privado
+**Grupo Educate Colombia** — Desarrollador Full-Stack · 19 feb 2024 — actualidad · Colombia · repositorio privado
 
 Roles: `Full-Stack` `QA` `Tester` `DBA` `Project Manager`
 
