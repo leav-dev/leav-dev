@@ -50,7 +50,7 @@ El equipo éramos **tres personas, yo incluido**, y entre nosotros cubríamos de
 | --- | --- |
 | **Núcleo** | `TypeScript` `Python` `Go` `Django REST Framework` `FastAPI` `React` `Angular` `PostgreSQL` `AWS` `Docker` `Kubernetes` `GitHub Actions` |
 | **Sólido** | `Lua` `Ruby` `C#` `Java` `Astro` `TailwindCSS` `SQLite` `OpenCV` `Web Scraping` |
-| **Con IA** | `opencode` `Cursor` `gentle-shell` `Kiro` `MCP` `RAG` |
+| **Con IA** | `opencode` `Cursor` `gentle-shell` `Kiro` `MCP` |
 
 ## Desarrollo aumentado con IA
 
